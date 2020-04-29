@@ -1,0 +1,253 @@
+\section{Methods}
+We designed two experiments to investigate our research questions.
+The first experiment applied both QV and Likert-scaled surveys to 
+measure people's preferences among societal issues.
+We then deployed a donation task to match the results of the surveys to people's preference. 
+The second experiment extends upon the first one with a focus
+in the context of HCI survey.\par
+
+\subsection{Demographics}
+
+\subsection{Experiment 1}
+%Motivation
+The first experiment aims to answer the first research question. 
+We try to understand how QV aligns with people's true preference
+compared to Likert-scaled surveys 
+when a group of people is selecting $n$ items among $k$ options.
+This experiment also aims to answer the third research question:  
+trying to observe if and how different numbers of voice credit 
+impact participants QV responses.
+Conducted between subjects, 
+the first experiment is made up of three primary segment: 
+demographics, surveys and donation. This process is demonstrated in graph X(a).\par
+
+%Grouping
+Both group of participants will fill out a demographic survey
+after agreeing the consent form.
+This demographic survey captures participant's basic information 
+such as age, gender, income, ethnicity, profession and so on. 
+Participants are divided into two groups: QV group and Likert group.
+Participants in the QV group 
+will first go through a tutorial on what QV is 
+and how QV works using a pre-recorded video. 
+To make sure that the participants understand the concepts correctly,
+they have to correctly answer questions regarding the concepts
+in order to move on. 
+They would experience 4 QV surveys shown as graphic X(b).\par
+
+%QV
+The first two QV surveys asked participants to vote with QV among 9 different societal causes 
+based on the causes they think requires more resource allocation. 
+The only difference between the first two surveys 
+are the number of voice credits the participants have to express their votes. 
+The two number of credits a participants can have are equally drawn from 
+two of the three possible number of credits: $36$, $108$ and $324$. 
+[Explain the three voice credits here] 
+The last two surveys are designed to look similar to the first two.
+They differ at the set of nine societal causes presented to the participants.
+These nine causes have no direct purpose to the experiment. 
+They are designed to distract the participants and 
+prevent them making connections to the donation task which follows.
+Note that the selection of voice credits 
+for the first two QV survey 
+would be the same for the latter two QV survey. 
+The second group of participants 
+completes two Likert-scaled surveys.
+The two surveys mirror the nine societal causes 
+listed on the first and third QV surveys.
+Both surveys are provided in the supplementary materials.\par
+
+%Donation
+A donation task is deployed to the participants after the surveys were completed
+to measure the true preferences based on participant's behaviors.
+Participants are told that for every 70 participants, one participant would win 35 US dollars.
+Assuming winning the 35 US dollars, 
+the participants were asked if they would want to donate 
+some money to some of the nine charity groups.
+These nine charity groups mirrors the nine societal causes 
+listed on the first two QV survey and the first likert-scaled survey.
+Participants are aware that 
+the research team will match one dollar to each one dollar they donated to an organization. 
+Participants are also aware that 
+they get to keep the amount of money not donated to any organizations if winning the lottery.\par
+
+\subsubsection{Selection of the societal causes}
+
+
+\subsubsection{System Architecture and Interface}
+The voting system is constructed using Python Flask for the back-end, 
+Angular for front-end and 
+MongoDB for database storage. 
+The experiment source code is publicly available \footnote{Not yet public} 
+and the QV interface is also provided as a stand-alone repository \footnote{https://github.com/hank0982/QV-app}.
+In this subsection,
+we focus on the QV interface.\par
+
+The QV interface, 
+shown in graph Y, 
+consists of three major sections.
+The first section contains definitions of QV and the prompt of the task.
+The second section shows a list of option with a plus and minus button to its left.
+Buttons are disabled if the number of voice credit does not permit the next vote.
+A bar on the right of the option shows the proportion of voice credits used to that option.
+The final section is a floating summary at sticks to the bottom of the page.
+It contains a visualization of the total number of credits and the remaining credits.\par
+
+\subsection{Experiment 2}
+The second experiment extends upon the first one,
+in which it examines 
+whether Quadratic Voting betters at aligning people's actual preferences
+compared to a Likert-scaled survey in an HCI setting.
+Different from political and public-opinion surveys, 
+testing participants' preference 
+in interface design and user experience 
+is much more non-trivial.
+Thus we developed a buy-back mechanism 
+and observe participants' behaviors 
+as their true preference.
+This experiment also acts as a concrete example as to how QV can be incorporated in HCI.
+
+\subsubsection{Choice of HCI Research Question}
+Research on video and audio quality 
+from the lens of HCI 
+has been a relatively mature.
+Contributions has been made to fields like
+multi-media conferencing \cite{watson1996evaluating}, video-audio perception \cite{chen2006cognitive, molnar2015assessing}
+and more specifically trade-offs between video and audio elements under network monetary constraints \cite{molnar2013comedy, oeldorf2012bad}.
+%These elements can includeing video frame rate, video bit rate, video resolution, video package loss rate, audio package loss rate, audio sampling rate, audio bit rate, audio bit depth, video-audio synchronization, etc. 
+
+Oeldorf-Hirsch et al. \cite{oeldorf2012bad} conducted a study, 
+covering the widest range of elements to the best of our knowledge,
+to understand how users with bandwidth constraints 
+made trade-offs between video and audio elements. 
+They examined participants' attitude between three video bit rates, 
+three video frame rates and two audio sampling rates 
+across three types of video content.
+Participants were asked to rate the overall quality, 
+video quality, audio quality and enjoyment level 
+on a 5-point Likert scale in each condition. 
+Conclusion were drawn using mean and standard deviation of the survey results.
+This is a typical study 
+where the goal is to find  
+$1$ or some of the $K$ elements to choose from
+when under constraint.
+In our second experiment, we expand this study
+to collect people's preference among a wider range of video and audio elements 
+and compare how Likert-scaled survey and QV reflects people's true perception preferences. 
+
+\subsubsection{Experiment 2 Design}
+In our experiment, we included a total of five video and audio element that will impact a video.
+These elements include video and audio package loss rate, 
+determining whether the audio or video stutters; 
+video resolution and audio sampling rate 
+effecting the quality of video and audio; 
+and video-audio synchronization. 
+We selected a few segment of weather broadcasting 
+from a news channel 
+as the content of our video.
+Weather broadcasts usually convey information via both visual and audio channels, 
+appeal to a wide array of audiences, 
+and do not require prior knowledge to understand.\par
+
+To ensure the ecological validity of the experiment, 
+we situated the comparison of different video and audio elements 
+in a hypothetical scenario in which the participant 
+is a manager of a weather reporting news station. 
+As the manager, 
+the participant was asked to rate 
+the importance of each video and audio elements 
+with the goal to maximize customer understanding of the context
+where network is of low bandwidth and that the weather broadcast 
+cannot be shown in its best quality.\par
+
+We designed a between-subject study
+with three groups of 60 participants.
+After the participants agreed with the consent form, 
+all three group of participant
+were presented an example weather broadcast segment
+with controls of the five video and audio elements 
+under the video shown in figure M. 
+All five elements were set to sub-optimal by default, 
+making the content near incomprehensible.
+Participants can alternate the five elements 
+in any combination, 
+to see how elements impact to the video.
+
+Once participants think that they had a grasp of 
+how different elements impact a video, 
+the first group of participants 
+then completed a 5-point Likert-scaled survey 
+while the second group of participants 
+completed a QV survey with K voice credits \footnote{K is decided from experiment 1}, 
+asking their opinions 
+on the importance of the 5 video and audio elements 
+in a weather broadcast 
+under a low bandwidth environment. 
+The third group of participants 
+were asked to perform a buy-back task 
+for a bad-quality advertising video.\par
+
+The buy-back task mimics a rational customer's behavior: 
+buying essential tools to complete some given task.
+Participants were told that 
+as the manager of the weather broadcast agency,
+they need to verify if their viewer 
+can understand the content of the video.
+Therefore, the goal of their task 
+is to correctly answer a set of multiple choice questions
+to make sure that they correctly comprehend the video.
+Given the video with sub-optimal video, 
+participants were given a budget of \$30 
+to purchase some or all of the features back.
+To ensure incentive-compatibility 
+of the participants' buy-back actions, 
+we offered to pay the participants their own remaining amount 
+from the \$30 budget through a lottery 
+under the condition that 
+they answered 80\% of the multiple choice questions correctly,
+[missing probability]
+version of a new weather broadcast video 
+adjusted by their buy-back choices. 
+These questions contained factual questions such as, 
+"What is the weather of Chicago?", 
+"What is the highs and lows of San Diego", 
+"Which of the follow cities got colder?". 
+Participants were shown three example questions 
+before the buy-back task to assist their decision.
+Participants can replay the video with their adjustments
+while answering the questions
+to ensure that participants do not require memorization.
+There will be a 5 minute timer to minimize the impact of replaying the video.
+With this design, 
+participants would try their best to make the video comprehensible 
+based on their opinions on which feature(s) was most needed 
+at the lowest cost.\par
+
+In the given weather broadcast video, 
+there were 4 levels of quality for each of the 5 elements. 
+By default, the video set to the lowest level 
+for all elements before any adjustment occurred. 
+%Based on prior study on the perception of the degradation of the 5 features, we designed the 4 levels to be as linear to user's perception as possible. Below are the 4 levels of the 5 elements listed from the worst to the best quality.
+
+\begin{enumerate}
+    \item Audio Package Loss Repaired with Silence (package loss rate) \cite{watson1996evaluating}: 20\%, 10\%, 5\%, 0\%
+    \item Video Package Loss (package loss rate) \cite{claypool1999effects}: 20\%, 8\%, 4\%, 0\% (20, 8.3, 3.3, 0) 
+    \item Audio Sampling Rate \cite{oeldorf2012bad, noll1993wideband}: 8kHz, 11kHz, 16kHz, 48kHz
+    \item Video Resolution \cite{oeldorf2012bad, knoche2008low}: 120x90, 168x126, 208x156, 240x180
+    \item Video-audio Synchronization (time video behind audio) \cite{steinmetz1996human}: 240ms, 200ms, 160ms, 0ms (new: 1850, 1615, 1050, 0)
+\end{enumerate}
+
+In the buy-back task, 
+each level of improvement for one feature costs \$2. 
+It would cost the entire budget of \$30 
+to buy all levels of every feature back. 
+Hence, the option of buying back everything was given to the participants,
+in return, there would be no extra payoff remaining for the participant.\par
+
+Similar to the first experiment, 
+the money spent on each feature during the buy-back task 
+are considered as the true preference 
+the population had towards the 5 video and audio features. 
+The results from the Likert-scaled surveys and QV survey 
+were then compared to the population's true preference 
+to see how different they were.\par
