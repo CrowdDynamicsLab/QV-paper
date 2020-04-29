@@ -1,11 +1,24 @@
-main.aux
-main.bbl
-main.blg
-main.fdb_latexmk
-main.fls
-main.log
-main.out
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.bbl
+*.blg
+*.fdb_latexmk
 *.gz
+
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+
+## windows env
 .vscode
-package-lock.json
-node_modules
