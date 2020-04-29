@@ -7,4 +7,5 @@ main.log
 main.out
 *.gz
 .vscode
-
+package-lock.json
+node_modules
