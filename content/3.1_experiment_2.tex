@@ -1,2 +1,424 @@
 \section{Experiment 2}
+
+We designed two experiments to investigate our research questions.
+
+The second experiment extends upon the first one with a focus
+in the context of HCI survey.\par
+
+
 \subsection{Methodology} \label{method-2}
+
+\subsubsection{Experiment 2 Design}
+
+\section{Experiment 2}
+The second experiment 
+extends upon the first one,
+and focus in an HCI setting.
+In other words, 
+does the same result from experiment one
+apply to another domain.
+Different from political and public-opinion surveys, 
+HCI surveys with eliciting one in $K$,
+usually focuses on users' preference 
+in interface design and user experiences.
+However, this also makes measuring 
+participant's true preference
+much more non-trivial.
+Thus, we developed a buy-back mechanism 
+and observe participants' behaviors in that task
+which serves as their true preferences.
+This experiment also acts 
+as a concrete example as to how 
+QV can be incorporated in HCI.
+
+\subsection{Choice of HCI Research Question}
+Selecting a HCI research question
+for us to apply QV, Likert, and 
+have a task that reflects participant's behavior
+is not trivial. 
+At the same time, 
+we do not want to invent a new experiment 
+that requires complex verification.
+Similar in the pretest,
+we want a well explored HCI topic 
+that we could rely on
+to ensure ecological validity.
+Most HCI research uses Likert scale surveys
+to understand participants opinion
+across one or more devices, design or interfaces.
+One could view this as one form of eliciting one
+out of $K$. 
+However, reproducing one of these experiences
+can be costly and difficult.
+Therefore, we turn to the other type of experiment,
+where UX/UI researchers aimed to prioritize
+features and elements that their customers care about.
+This type of surveys are often find online
+and as feedback forms.
+
+Research on video and audio quality 
+from the lens of HCI 
+has been a relatively mature.
+Contributions has been made to fields like
+multi-media conferencing \cite{watson1996evaluating}, 
+video-audio perception \cite{chen2006cognitive, molnar2015assessing}
+and more specifically trade-offs 
+between video and audio elements 
+under network monetary constraints \cite{molnar2013comedy, oeldorf2012bad}.
+
+Oeldorf-Hirsch et al. \cite{oeldorf2012bad} conducted a study, 
+covering the widest range of elements 
+to the best of our knowledge,
+to understand how users 
+with bandwidth constraints 
+made trade-offs between video and audio elements. 
+They examined participants' attitude 
+between three video bit rates, 
+three video frame rates 
+and two audio sampling rates 
+across three types of video content.
+Participants were asked to rate the overall quality, 
+video quality, audio quality and enjoyment level 
+on a 5-point Likert scale in each condition. 
+Conclusion were drawn 
+using mean and standard deviation 
+of the survey results.
+This is a typical study 
+where the goal is to find  
+one or some of the $K$ elements to choose from
+when under constraint.
+We follow similar experiment scenario
+with emphasis on collecting participant's attitude
+among a wider range of video and audio elements 
+and compare how Likert scaled survey 
+and QV reflects people's true perception preferences. 
+
+Based on these related works, 
+we selected five video elements to alter
+in our experiments. 
+These elements includes: 
+(1) Audio Quality, 
+(2) Video Quality,
+(3) Audio Packet Loss,
+(4) Video Packet Loss, and 
+(5) Audio-Video Synchronization.
+Details of these elements 
+are discussed in the next subsection.
+
+% \begin{figure}[htpb]
+%     \centering
+%     \includegraphics[width=\textwidth, keepaspectratio=true]{resources/exp_2_video.png}
+%     \caption{
+%         Real-time Video Element Interface
+%     }
+%     \label{fig:exp_2_video}
+% \end{figure}
+
+\subsection{Video Alternation Interface}
+The key interface in this experiment
+is the real-time video element interface
+displayed in Figure \ref{fig:exp_2_video}. 
+This interface showcased a weather video
+with a set of controls at the bottom.
+Participants can toggle any of these video elements,
+and see the immediate changes to the video
+on the top of the interface.
+Participants can pause and play the video at anytime.
+
+Based on prior study on the perception of 
+the degradation of the 5 features, 
+we designed the 4 levels to be as linear 
+to user's perception as possible. 
+Below are the 4 levels of the 5 elements 
+listed from the worst to the best quality
+reflected on the interface.
+
+\begin{enumerate}
+    \item Stability of Video Imagery \cite{claypool1999effects}: This refers to mimicking the effects of lost packets of the video. When packets are lost during transmission, the screen would freeze in the previous frame. The different levels are set with 20\%, 8\%, 4\%, and 0\% of the data lost during the entire video.
+    \item Stability of Audio \cite{claypool1999effects}: This refers to mimicking the effects of lost packets of the audio. When packets are lost during transmission, the audio would drop for a certain amount of time. The different levels are set with 20\%, 8\%, 4\%, and 0\% of the data lost during the entire playback.
+    \item Quality of audio \cite{oeldorf2012bad, noll1993wideband}: The quality can change with a different audio sampling rate that refers to the different file size of the audio. The different levels of audio sampling rate in the experiment is 8kHz, 11kHz, 16kHz, and 48kHz respectively.
+    \item Quality of the video \cite{oeldorf2012bad, knoche2008low}: The quality of the video is alternated by changing the video resolution 210x280, 294x392, 364x486, and 420x560 but fitted into the same size of final display such that the pixel density per inch differs.
+    \item Video-audio Synchronization \cite{steinmetz1996human}: The synchronization of the video and audio is altered by having the audio 1850, 1615, 1050 or 0 milliseconds ahead of the video.
+\end{enumerate}
+
+In the prompt of the interface, 
+participants were told that this research 
+is conducted by a video streaming company
+primarily serving in-flight entertainment systems.
+During flights,
+data bandwidth are limited and engineers 
+of the company need to know what to prioritize
+to serve to the customer.
+Therefore, through the survey,
+the company can understand 
+how customers think are important video elements
+that will help them understand the video.
+
+We believe this scenario is easy to understand 
+and can be easily applied to many real life scenarios,
+such as sudden drop in mobile network,
+spotty WiFi connection
+or really in a flight.
+We also believe that participants 
+have experience at least one of the five
+video elements in the past
+making this easy to understand and relay.
+
+
+\subsection{Buyback as behaviors}
+Similar to the first experiment,
+we need a task to align participant's attitude
+with their behavior.
+We designed a task called Buyback, 
+which mimics a rational customer's behavior: 
+buying essential tools to complete some given task.
+To the best of our knowledge,
+we are the first to design such a task,
+yet, it reflects many behaviors
+in the real life.
+The task stems on 
+many subscription-based services on the market,
+in which requires customers to pay additional premiums
+for additional benefits.
+
+In the first stage of the buyback,
+participants were given 
+a video with sub-optimal quality
+that mimics worst case scenarios
+if the internet bandwidth is limited.
+This is realized by 
+setting the video interface controllers 
+to level 0.
+Participants can ``enhance'' each of these elements
+buy ``purchasing'' a level of that element.
+For instance, 
+participants can buy two levels of audio quality,
+and one level of video stability.
+Each of these levels costs $2$ dollars.
+Participants were given a budget of \$30 
+to purchase some or all of the features back.
+We call this action the ``buyback actions''.
+
+To ensure incentive-compatibility 
+of the participants' buy-back actions, 
+we offered to pay the participants their own remaining amount 
+from the \$30 budget through a lottery.
+Participants would be eligible for the lottery 
+only if they correctly answered 80\% of 
+five multiple choice questions 
+related to the content of the video correctly.
+This ensures that participants has
+correctly comprehend the video.
+This also set the goal for the participants,
+to really consider what video elements
+impact one's experience at understanding
+the content of the video.
+
+The five questions are factual questions such as, 
+"What is the weather of Chicago?", 
+"What is the highs and lows of San Diego", and
+"Which city was not shown in the video?". 
+Participants were shown five example questions 
+before the buy-back task to assist their decision.
+Participants can replay the video with their adjustments
+while answering the questions
+to ensure that participants do not require memorization.\par
+
+% \begin{figure}[htpb]
+%     \centering
+%     \includegraphics[width=\textwidth, keepaspectratio=true]{resources/Exp2.png}
+%     \caption{
+%         Experiment 2 Flow Chart
+%     }
+%     \label{fig:exp2_flow}
+% \end{figure}
+
+\subsection{Experiment setup}
+In this experiment,
+we recruit 180 participants through MTurk.
+Participants were divided into 3 groups, 
+demonstrated in Figure \ref{fig:exp1_flow}.
+We design the study as a between subject study.
+
+After agreeing the consent form,
+all three group of participants 
+will complete a demographic survey.
+This demographic survey will also
+captures participant's basic information 
+such as age, gender, income, ethnicity, profession and so on. 
+Shown in Figure \ref{fig:exp_2_video}, 
+the three groups of participants,
+from top to bottom, are Likert, QV and Buyback.
+Now we describe the experiment design for each group.
+
+In the Likert group,
+participants were ask to read through a page
+that contains the explanation of the five video elements
+listed above.
+Participants will then have a chance to experience
+the video interface,
+to understand how different video elements
+impact a video.
+Participants are also required to answer the five sample questions
+displayed to the participants in the buyback task.
+This assures that the participants have the same goal of 
+trying to understand the context of the video
+and not just for pure entertainment purposes.
+
+Once the participants have spend enough time with the video elements
+as well as answering the five multiple choice questions,
+they are asked to fill out a likert-scale survey,
+expressing their attitude
+toward the the different video elements.
+
+The QV group follows closely with the Likert Group.
+Participants in the QV group 
+are first required to look at a short clip
+on what QV is and answer a few questions
+to make sure that they understood how QV works.
+Then, similar to the Likert group, 
+participants will learn about the video elements, 
+experience it through the video element interface.
+They would then asked to ``vote'' on how important they think
+the different video elements were,
+to help them comprehend the video content.
+In this QV, we use 100 credits based on the optimal
+results from the first experiment.
+We use the same QV interface demonstrated in Figure \ref{fig:system_interface}.
+
+Participants in the buyback group,
+similar to the Likert group,
+will also learn about the different video elements
+and experience it in the video element interface.
+
+They would then shown the buyback task as described earlier
+in which they will decide
+what they are buying
+based on the demo video.
+With the budget of \$30 and each feature costs \$2,
+participants can buy back everything with no extra payoff
+or making trade-offs between the elements they think are important.
+
+Once their decision is made,
+we will show the participants another video, 
+very similar to the first video,
+using the set of controls they bought
+and ask them a few questions.
+
+
+% In our experiment, we included a total of five video and audio element that will impact a video.
+% These elements include video and audio package loss rate, 
+% determining whether the audio or video stutters; 
+% video resolution and audio sampling rate 
+% effecting the quality of video and audio; 
+% and video-audio synchronization. 
+% We selected a few segment of weather broadcasting 
+% from a news channel 
+% as the content of our video.
+% Weather broadcasts usually convey information via both visual and audio channels, 
+% appeal to a wide array of audiences, 
+% and do not require prior knowledge to understand.\par
+
+% To ensure the ecological validity of the experiment, 
+% we situated the comparison of different video and audio elements 
+% in a hypothetical scenario in which the participant 
+% is a manager of a weather reporting news station. 
+% As the manager, 
+% the participant was asked to rate 
+% the importance of each video and audio elements 
+% with the goal to maximize customer understanding of the context
+% where network is of low bandwidth and that the weather broadcast 
+% cannot be shown in its best quality.\par
+
+% We designed a between-subject study
+% with three groups of 60 participants.
+% After the participants agreed with the consent form, 
+% all three group of participant
+% were presented an example weather broadcast segment
+% with controls of the five video and audio elements 
+% under the video shown in figure M. 
+% All five elements were set to sub-optimal by default, 
+% making the content near incomprehensible.
+% Participants can alternate the five elements 
+% in any combination, 
+% to see how elements impact to the video.
+
+% Once participants think that they had a grasp of 
+% how different elements impact a video, 
+% the first group of participants 
+% then completed a 5-point Likert-scaled survey 
+% while the second group of participants 
+% completed a QV survey with K voice credits \footnote{K is decided from experiment 1}, 
+% asking their opinions 
+% on the importance of the 5 video and audio elements 
+% in a weather broadcast 
+% under a low bandwidth environment. 
+% The third group of participants 
+% were asked to perform a buy-back task 
+% for a bad-quality advertising video.\par
+
+% The buy-back task mimics a rational customer's behavior: 
+% buying essential tools to complete some given task.
+% Participants were told that 
+% as the manager of the weather broadcast agency,
+% they need to verify if their viewer 
+% can understand the content of the video.
+% Therefore, the goal of their task 
+% is to correctly answer a set of multiple choice questions
+% to make sure that they correctly comprehend the video.
+% Given the video with sub-optimal video, 
+% participants were given a budget of \$30 
+% to purchase some or all of the features back.
+% To ensure incentive-compatibility 
+% of the participants' buy-back actions, 
+% we offered to pay the participants their own remaining amount 
+% from the \$30 budget through a lottery 
+% under the condition that 
+% they answered 80\% of the multiple choice questions correctly,
+% [missing probability]
+% version of a new weather broadcast video 
+% adjusted by their buy-back choices. 
+% These questions contained factual questions such as, 
+% "What is the weather of Chicago?", 
+% "What is the highs and lows of San Diego", 
+% "Which of the follow cities got colder?". 
+% Participants were shown three example questions 
+% before the buy-back task to assist their decision.
+% Participants can replay the video with their adjustments
+% while answering the questions
+% to ensure that participants do not require memorization.
+% There will be a 5 minute timer to minimize the impact of replaying the video.
+% With this design, 
+% participants would try their best to make the video comprehensible 
+% based on their opinions on which feature(s) was most needed 
+% at the lowest cost.\par
+
+% In the given weather broadcast video, 
+% there were 4 levels of quality for each of the 5 elements. 
+% By default, the video set to the lowest level 
+% for all elements before any adjustment occurred. 
+% %Based on prior study on the perception of the degradation of the 5 features, we designed the 4 levels to be as linear to user's perception as possible. Below are the 4 levels of the 5 elements listed from the worst to the best quality.
+
+% \begin{enumerate}
+%     \item Audio Package Loss Repaired with Silence (package loss rate) \cite{watson1996evaluating}: 20\%, 10\%, 5\%, 0\%
+%     \item Video Package Loss (package loss rate) \cite{claypool1999effects}: 20\%, 8\%, 4\%, 0\% (20, 8.3, 3.3, 0) 
+%     \item Audio Sampling Rate \cite{oeldorf2012bad, noll1993wideband}: 8kHz, 11kHz, 16kHz, 48kHz
+%     \item Video Resolution \cite{oeldorf2012bad, knoche2008low}: 120x90, 168x126, 208x156, 240x180
+%     \item Video-audio Synchronization (time video behind audio) \cite{steinmetz1996human}: 240ms, 200ms, 160ms, 0ms (new: 1850, 1615, 1050, 0)
+% \end{enumerate}
+
+% In the buy-back task, 
+% each level of improvement for one feature costs \$2. 
+% It would cost the entire budget of \$30 
+% to buy all levels of every feature back. 
+% Hence, the option of buying back everything was given to the participants,
+% in return, there would be no extra payoff remaining for the participant.\par
+
+% Similar to the first experiment, 
+% the money spent on each feature during the buy-back task 
+% are considered as the true preference 
+% the population had towards the 5 video and audio features. 
+% The results from the Likert-scaled surveys and QV survey 
+% were then compared to the population's true preference 
+% to see how different they were.\par
+
