@@ -8,14 +8,15 @@
 \usepackage{booktabs} % For formal tables
 \usepackage{cleveref} % for better references
 \usepackage{subfig,caption}
-\usepackage[american]{babel}% Recommended
+\usepackage[english]{babel}% Recommended
 \usepackage{csquotes}% Recommended
+\usepackage[abbreviate=true, dateabbrev=true, natbib=true, isbn=false, doi=false, eprint=false, urldate=comp, url=false, maxbibnames=9, maxcitenames=2,  backref=false, backend=bibtex, style=ACM-Reference-Format]{biblatex}
 
 \RequirePackage{rotating}
 
-% using biblatex
-\let\citename\relax
-\RequirePackage[abbreviate=true, dateabbrev=true, natbib=true, isbn=false, doi=false, eprint=false, urldate=comp, url=false, maxbibnames=9, maxcitenames=2,  backref=false, backend=bibtex, style=ACM-Reference-Format,language=american]{biblatex}
+% % using biblatex
+% \let\citename\relax
+% \RequirePackage[abbreviate=true, dateabbrev=true, natbib=true, isbn=false, doi=false, eprint=false, urldate=comp, url=false, maxbibnames=9, maxcitenames=2,  backref=false, backend=bibtex, style=ACM-Reference-Format,language=american]{biblatex}
 
 \addbibresource{reference.bib}
 \renewcommand{\bibfont}{\Small}
