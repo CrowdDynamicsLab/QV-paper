@@ -1,62 +1,64 @@
 \section{Related Works} \label{related_works}
 In this section, 
-we first explain the challenges
-that Likert faces
-and then describe related works of QV.
+we present related works
+that discussed the challenges
+of Likert survey
+and related works of QV.
 
 \subsection{Likert Scale Surveys}
-Likert-scale survey, 
-is a commonly used method 
+Likert surveys are commonly deployed
 to collects participant's opinions
 because of its ease of use.
 These surveys are deployed
 to validate findings or clarify hypotheses
 \cite{ozok2009survey, ledo2018evaluation} in HCI.
 They are also used to verify or uncover the user's needs.
-The original Likert scale surveys
-were invented by Rensis Likert in 1932, 
-which utilizes step-intervals 
-from one attitude to the next 
-on the scale \cite{likert1932technique}.
+Likert surveys were invented by \textcite{likert1932technique} 
+in \citeyear{likert1932technique},
+which utilized a scale to deploy step-intervals 
+from one attitude to the next.
 Researchers today design 3, 5, 7, 
-or even 12-point Likert scale evaluation surveys to accommodate different uses
+or even 12-point Likert surveys to accommodate different uses
 \cite{garland2008computer,finstad2010}.
 In addition, these surveys
-can also use verbal descriptions
-to demonstrate an ordinal scale.
-Some researchers even developed 
-alternative forms of Likert scale 
+can ause verbal descriptions
+to segment the intervals,
+presenting the choices with an ordinal scale.
+Some researchers looked at
+alternative presentations of the Likert scale
 such as slider scales \cite{roster2015exploring} 
 or phrase completions \cite{hodge2003phrase}, 
 which aimed to circumvent 
 some of the shortcomings of the traditional Likert scale.
 
 There are, however, widespread controversies in the community on
-when, why, and how to use it \cite{bishop2015use}.
+when, why, and how to use Likert surveys \cite{bishop2015use}.
 For instance, 
-researchers can misuse statistical methods
-, such as using mean and standard deviations \cite{jamieson2004likert},
+researchers sometimes misuse statistical method,
+such as using mean and standard deviations \cite{jamieson2004likert},
 to understand outcomes
 when working with an ordinal metric.
-Quantifying aggregated Likert scale surveys,
-such as explaining what ``agree and a half'' means
-can also be unclear.
+Quantifying aggregated ordinal scale Likert surveys,
+such as an average of ``1.5 agree'' can be unclear,
+given that there does not exist ``agree and a half''
+in real life.
 Besides, 
-as options on the survey can be stepwise,
-one should not assume scales to be equally divided,
-which can be confusing.
-In other words, 
-strongly agree and agree can be different compared to
-neutral and agree \cite{jamieson2004likert, edmondson2005likert}.
+options on the Likert scale can be stepwised.
+One should not assume scale intervals to be equal.
+In other words,
+the difference between
+``strongly agree'' and ``agree'' can be different 
+when compared to the difference between
+``neutral'' and ``agree'' \cite{jamieson2004likert, edmondson2005likert}.
 
 An empirical study by \textcite{quarfoot2017quadratic}
 identified another challenge
 where people exaggerate their views
 when filling out political surveys.
 In this study,
-participants often express strong polarized opinions
+participants often express polarized opinions
 or have no opinion at all,
-making it hard to form optimal conclusions\cite{posner2018radical}.
+making it hard to form optimal conclusions \cite{posner2018radical}.
 % When the results were aggregated, 
 % a ``W'' shape distribution.
 %This distribution demonstrated how people stand upon polarized views,
@@ -65,54 +67,54 @@ theoretically proved by \textcite{cavaille2018towards},
 where respondents tend to overstate their values
 if they want to influence the results through the survey.
 These challenges motivated us 
-to understand whether QV can fill the gap
+to understand whether QV can fill the gap of inaccuracy
 and provide a more accurate measurement
 for collective decision making.\par
 
 \subsection{Quadratic Voting}
+Voting is often excercised
+for collective decision making.
 Quadratic voting originated 
-with the argument
-that current one-person-one-vote system
+from the argument
+that current one-person-one-vote (1p1v) system
 can easily bias toward the majority's opinion
-and omitting the minority's votes\cite{posner2018radical}.
-This phenomenon is termed as the tyranny of the majority
-where the democratic decision 
-does not take care of those in need.
-In other words, these types of voting
-does not allow fine-grain responses
-to the options they were to vote \cite{sep-voting-methods}.
-Some voting mechanisms tried to resolve this
-by introducing rank-based voting 
-in which voters would decide
-how they rank the options
-while submitting their opinions.
-This mechanism can however
+and omitting the minority's votes.
+This phenomenon is termed as 
+the ``Tyranny of the Majority''
+which criticizes that democratic decision
+can easilty neglect those in need 
+\cite{posner2018radical}.
+In addition, 1p1v suffers the inability
+for individuals to express fine-grain opinions
+on the options one voted \cite{sep-voting-methods}.
+Ranked-based voting tried to resolve this
+by allowing voters to rank the options.
+This mechanism can
 suffer from Condorcet's paradox 
 where results can be suboptimal 
 because the ranks of the voters
-might not be transitive\cite{sep-voting-methods}.
-Many other voting mechanisms suffer from similar issues.
+might not be transitive\cite{easley2012networks, sep-voting-methods}.
 
-This triggers the development of Quadratic Voting
+This motivated the development of Quadratic Voting
 created by \textcite{posner2018radical}. 
 to overcome traditional voting challenges .
-QV tries to capture a cost 
-for the voter when he or she
-made a particular decision by voting toward specific options.
+QV captures the cost a voter has to pay
+when they made a particular voting decision.
+It regulates the votes by assigning different level of prices
+given a fix budget.
 This "price-taking" equilibrium helps
-participants maximizes their utility using their votes.
-This is theoretically proven by \textcite{lalley2018quadratic}
+participants vote by maximizing their utility.
+This is theoretically supported by \textcite{lalley2018quadratic}
 and showed that there exists an approximate structure of Bayes-Nash equilibria.
 
 In order for QV to capture the voice of the minority
-and allocate the correct cost to the votes
-QV has the following mechanism:
-Consider collecting $N$ participants voting,
+and allocate the correct cost to the votes,
+QV established the following mechanism:
+Consider collecting votes from $N$ participants,
 each participant is entitled to 
 $K$ voice credits.
-Participants can express their binary opinion 
-(for or against)
-each option$o_i$ within a set of options $O$ listed on the ballot. 
+Participants can express binary opinion (for or against)
+each option $o_i$ acorss a set of options $O$ listed on the ballot. 
 Participants can purchase any number of votes $v_i \in \mathbb{R}$
 vetted toward any of the options $o_i$.
 However, to vote $v_i$ votes toward $o_i$,
@@ -124,38 +126,42 @@ among the total votes for any option $\sum{V_{oi}}$
 across all $N$ participants.
 
 To use an analogy,
-Suppose every voter has a bank account 
+suppose every voter has a bank account 
 with a fixed amount of money, say 100 dollars.
 On a ballot, there are ten statements.
 Voters can now buy votes using their money in the account.
 However, for each statement, the cost of the votes
 increases quadratically. 
-For example, voting two fors on the first option 
-would cost the voter four votes;
-voting three against on the fifth option 
-costs the voter nine votes, and so on.
+For example, voting two fors on the first statement 
+would cost the voter four dollars;
+voting three against on another statement 
+costs the voter nine dollars, and so on.
 This means that the more votes one devote to an option,
-the more costly it is to do so,
-forgoing the opportunity the voter had
-to vote for other options.
+the more costly it is.
+Voting more votes on one statment, 
+forgoes the opportunity to vote for other options.
+Here, the money referes to the voice credit in QV.
 
 \subsection{QV in the wild}
-After QV was proposed,
+After proposing QV,
 \textcite{quarfoot2017quadratic} conducted an 
 empirical study to understand how 
 QV results compare to Likert scale surveys.
-They recruited 4500 participants 
-to survey an individual's opinions
+They surveyed 4500 participants 
+on individuals' opinions
 across ten public policy
-using either Likert-style questionnaire, QV survey, or both.
+using either a Likert survey, QV, or both.
 The study found that the number of people
 who voted for the same number of votes
-for the options 
-distributed normally and consistently across all options.
-This differs from results from Likert scaled surveys 
-completed from the same group of participants,
-where results are either heavily skewed 
-or polarized ``W-shaped''distribution.
+for any particular option 
+follows a normal distribution when using QV.
+This differ from the Likert surveys,
+which among the same group of participants,
+returned heavily skewed 
+or polarized ``W-shaped'' distributions.
+Researchers inferred 
+QV provides is better at expressing the participant's opinion
+for polarized statements.
 Researchers also saw individuals 
 spent more time expressing their opinion
 and reveal a more fine-grain attitude 
@@ -165,7 +171,7 @@ QV provides a clearer picture
 of public opinion to policymakers
 \cite{quarfoot2017quadratic}.
 
-The work by Quarfoot et al., however,
+The work by \textcite{quarfoot2017quadratic}, however,
 only used mean and z-scores,
 to compare the final aggregated results 
 across the two methods.
@@ -173,7 +179,7 @@ In addition,
 the design on the policies 
 have a strong tendency for voters
 to agree or disagree on the extreme,
-such as one's opinion on ``same-sex marriage''.
+such asking one's opinion on ``same-sex marriage''.
 Thus, little do we know if
 QV produces different results 
 than Likert scale surveys
@@ -183,17 +189,18 @@ for example, choosing one's favorite ice cream flavor.\par
 % preference elicitation where the group aims to choose
 % one among $K$ options.
 
-Another empirical study was applied to education 
+Another empirical study was applied to 
+the field of education 
 by \textcite{naylor2017first}. 
-The author again used QV and Likert
+The author used QV and Likert survey
 to understand essential elements 
 among a list of factor
 that impacts students' success in universities.
 Results showed that QV provided more insights, 
 such as distinguishing good-to-have factors from must-have elements.
 These factors are not heated debated controversies
-compared to public policies in the previous studies and 
-they are independent elements that do not require 
+compared to public policies in the previous studies, 
+but each of the elements are independent and does not require 
 students to make trade-offs.
 For example, students can have a sense of ``belonging'' and
 a sense of ``achievement'' at the same time.
@@ -208,14 +215,15 @@ one in $K$ options.
 % but rather where each option is interconnected
 % and can impact one from the other.
 This setting was recently discussed 
-in a theoretical work by \textcite{eguia2019quadratic},
+in a theoretical work by \textcite{eguia2019quadratic}
 who claims that QV is still in favor 
 of resolving budget-constrained 
 for risk natural agents
 to figure out an efficient decision 
 across multiple alternatives
 as a collective choice problem.
-We aim to complete this missing piece of the puzzle.
+We aim to complete this missing piece of the puzzle 
+through an emprical study.
 Further,
 we are not aware of any work
 that studies alignment between
@@ -226,7 +234,9 @@ possible fallacy exists with self-reporting
 \cite{araujo2017much, vavreck2007exaggerated}.
 Thus, we aim to understand
 how QV and Likert scale surveys
-align with the agent's true beliefs.
+aligned with the agent's true beliefs
+instead of simply comparing 
+the outcomes of Likert surveys with QV.
 We also want to test
 whether the total number of voice credits 
 impacted the results of QV.
