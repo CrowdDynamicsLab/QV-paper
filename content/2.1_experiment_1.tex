@@ -1,10 +1,38 @@
 \section{Experiment 1: Quadratic Voting, Likert scale surveys and Donation}
 \subsection{Methodology} \label{method-1}
-The first experiment aims to answer research questions one and three. 
-We collected 213 valid submissions from Mturk in 2020. %actual 216, screens 3.4K 
-%Participants were recruited to match the US 2019 census for education level and age.
-Participants were told that this study aims to understand their opinions toward societal causes and will be asked to complete a donation task.
-Participants received \$0.75 and \$1.75 according to the groups they are assigned to.
+% Experiment overview
+We designed the first experiment 
+consisiting of Likert survey, QV and a donation task,
+to answer research questions one and three. 
+Participants were recruited from Amazon Mechanical Turk (MTurk)
+with 213 valid submissions. %screens 3.4K 
+They received \$0.75 and \$1.75 according to the groups they are assigned to.
+In this section, 
+we detailed out experiment design.
+
+%The donation task. Why?
+In order to figure out 
+how QV and Likert surveys 
+represent individual's true preferences,
+we ask participants to complete a survey
+and donate to a charity.
+Our goal is to see 
+wheter participant's donation behavior are similar to 
+the attitudes they stated in the survey.
+There are multiple reasons
+why we desinged a donation task.
+First, donation tasks are easily relatable
+given that they occure in real life and
+and monetary behaviors are direct and imagineable.
+Second, donations are simple to conduct,
+even at a large scale.
+Third, donation tasks appeared in many experiments 
+\cite{Xiao2019, benz2008people, gendall2010effect} 
+as an effective indicator of participants' behavior.
+Fourth, donation is a behavior containing
+complimentary and homogenous choices and
+where each of the options are indipendent.
+It is a clean example of chooing one out of $K$ in real life.
 
 \begin{figure}[htpb]
     \centering
@@ -16,71 +44,170 @@ Participants received \$0.75 and \$1.75 according to the groups they are assigne
     \label{fig:exp1_image_flow}
 \end{figure}
 
-To answer research question one, we first want to see if people donate honestly with the opinion one indicated in the survey.
-Donation is a real-life behavior that has immediate and direct monetary impacts.
-Not only is donation easy to conduct online and large scale, but it is also reflected directly to the participants.
-Donation tasks were used in many experiments \cite{Xiao2019, benz2008people, gendall2010effect} as an effective indicator of participants' behavior.
-At a high level, we experimented with the flow shown in Graph \ref{fig:exp1_image_flow}.
-All participants first filled out the demographic survey.
-Then they will complete some form of opinion collection (the yellow box), followed by a distraction survey.
-Finally, participants will do a donation task.
-We explain each section in detail.
+At a high level, 
+we summarize the experiment flow 
+in Graph \ref{fig:exp1_image_flow}.
+The experiment consisted four steps:
+To begin the experiment, 
+participants filled out the demographic survey.
+Based on the demographics,
+participants completed one form of opinion collection,
+highlighed as the yellow box
+in Graph \ref{fig:exp1_image_flow}.
+After that, 
+participants filled out another survey,
+the distraction survey,
+to divert their attention before they complete the final task.
+The final task asked participants to do a donation.
+Now we explain each section in detail.
 
-In the demographic survey, we collected the participant's gender, ethnicity, age range, household income level, education level, current occupation.
-We made sure that each of the seven groups followed the US 2019 census containing participants with the same proportion in age and education level.
-The first group, known as the Likert group (Upper path in Graph \ref{fig:exp1_image_flow}), will reveal their opinion using a Likert scale survey.
-The second to the seventh group of participants, the QV group (Lower path in Graph \ref{fig:exp1_image_flow}), will reveal their preference by completing two QVs with different numbers of voice credits successively.
-The reason why we further divided these participants into group two to seven, is to answer research question three, that is whether the number of voice credits impacts the outcome.
-These two voice credits that participants experience are drawn from three possible values: $N \times O$, $N^1.5 \times O$, $N^2 \times O$, where $N$ is the number of options in the survey, and $O$ is the number of levels, excluding neutral on the Likert scale survey. %not sure if this is clear
-In our case, with nine options and used a five-point Likert scale survey, the three values would be $36$, $108$, and $324$.
+Prior to starting the experiment,
+participants were told that 
+this study aims to understand their opinions 
+toward societal causes and will be asked to complete a donation task.
+During the demographic survey, 
+we collected the participant's gender, ethnicity, age range, household income level, 
+education level, and current occupation.
+Based on the age and education level,
+we divided participants into seven groups
+and made sure each group contained the same distribution
+as the US 2019 census.
+These seven groups can be further categorized as
+the Likert Group (Group 1) and the QV Group (Group 2 to 7).
+The Likert Group, shown as the upper path in the shaded aread of Graph \ref{fig:exp1_image_flow}, 
+revealed their opinion using a Likert scale survey.
+The QV Group, shown as the lower path in the shaded aread of Graph \ref{fig:exp1_image_flow}, 
+revealed their opinions by completing two QVs, each with a different numbers of voice credit.
+The reason why we divided the QV Group into six subgroups
+is to answer research question three, 
+that is whether the number of voice credits impacts the outcome.
+These two voice credits that participants experience 
+are drawn from three possible values: $N \times O$, $N^1.5 \times O$, $N^2 \times O$, 
+where $N$ is the number of options in the survey, 
+and $O$ is the number of levels, 
+excluding neutral on the Likert scale survey. %not sure if this is clear
+In our case, with nine options ($N=9$) and
+used a five-point Likert scale survey ($O=4$), 
+thus three values would be $36$, $108$, and $324$.
+With these three possible values, 
+we choose two for each of the six subgroups.
 
-% Explain text: On a 5-point Likert scale, users can vote at most two levels, positive or two levels negative (and a neutral). We want to make sure that in a QV, the users have enough budget to cast two votes either positively or negatively for all options, similar to the Likert survey (so that we are not over limiting their ability to express the same intensity in QV). In QV, two votes cost four credits. So, the minimum number of total voice credits is 4 * # of options = 4*9 = 36. To test how larger budgets impact people's choices, we set an exponential increase in the total voice credits based on the number of options. In the minimum case, we use (# of options)^1. We scale the budget as (# of options)^1.5 and (# of options)^2 in the second and third budgets. Hence, the second budget is 4 * (# of option)^1.5 = 4 * 27 = 108. The third budget is 4 * (# of option)^2 = 4 * 81 = 324.
+In the Likert group, 
+the survey looks identical to a typical five-point Likert scaled survey.
+We assume participants have prior knowledge in Likert surveys.
+Participants were presented with the nine societal causes, 
+and were asked the importance each of these causes: 
+With options ranging from ``Very important'' to ``Very Unimportant.''
 
-In the Likert group, the survey looks like a typical five-point Likert scaled survey.
-Participants were presented with nine societal causes, and were asked the importance each of these causes: From ``Very important'' to ``Very Unimportant.''
-In the QV group, participants were asked to watch a prerecorded tutorial video of QV's concept and how to operate the QV interface.
-Participants are granted unlimited time to interact with a demo QV interface. 
-This process is shown as ``tutorial on quadratic voting'' in Graph \ref{fig:exp1_image_flow}.
-To ensure that participants paid attention to the video and understood QV, they were asked to answer at least three of the five multiple-choice questions correctly to continue with the survey.
-Participants would vote for the same causes.
+In the QV group, 
+participants were asked to watch 
+a prerecorded tutorial video of QV's concept 
+and how to operate the QV interface.
+Participants are granted unlimited time 
+to interact with a demo QV interface. 
+This process is demonstrated as 
+``tutorial on quadratic voting'' 
+in Graph \ref{fig:exp1_image_flow}.
+To ensure that participants paid attention to the video and understood QV, 
+they were asked to answer at least three of the five multiple-choice questions 
+correctly to continue with the survey.
+Once participants passed the quiz, 
+paticipants will be given voice credits of either 36, 108 or 324.
+They will vote in QV using these voice credits 
+with the nine options identical to those in the Likert Group.
+Participants would repeat this action using a different set of voice credits.
+These two QVs are shown as two QV icons in Graph \ref{fig:exp1_image_flow}.
 
-Once participants completed their surveys in the opinion collection stage, they were asked to finish a series of short answer questions allowing them to express their thoughts related to another set of societal issues.
-We called this survey the distraction survey because it is designed to prevent participants from connecting their survey responses to their final donation task.
 
-We ask participants to perform a donation in the final stage. 
-To ensure the incentive compatibility of the design, participants do not donate imaginatively.
+
+After both groups of participants completed their surveys in the opinion collection stage, 
+they finish a short answer question
+that allowed them to express their thoughts 
+related to another set of societal issues.
+These societal issues are unrelated in the previous stage,
+and are designed to distraction participants.
+We do not want participants to connect their survey responses
+to interfere with their behaviors during the donation task.
+
+Finally, 
+we ask participants to perform a donation in the final stage.
+This task persented nine organizations,
+each referring to one of the nine societal causes
+that we listed during the opinion collection phase.
+Partcipants can donate up to 35 dollar 
+to any of these organizations.
+To ensure incentive compatibility, 
+participants do not donate imaginatively.
 Participants are aware that every one in 70 participants would win 35 US dollars.
-Assuming winning the 35 US dollars, the participants were asked if they would want to donate some money to some of the nine charity groups.
-Participants are also aware that they keep the remaining amount of undonated money if they win the lottery.
-Further, participants are aware that the research team will match one dollar to each one dollar they donated to an organization. 
-This setup means the donation carries a cost.
+Assuming winning the 35 US dollars, 
+the participants were asked 
+if they would want to donate some money 
+to any of the nine charity groups.
+Participants are also aware that 
+they keep the remaining amount of undonated money 
+if they win the lottery.
+Further, participants are aware that 
+the research team will match one dollar to each one dollar 
+they donated to an organization.
+This setup means the donation carried an underlying cost.
 
-To minimize the difference across the study, we use the same prompt across Likert scaled survey, QV, and the donation task.
-We explicitly tell the participants that there are limited resources in the society, and people have different preferences in how resources should be allocated and ask the participants, ``What societal issues need more support?''
-The nine societal causes cover a broad spectrum of categories.
-We used the categorization of charity groups on Amazon Smile, a popular donation website that has accumulated over 100 million dollars of donations as our topics of the societal causes.
-The categories include (1) Pets and Animals, (2) Arts, Culture, Humanities, (3) Education, (4) Environment, (5) Health, (6) Human Services, (7) International, (8) Faith and Spiritual, and (9) Veteran. 
-Within each of these categories, we select one charity from Amazon Smile as the representation of the subject matter used in the donation task.
+To minimize the difference across groups in the study, 
+we use the same prompt across Likert scaled survey, QV, and the donation task.
+We explicitly tell the participants that 
+there are limited resources in the society, 
+and people have different preferences 
+in how resources should be allocated and ask the participants, 
+``What societal issues need more support?''
+
+To ensure that the nine societal causes 
+covered a broad spectrum of categories.
+We used the categorization of charity groups on Amazon Smile, 
+a popular donation website that has accumulated over 100 million dollars of donations, 
+as our topics of the societal causes.
+The categories include (1) Pets and Animals, (2) Arts, Culture, Humanities, (3) Education, (4) Environment, 
+(5) Health, (6) Human Services, (7) International, (8) Faith and Spiritual, and (9) Veteran. 
+Within each of these categories, 
+we select one charity organization from Amazon Smile 
+as the representation of the subject matter used in the donation task.
 
 \subsection{System Design}
-We using Python Flask for the back-end, Angular for front-end, and MongoDB for database storage to construct the voting system. 
-The experiment source code is publicly available \footnote{Not yet public}, and so is the QV interface as a stand-alone repository \footnote{https://github.com/hank0982/QV-app}.
+We using Python Flask for the back-end, Angular for front-end, 
+and MongoDB for database storage to construct the voting system. 
+The experiment source code is publicly available \footnote{Not yet public}, 
+and so is the QV interface as a stand-alone repository \footnote{https://github.com/hank0982/QV-app}.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.7\textwidth, keepaspectratio=true]{content/image/qv-donation.png}
     \caption{
-        The QV voting interface used across both experiments. Through mutiple iteration of design, the interface allows participants to vote, and provide some information about how their votes were allocated. The progress bar implementation were inspired by knapsack voting interface by \textcite{goel2015knapsack}.
+        The QV voting interface used across both experiments. 
+        We omit the prompt in this figure.
+        After mutiple iterations (details in the Appendeix), 
+        the interface allows participants to vote, 
+        with real time feedback of how the votes allocats. 
+        The progress bar implementation 
+        were inspired by knapsack voting interface by \textcite{goel2015knapsack}.
     }
     \label{fig:qv_donation}
 \end{figure}
 
 The QV interface, is shown in Figure \ref{fig:qv_donation}.
-We omit the prompt on the top of the interface.
-The body section is the voting panel, containing all options to vote for.
-To the left of the options, participants vote using the plus and minus buttons.
-Buttons are disabled if the number of voice credits does not permit the next vote.
-A bar on the right of the option shows the proportion of voice credits used to that option with text associated with the visual.
-The different colors and the icons to the right of each option exhibits for or against that option.
-The summary panel always floats at the bottom of the page to ensure visibility.
-A progress bar shows the number of voice credits that the participants have and had not used.\par
+The body section is the voting panel
+that contained all options to vote for.
+To the left of each option, 
+participants vote using the plus and minus buttons.
+Buttons are disabled 
+if the number of voice credits 
+does not permit the next vote.
+A bar on the right of the option 
+shows the proportion of voice credits 
+used to that option with text associated with the visual.
+The different colors and the icons 
+to the right of each option 
+exhibits the number of for or against 
+that currently devoted to an option.
+The summary panel always 
+floats at the bottom of the page 
+to ensure visibility.
+A progress bar shows the number of voice credits 
+that the participants have and had not used.\par
