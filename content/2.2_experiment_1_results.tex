@@ -13,23 +13,58 @@ and present the analysis results.
 % -- raw data
 %     describe the dataset, total # of participants in each group before and after dataset cleaning, demographics of each group;
     
-Overall, we collected 223 complete responses in the first experiment. We removed 4 responses after checking the quality of the responses due to reasons such as not answering the qualitative question seriously or misunderstanding the prompt. Among the 219 remaining responses, 56 completed the Likert path, and the rest were distributed relatively evenly across the remaining 6 paths with various orders of QV, ranging from 24 to 28 responses per path. Aggregating responses from all 6 paths, the number of responses we got for QV with 36 credits (QV36), QV with 108 credits (QV108) and QV with 324 credits (QV324) were 107, 108, and 111 respectively. (To-do: maybe add a hierarchical graph the represents how responses from different paths are aggregated)
+Overall, we collected 223 complete responses in the first experiment. 
+We removed four poor-quality responses 
+either participant responded the qualitative question facetiously 
+or misunderstanding the prompt. 
+Among the 219 remaining responses, 
+56 completed the Likert path, 
+and the rest were distributed relatively evenly 
+across the remaining six subgroups with various orders of QV, 
+ranging from 24 to 28 responses per subgroup. 
+Aggregating responses from all six subgroups, 
+the number of responses collected for QV with 36 credits (QV36), 
+QV with 108 credits (QV108) and QV with 324 credits (QV324) 
+were 107, 108, and 111, respectively. 
+%(To-do: maybe add a hierarchical graph the represents how responses from different paths are aggregated)
 
-We recruited the participants with the goal of constructing a sample that was representative of the US census data in terms of age and education level. Having a representative sample is in particularly critical in our study because these voting and survey tools should aim to be designed for the general population. Based on Table \ref{fig:demo_exp1}, all the groups closely followed the demographics of the US population in both age and education level. This ensured that our results were not biased to a certain subgroup of the population, which is generally hard to achieve in MTurk studies without specific control. 
+We recruited the participants 
+to construct a sample 
+representative of the US 2019 census data 
+in terms of age and education level. 
+Having a representative sample is critical because of the generalizability of voting and survey tools. 
+Based on Table \ref{fig:demo_exp1}, 
+all the groups followed the demographics in both age and education level. 
+This ensured unbiased results toward any subgroup of the population, 
+which is generally hard to achieve in MTurk studies without specific control \cite{difallah2018demographics}.
 
-
-\begin{figure}[htpb]
+\begin{table}
     \centering
-    \includegraphics[width=0.7\textwidth, keepaspectratio=true]{content/image/demographics_table.png}
     \caption{
         Sample Demographics Statistics Compared to US Census Data (Will fix into a table later)
     }
-    \Description[Sample Demographics Statistics Compared to US Census Data for experiment 1]{Sample Demographics Statistics Compared to US Census Data for experiment 1}
+    \Description[Sample Demographics Statistics Compared to US Census Data for experiment 1]{
+        Sample Demographics Statistics Compared to US Census Data for experiment 1
+    }
     \label{fig:demo_exp1}
-\end{figure}
-    
-%     donation descriptive statistics: perc of non-zero donation, total donation amount comparison across groups, donation distribution across topics between groups
+    \begin{tabular}{|c|ccccc|c|} 
+    \hline
+     & \begin{tabular}[c]{@{}c@{}}Likert\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}QV36\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}QV108\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}QV324\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}Total\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}Census\\Perc* \end{tabular} \\ 
+    \hline
+    No High School & 16.07\% & 14.02\% & 13.89\% & 14.41\% & 14.61\% & 10.22\% \\
+    High School & 25.00\% & 27.10\% & 25.93\% & 26.13\% & 26.03\% & 27.73\% \\
+    Some College  Associate & 28.57\% & 26.17\% & 34.26\% & 34.23\% & 32.88\% & 33.09\% \\
+    Bachelor's Degree above & 30.36\% & 32.71\% & 34.26\% & 34.23\% & 32.88\% & 33.09\% \\ 
+    \hline
+    18 - 24 & 21.43\% & 15.89\% & 14.81\% & 15.32\% & 16.89\% & 13.65\% \\
+    25 - 39 & 26.79\% & 29.91\% & 30.56\% & 29.73\% & 29.22\% & 30.74\% \\
+    40 - 54 & 25.00\% & 29.91\% & 28.70\% & 29.73\% & 28.31\% & 28.32\% \\
+    55 - 69 & 26.79\% & 24.30\% & 25.93\% & 25.23\% & 25.57\% & 27.29\% \\
+    \hline
+    \end{tabular}
+\end{table}
 
+% donation descriptive statistics: perc of non-zero donation, total donation amount comparison across groups, donation distribution across topics between groups
 In this experiment, each set of survey responses by a participant in a condition could be matched to the set of donation decisions made by the same participant. Since we would like to use the donation outcome of a participant as a proxy of his/her true preferences across the nine charity topics, we could only do so with participants that donated a non-zero amount of money. Therefore, we further filtered the dataset to keep only the responses that had a non-zero total donation amount. Across all the conditions, the average non-zero donation rate was 73.3\%, consistent with the results provided by Fehr and Gintis in 2007 \cite{fehr2007human}, which suggested that about 30\% of the population would always free-ride in public goods provision regardless of what others do. The donation rate in each condition closely centered around the average donation rate, ranging from 70.37\% (in QV108) and 77.19\% (in Likert). The number of valid responses after this step for Likert, QV36, QV108, and QV324 were 44, 76, 76 and 84 respectively.
 
 Among those who donated a non-zero amount, participants exhibited different behaviors when deciding how much to donate in total. As shown in Figure \ref{fig:total_don_exp1}, there were two main clusters for the total donation amount. The first cluster centered around \$9-12 and most data points in this cluster lied within the range of \$5 to \$20. This group of people, making up about 60\% of the entire sample, donated part of the lottery winning amount but still kept a significant portion for themselves. The second cluster was between \$33 to \$35, suggesting that this group of people chose to contribute almost the full amount of the lottery prize. There were approximately 25\% of the participants who behaved this way. In most cases, the distribution pattern across conditions were relatively consistent, except that there were almost twice the proportion of participants in the Likert condition that donated almost the full amount compared to the other QV conditions. One possible explanation for the difference would be that the amount of effort required to complete the Likert condition was much lower than that of QV, and participants felt less tempted to earn extra reward for their time spent in the Likert condition. Overall, we found that the total amount of donation per participant was large enough to be distributed across charities in a way that could represent the full picture of his/her underlying true preferences for nine topics.
