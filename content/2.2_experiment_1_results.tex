@@ -307,9 +307,47 @@ It is formally defined as the following: \par
     The Cosine similarity angle $\theta$ between a set of survey response $\vec{v} = [v_1, v_2, ..., v_n] \in \mathbb{R}^n$, and a set of donation amount $\vec{d} = [d_1, d_2, ..., d_n] \in \mathbb{R}^n$, where $n$ is the number of topics or options involved in the decision, is calculated via $\theta = \frac{180}{\pi} \arccos{\frac{\vec{v} \cdot \vec{d}}{\|\vec{v}\| \|\vec{d}\|}}$, and $0\deg \leq \theta \leq 180\deg$.
 \end{quote}
 
-Cosine similarity is a commonly used similarity metric that measures the cosine of the angle between two non-zero vectors \cite{singhal2001modern}. It only provides information about the relative orientation of the two vectors and does not take into account the magnitude of the vectors. The angle of the Cosine similarity measures the same thing but represents it in terms of the angle degree, instead of a value between 0 and 1, which makes it more intuitive for interpretation. The definition of the angle of Cosine similarity fits our need perfectly. It is monotonic with respect to how different the orientations of the two vectors are, i.e., the relative strength in opinions, and does not care about the magnitude of the vectors, i.e., absolute vote or donation amount. Two sets of perfectly align opinions will yield a Cosine similarity angle of zero, while two sets of completely opposite opinions will result in an angle of 180 degree.
+Cosine similarity is a commonly used similarity metric 
+that measures the cosine of the angle 
+between two non-zero vectors \cite{singhal2001modern}. 
+It only provides information about 
+the relative orientation 
+of the two vectors and 
+does not take into account 
+the magnitude of the vectors. 
+Instead of resulting in a value between $0$ and $1$,
+we use the the angle degree for Cosine similarity,
+which represents the same information 
+but provides more intuition for interpretation.
+%The definition of the angle of Cosine similarity fits our need perfectly. 
+It is monotonic with respect to 
+how different the orientations of the two vectors are,
+i.e., the relative strength in opinions, 
+and does not care about the magnitude of the vectors, 
+i.e., absolute vote or donation amount. 
+Two sets of perfectly align opinions 
+will yield a Cosine similarity angle of zero, 
+while two sets of completely opposite opinions 
+will result in an angle of 180 degree.
 
-To compare the degree of alignment between the survey results from Likert, QV36, QV108, QV324 and their corresponding truthful preferences reflected in the donation task, our first step was to compute a Cosine similarity angle for each participant in each group. For the Likert group, we computed the Cosine similarity angle of a vector of Likert responses (between -2 and 2 for each topic) and a vector of the absolute donation amount of the same individual. In the 3 QV conditions, the angle is between a vector of QV votes and a vector of the absolute donation amount of the same participant. The next step that completes our analysis is setting up a Bayesian Model for these four sets of Cosine similarity angle per condition as described in the next subsection.
+Intuitively,
+to compute the Cosine similarity angle 
+for each participant in each group,
+we first translate each response,
+urvey results from Likert, QV36, QV108, QV324, and 
+their corresponding truthful preferences 
+reflected in the donation task,
+into a vector.
+For the Likert group, 
+we computed the Cosine similarity angle of a vector 
+of Likert responses (between -2 and 2 for each topic) and 
+a vector of the absolute donation amount of the same individual. 
+In the 3 QV conditions, 
+the angle is between a vector of QV votes and 
+a vector of the absolute donation amount of the same participant. 
+The next step is to set up a Bayesian Model 
+for these four sets of Cosine similarity angle 
+per condition as described in the next subsection.
 
 
 \subsubsection{Bayesian Formulation}
@@ -319,27 +357,106 @@ To compare the degree of alignment between the survey results from Likert, QV36,
 %     choice of the likelihood function
 %     choice of prior distributions
 
-Given the four sets of Cosine similarity angle under Likert, QV36, QV108 and QV324 conditions respectively, we employed a Bayesian formulation of the problem to compare the degree of alignment between pairs of the conditions. \textcite{kay2016researcher} introduced a few potential benefits for applying Bayesian analysis in the HCI community. A recent study by \textcite{xiao2019should} justified their use of Bayesian formulation with two additional reasons. Based on benefits proposed by past studies, we argued for our choice of Bayesian formulation with the following three reasons:
+Given the four sets of Cosine similarity angle 
+under Likert, QV36, QV108, and QV324 conditions respectively, 
+we employed a Bayesian formulation of the problem 
+to compare the degree of alignment between pairs of the conditions. 
+\textcite{kay2016researcher} introduced a few potential benefits 
+for applying Bayesian analysis in the HCI community. 
+A recent study by \textcite{xiao2019should} 
+justified their use of Bayesian formulation 
+with two additional reasons. 
+Based on benefits proposed by past studies, 
+we argued for our choice of Bayesian formulation 
+with the following three reasons:
 
 \begin{itemize}
-    \item \textbf{Transparency and Fewer Assumptions} In a t-test or ANOVA, the data needs to follow several assumptions, including Normality and Homogeneity of variance. In our case, both assumptions may be violated. Hence, we used Bayesian formulation to relax the assumptions of normality and equal variances by defining a non-normal likelihood function and making variances independent across groups.
-    \item \textbf{Small $n$ Studies} Traditional statistical tests that assume Normality require at least a sample size of 30. Even when a sample size is greater than 30, a large effect size may still produce an insignificant p-value due to a not sufficiently large sample. On the contrary, a Bayesian model is valid at every value of $n$. Given the relatively small sample of our Likert group, we chose to use a Bayesian model.
-    \item \textbf{Additional Information} Compared to traditional statistical analysis that only produce a single p-value and a single effect size value, a Bayesian model is able to produce the entire distribution of the effect size, making additional information available for clearer inference. In our study, effect size is in particularly important because the cost of switching to a new survey tool is not worthwhile if the effect size is not substantial even if we get a significant p-value.
+    \item \textbf{Transparency and Fewer Assumptions} 
+    In a t-test or ANOVA, 
+    the data needs to follow several assumptions, 
+    including Normality and Homogeneity of variance. 
+    In our case, both assumptions may be violated. 
+    Hence, we used Bayesian formulation 
+    to relax the assumptions of normality and 
+    equal variances by defining 
+    a non-normal likelihood function 
+    and making variances independent across groups.
+    \item \textbf{Small $n$ Studies} 
+    Traditional statistical tests 
+    that assume normality 
+    required at least a sample size of 30. 
+    Even when a sample size is greater than 30, 
+    a large effect size may still produce 
+    an insignificant p-value 
+    due to a not sufficiently large sample. 
+    On the contrary, 
+    a Bayesian model is valid at every value of $n$. 
+    Given the relatively small sample 
+    of our Likert group, 
+    we chose to use a Bayesian model.
+    \item \textbf{Additional Information} 
+    Compared to traditional statistical analysis 
+    that only produce a single p-value 
+    and a single effect size value, 
+    a Bayesian model is able to produce 
+    the entire distribution of the effect size, 
+    making additional information available 
+    for clearer inference. 
+    In our study, 
+    effect size is in particularly important 
+    because the cost of switching to a new survey tool 
+    is not worthwhile 
+    if the effect size is not substantial 
+    even if we get a significant p-value.
 \end{itemize}
 
-In our Bayesian formulation, the outcome variable $\theta_{i|j}$ is the Cosine similarity angle between a survey response vector and a donation amount vector of each participant $i$ under a given experimental condition $j$: Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324  donation alignment. Our goal is to first find four best fitting distributions that describe the four sets of $\theta_{i|j}$ respectively, then compare the means of each pair of distributions to see if they differ significantly and substantially via Bayesian analysis. 
+In our Bayesian formulation, 
+the outcome variable $\theta_{i|j}$ 
+is the Cosine similarity angle 
+between a survey response vector and 
+a donation amount vector of each participant $i$ 
+under a given experimental condition $j$: 
+Likert donation alignment, QV36 donation alignment, 
+QV108 donation alignment, and QV324 donation alignment. 
+Our goal is to first find four best fitting distributions 
+that describe the four sets of $\theta_{i|j}$ respectively, 
+then compare the means of each pair of distributions 
+to see if they differ significantly 
+and substantially via Bayesian analysis. 
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.8\textwidth, keepaspectratio=true]{content/image/model_graph.png}
     \caption{
-      Graphical representation of our Bayesian model (to-do: update to a prettier version)
+      Graphical representation of our Bayesian model (to-do: update to a prettier version. \tc{Not sure how to add more details to this graph.})
     }
     \Description[Graphical representation of our Bayesian model for experiment 1]{Graphical representation of our Bayesian model for experiment 1}
     \label{fig:bayesian_model_exp1}
 \end{figure}
 
-We chose a Student-t distribution to describe the Cosine similarity angle data per condition, i.e., as the likelihood function in the Bayesian model (note that this is a drawing distribution, not the t-test). A Student-t distribution is similar to a Normal distribution in the overall shape but is heavy-tailed, which is more forgiving about having more extreme values than a Normal distribution with the same variance. We did not want to make the strong assumption of Normality and thus decided on a Student-t distribution. In Bayesian modeling, typically, the likelihood function is parametric, meaning that each parameter of the likelihood function is treated as a random variable drawn from a distribution with parameters, i.e., what we also called the prior of the likelihood model parameters. In a Student-t distribution of a given condition $j$, there are three parameters: the mean ($\mu_j$), the scale ($\sigma_j$), and the degrees of freedom ($\nu$). In general, we defined the priors, i.e., likelihood functions of the parameters, based on the criterion of being weakly informative since we did not want to impose any strong assumption on what the model should look like and preferred allowing all possible values for the parameters. The detail Bayesian model is the following (also in Fig. \ref{fig:bayesian_model_exp1}:
+We chose a Student-t distribution 
+to describe the Cosine similarity angle data per condition, 
+i.e., as the likelihood function in the Bayesian model %this sentence is unclear?
+(note that this is a drawing distribution, not the t-test). 
+A Student-t distribution is similar to a Normal distribution 
+in the overall shape but is heavy-tailed, 
+which is more forgiving about having more extreme values 
+than a Normal distribution with the same variance. 
+We did not want to make the strong assumption of normality 
+and thus decided on a Student-t distribution. 
+In Bayesian modeling, typically, the likelihood function is parametric, 
+meaning that each parameter of the likelihood function is treated as a random variable 
+drawn from a distribution with parameters, 
+i.e., what we also called the prior of the likelihood model parameters. 
+In a Student-t distribution of a given condition $j$, 
+there are three parameters: 
+the mean ($\mu_j$), the scale ($\sigma_j$), and the degrees of freedom ($\nu$). 
+In general, we defined the priors, 
+i.e., likelihood functions of the parameters, 
+based on the criterion of being weakly informative 
+since we did not want to impose any strong assumption on what the model should look like 
+and preferred allowing all possible values for the parameters. 
+The detail Bayesian model is the following (also in Fig. \ref{fig:bayesian_model_exp1}:
 
 \begin{quote}
     $\theta_{i|j} \sim$ Student-t$(\nu, \mu_j, \sigma_j)$, \hfill likelihood function to model angle in condition $j$ (1) \\
@@ -348,7 +465,18 @@ We chose a Student-t distribution to describe the Cosine similarity angle data p
     $\sigma_j \sim \Gamma(\alpha, \beta)$, \hfill scale parameter for condition j (4)
 \end{quote}
 
-We drew the degrees of freedom $\nu$ from a shifted exponential distribution to ensure that $\nu \geq 1$. The mode $\mu_j$ for condition $j$ was drawn from a Normal distribution with mean $M_0$ and scale $SD_0$, where $M_0$ and $SD_0$ were constants that were weakly informative. The scale parameter $\sigma_j$ was drawn from a Gamma distribution with generous $\alpha$ and $\beta$ constant values to ensure the scale parameter was always greater than zero. (to-do: do I need to specifiy what the constants are?) Now that we have finished introducing our Bayesian model, we will move on to the results of our analysis.
+We drew the degrees of freedom $\nu$ 
+from a shifted exponential distribution 
+to ensure that $\nu \geq 1$. 
+The mode $\mu_j$ for condition $j$ was drawn 
+from a Normal distribution 
+with mean $M_0$ and scale $SD_0$, 
+where $M_0$ and $SD_0$ were constants that were weakly informative. 
+The scale parameter $\sigma_j$ was drawn from a Gamma distribution 
+with generous $\alpha$ and $\beta$ constant values 
+to ensure the scale parameter was always greater than zero. (\lwt{to-do: do I need to specifiy what the constants are?})
+Now that we have finished introducing our Bayesian model, 
+we present the results of our analysis.
 
 \subsubsection{Results Analysis}
     
@@ -358,27 +486,63 @@ We drew the degrees of freedom $\nu$ from a shifted exponential distribution to 
 %     Describe effect size analysis for comparing Likert and QV
 %     Describe effect size analysis for comparing across QVs
 
-The Bayesian analysis was performed using PyMC3 \cite{salvatier2016probabilistic}, a popular Bayesian inference framework. One of the common computational techniques for Bayesian inference is Markov Chain Monte Carlo (MCMC), a stochastic sampling technique. It samples the posterior distribution $P(\theta | D)$, the distribution functions of the parameters in the likelihood function given the data observations $D$. We used the No-U Turn Sampler (NUTS) specifically in our analysis. 
+The Bayesian analysis was performed using PyMC3 \cite{salvatier2016probabilistic}, 
+a popular Bayesian inference framework. 
+One of the common computational techniques 
+for Bayesian inference is Markov Chain Monte Carlo (MCMC), 
+a stochastic sampling technique. 
+It samples the posterior distribution $P(\theta | D)$, 
+the distribution functions of the parameters 
+in the likelihood function given the data observations $D$. 
+We used the No-U Turn Sampler (NUTS) specifically 
+in our analysis. 
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/traceplot.png}
     \caption{
-      Traceplot showing the results of the MCMC estimation. Left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$, and right column shows the corresponding traces. (to-do: change to latex expression in figure; more explanation in caption)
+      Traceplot showing the results of the MCMC estimation. Left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$, and right column shows the corresponding traces. (\lwt{to-do: change to latex expression in figure; more explanation in caption} \tc{add more caption details})
     }
     \Description[Traceplot for experiment 1]{Traceplot for experiment 1}
     \label{fig:traceplot_exp1}
 \end{figure}
 
-Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, the model shows good convergence. The Gelman-Rubin statistic $\hat{R}$ for all parameters were 1, indicating that the multiple sampling chains converged. Based on the posterior distributions in the left column in Fig. \ref{fig:traceplot_exp1}, we can see that the means of the four Student-t distributions vary. In the condition QV108 and QV324 (the orange and green lines), the modes of the mean of the Cosine similarity angle (QV108: $44.649 \deg$, QV324: $44.796 \deg$) are smaller than those in the other two conditions, indicating a better alignment between the survey results and donation behavior. QV36 (the red line) has a mode of the mean in the middle ($49.029 \deg$), and Likert (the blue line) has the largest mode of the mean ($52.857 \deg$) among all four conditions. The posterior distributions of the scale parameter in all four likelihood functions are similar, with a mode ranging from 13.904 and 15.724. (to-do: add posterior check in the appendix)
+Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, 
+the model shows good convergence. 
+The Gelman-Rubin statistic $\hat{R}$ for all parameters were 1, 
+indicating that the multiple sampling chains converged. 
+Based on the posterior distributions in the left column in Fig. \ref{fig:traceplot_exp1}, 
+we can see that the means of the four Student-t distributions vary. 
+In the condition QV108 and QV324 (the orange and green lines), 
+the modes of the mean of the Cosine similarity angle 
+(QV108: $44.649 \deg$, QV324: $44.796 \deg$) 
+are smaller than those in the other two conditions, 
+indicating a better alignment 
+between the survey results and donation behavior. 
+QV36 (the red line) 
+has a mode of the mean 
+in the middle ($49.029 \deg$), 
+and Likert (the blue line) 
+has the largest mode of the mean ($52.857 \deg$) 
+among all four conditions. 
+The posterior distributions of the scale parameter 
+in all four likelihood functions are similar, 
+with a mode ranging from 13.904 and 15.724. 
+(\lwt{to-do: add posterior check in the appendix})
 
-To further confirm how different the means of the likelihood functions between each pair of the conditions are, we constructed the distribution of the un-normalized difference and the distribution of the effect size (normalized difference) between the means. Figure \ref{fig:contrast_exp1}
+To further confirm how different the means 
+of the likelihood functions 
+between each pair of the conditions, 
+we constructed the distribution 
+of the un-normalized difference and 
+the distribution of the effect size 
+(normalized difference) 
+between the means as shown in figure \ref{fig:contrast_exp1}
 
 
-\begin{landscape}[hbt]
+\begin{landscape}
     \centering
     \includegraphics[width=1.4\textwidth, keepaspectratio=true]{content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf}
-    % there were issues with this caption, removed for now    
     % \caption{
     %   The figure shows comparison of the means from the survey-donation alignment likelihood function between the four experimental conditions (Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324 donation alignment). The last column shows contrasts between the Likert donation alignment and the pooled QV donation alignment across three QV conditions. The first row focuses on the un-normalized difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. 
     % }
