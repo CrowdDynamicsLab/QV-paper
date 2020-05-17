@@ -74,7 +74,7 @@ Since we use the donation outcome of a participant
 as a proxy of their true preferences 
 across the nine societal causes, 
 we could only analyze
-participants whom donated a non-zero amount of money.
+participants who donated a non-zero amount of money.
 Therefore, we further filtered the dataset 
 to keep only the responses 
 that had a non-zero total donation amount.
@@ -113,35 +113,56 @@ compared to the other QV conditions.
 One possible explanation for the difference is 
 the Likert group required less effort compared to that of QV, 
 and participants felt less tempted 
-to earn extra reward for their time spent in the Likert condition. 
+to earn an extra reward for their time spent in the Likert condition. 
 Overall, we found that the total amount of donation per participant 
 was large enough to be distributed across charities
 in a way that could represent the full picture of 
-their underlying true preferences for nine topics.
+their true underlying preferences for nine topics.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/total_contributions_across_conditions.pdf}
     \caption{
-       Distributions of total amount donated by participants across four surveying methods.
+       Distributions of the total amount donated by participants across four surveying methods.
        We see two distributions, one centered by $\$9-12$ and the other centered by $\$33$ to $\$35$.
        We also see more Likert participants donate almost most of their donation quota compared to the QV Groups.
     }
-    \Description[Distributions of Total Donation Amounts across Groups for experiment 1]{ Distributions of total amount donated by participants across four surveying methods.
+    \Description[Distributions of Total Donation Amounts across Groups for experiment 1]{ Distributions of the total amount donated by participants across four surveying methods.
     We see two distributions, one centered by $\$9-12$ and the other centered by $\$33$ to $\$35$.
     We also see more Likert participants donate almost most of their donation quota compared to the QV Groups.}
     \label{fig:total_don_exp1}
 \end{figure}
 
-Given the aggregated total donation amount across all the participants in each condition, the amount was distributed to the nine charities in a highly varying manner as shown in Figure \ref{fig:topic_don_exp1}. The environment-related, health-related, and human-related charities were consistently the most popular ones among all the options in different groups, while the art-related, international-related, and faith-related ones were always the least popular. However, we could see some differences in the population-level preferences towards charities across the four conditions. For example, the pets-related charity received far less donation in percentage than the three QV groups. This suggests that there was a good amount of variance in people's opinions towards the nine topics, making the surveying task meaningful.
+Aggregated across all participants,
+the amount of donations for each 
+of the nine charities have a similar trend
+shown in Figure \ref{fig:topic_don_exp1}. 
+Environment-related, health-related, and human-related charities 
+were consistently the more popular 
+compared to the art-related, international-related, and faith-related charities.
+However, there are some differences 
+when observing the population-level preferences 
+towards charities across the four surveying methods. 
+For example, the pets-related charity 
+received far less donation in percentage 
+for the Likert Group compared with the QV groups. 
+This suggests that there was a good amount of variance 
+in people's opinions toward the nine topics, 
+making the surveying task meaningful.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/normalized_contributions_per_topic_across_conditions.pdf}
     \caption{
-      Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions
+      Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions.
+      We see a general trend of the more and less popular charities while some differences across each
+      surveying method within each group.
     }
-    \Description[Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions for experiment 1]{Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions for experiment 1}
+    \Description[Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions for experiment 1]{
+      Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions.
+      We see a general trend of the more and less popular charities while some differences across each
+      surveying method within each group.
+    }
     \label{fig:topic_don_exp1}
 \end{figure}
 
@@ -149,7 +170,11 @@ Given the aggregated total donation amount across all the participants in each c
     \centering
     \includegraphics[width=0.4\textwidth, keepaspectratio=true]{content/image/likert_distribution_per_topic.pdf}
     \caption{
-      Distribution of Likert Responses per Topic. Each level from -2 to 2 corresponds to Very unimportant, Unimportant, Neutral, Important, and Very important.
+      Distribution of Likert Responses per Topic. 
+      Each level from -2 to 2 corresponds to 
+      ``Very unimportant'', ``Unimportant'', ``Neutral'', ``Important'', and ``Very important''.
+      We see a right skewed distribution across all groups with variations in their shapes.
+      This means that participants showed their relative preferences even in the Likert Group.
     }
     \Description[Distribution of Likert Responses per Topic for experiment 1]{Distribution of Likert Responses per Topic for experiment 1}
     \label{fig:likert_exp1}
@@ -157,15 +182,66 @@ Given the aggregated total donation amount across all the participants in each c
 
 %     QV & Likert votes descriptive statistics: votes distribution per topic across groups, budget usage distribution across QV groups
 
-Figure \ref{fig:likert_exp1} shows how Likert responses distribute at the aggregated level across the nine topics. With a 5-point Likert scale, we can see that most topics have a distribution that skews towards positive opinions, with a median of "Important" and "Very Important". Even though the medians of six out of nine topics are all "Important", the shapes of their distributions are different, suggesting different levels of support by the participants. The sufficient amount of variations shown across topics indicates that our prompt in the experiment that asked participants to be aware of the resource constraint and express their relative preferences worked as intended. 
+Figure \ref{fig:likert_exp1} demonstrates 
+the aggregated Likert responses
+distributed across the nine societal causes. 
+we can see that most topics skewed towards positive opinions, 
+with a median of "Important" and "Very Important." 
+Despite six out of nine topics have a median of "Important," 
+the shapes of their distributions are different which
+suggested participants have different levels of support. 
+The sufficient amount of variations 
+shown across topics indicated that 
+our prompt in the experiment, 
+which we reminded participants that resources are limited
+and one should express their relative preferences 
+worked as intended. 
 
-Comparing across the three QV surveys, the response distributions are similar but have subtle differences. Consistent with prior work in QV \cite{quarfoot2017quadratic}, most distributions of all the topics are close to a Normal distribution. Looking only at the median of a distribution, the result from QV36 has less variation than those from QV108 and QV324, and resembles that from the Likert survey more. The medians of QV108 and QV324, on the contrary, clearly show nuanced differences across topics. Distributions in QV324 have longer tails than those in QV108, suggesting that participants did make use of the increased credits to express more extreme opinions at higher costs. A further examination in the percentage voice credits budget usage in three QV conditions (Figure \ref{fig:qv_budget_exp1}), we found that there was no decrease in the median percentage usage as the budget size increased (all around 98\%), but the tail of lower percentage usage in QV324 was longer than in the other two cases. This finding suggests that the extra credits provided to the participants were put to good use in most cases, and that participants were still comfortable with completing a QV survey with a large budget up to the order of $N^2$ ($N$ is the number of options in a survey) and complicated calculations with our QV interface. % mention the implication of longer tail in QV324 in discussion section: need to be aware of using an overly large budget and resulting in a worse tail
+Comparing across the three QV surveys, 
+the response distributions are similar 
+but have subtle differences. 
+Consistent with prior work in QV \cite{quarfoot2017quadratic}, 
+most distributions of all the topics 
+are close to a Normal distribution.
+There is less variation
+at the median of a distribution, 
+comparing results from QV36 
+then those from QV108 and QV324
+and resembles that from the Likert survey more.
+The medians of QV108 and QV324, on the contrary, 
+clearly show nuanced differences across topics. 
+Besides, distributions in QV324 
+have longer tails 
+then those in QV108, 
+suggesting that participants 
+did make use of the increased credits 
+to express more extreme opinions at higher costs. 
+After examining
+the usage of 
+voice credits across the three QV conditions 
+(Figure \ref{fig:qv3_exp1}), 
+we found no decrease 
+in the median with increased budget size (all around 98\%), 
+but the tail of lower percentage usage in QV324 was longer 
+then in the other two cases. 
+This finding assured that 
+participants made good use of 
+the extra credits 
+and they were comfortable 
+completing QV with a large budget 
+up to the order of $N^2$ ($N$ is the number of options in a survey) 
+and complicated calculations with our QV interface. 
+% mention the implication of longer tail in QV324 in the discussion section: 
+% need to be aware of using an overly large budget and resulting in a worse tail
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/qv_distribution_per_topic.pdf}
     \caption{
-      Distribution of QV Responses per Topic in QV36, QV108 and QV324. The maximum possible number of votes on a topic was 6 votes in QV36, 10 votes in QV108, and 18 votes in QV324.
+      Distribution of QV Responses per Topic in QV36, QV108 and QV324. 
+      The maximum possible number of votes on a topic was 6 votes in QV36, 10 votes in QV108, and 18 votes in QV324.
+      The tails expends out as the number of total credits increases. 
+      All three QV follows a normal distribution.
     }
     \Description[Distribution of QV Responses per Topic for experiment 1]{Distribution of QV Responses per Topic for experiment 1}
     \label{fig:qv3_exp1}
@@ -178,15 +254,54 @@ Comparing across the three QV surveys, the response distributions are similar bu
 %     mention our test of checking if other factors impact total donation amount -> absolute vs. normalized donation amount
 %     show histogram and other descriptive statistics of the angle data
 
-To answer our research question of how align Likert and QV survey responses are with people's true opinions reflected by their incentive-compatible (to-do: is it accurate to use this term here?) behavior, we need to design a metric that can measure the degree of alignment between the two. Before discussing about our choice of metric, we need to clarify the definition of "alignment" used here. Our definition of having a perfect alignment between a set of survey response and a set of donation amount by the same individual is that the individual expresses preferences with the same relative strength in both cases. Formally, it is defined as the following:\par
+To answer our research question 
+of how to align Likert and QV survey responses are 
+with people's true opinions 
+reflected by their incentive-compatible behavior, %to-do: is it accurate to use this term here?
+we need to design a metric 
+that can measure the degree of alignment 
+between the two. 
+Before discussing our choice of metric, 
+we first clarify the definition of "alignment" in our analysis. 
+A perfect alignment 
+between a survey response 
+and the same participant's donation choices
+requires an individual to express their preferences
+with the same relative strength as their donation amount. 
+More formally, it is defined as the following:\par
 
 \begin{quote}
-    A set of survey response $\vec{v} = [v_1, v_2, ..., v_n]$, and a set of donation amount $\vec{d} = [d_1, d_2, ..., d_n]$, where $n$ is the number of topics or options involved in the decision, are perfectly align if there exists a positive constant $k>0$ that satisfies $k\vec{v} = \vec{d}$.
+    A set of survey response $\vec{v} = [v_1, v_2, ..., v_n]$, 
+    and a set of donation amount $\vec{d} = [d_1, d_2, ..., d_n]$, 
+    where $n$ is the number of topics or options involved in the decision, 
+    are perfectly align if there exists a positive constant $k>0$ that satisfies $k\vec{v} = \vec{d}$.
 \end{quote}
 
-Our alignment focused on the relative strength in opinion for two reasons. First, the results from our four sets of surveys and the donation task were not on the same scale. For example, the maximum possible number of votes on a topic in QV36 is 6 while the maximum donation amount on a topic is \$35. Second, given two participants with the same opinion across the nine topics, their total amount of donation may still differ due to other factors such as income level, level of education, etc. Even if both of them split their total donation amounts in the same way proportionally, their absolute donation amounts across the topics would be different. Hence, we decided to care only about the relative strength in opinions across topics.
+Our alignment focused on the relative strength across opinions for two reasons. 
+First, the results from our four types of surveys 
+and the donation task were not on the same scale. 
+For example, the maximum possible number of votes on a topic 
+in QV36 is 6 
+while the maximum donation amount on a topic is \$35. 
+Second, 
+any two participants might donate differently
+due to other factors such as income level or level of education,
+even if both of them split their total donation amounts in the same way proportionally.
+In other words, 
+participants might donate with the \textit{same} level of preference acorss options 
+but with \textit{different} levels of total amount to donate.
+Hence, we decided to care only about the relative strength in opinions across topics.
 
-The metric for measuring the degree of alignment thus need to be monotonic with respect to the amount of discrepancy between two preference vectors in terms of relative strength in preferences. It would be preferable if the metric is easily interpretable. With these two criteria in mind, we decided to use the angle $\theta$ in the Cosine similarity metric as the alignment metric. It is formally defined as the following: \par
+The metric for measuring the degree of alignment 
+thus need to be monotonic 
+with respect to the amount of discrepancy 
+between two preference vectors 
+in terms of relative strength in preferences. 
+It would be preferable if the metric is easily interpretable. 
+With these two criteria in mind, 
+we decided to use the angle $\theta$ in the Cosine similarity metric 
+as the alignment metric. 
+It is formally defined as the following: \par
 
 \begin{quote}
     The Cosine similarity angle $\theta$ between a set of survey response $\vec{v} = [v_1, v_2, ..., v_n] \in \mathbb{R}^n$, and a set of donation amount $\vec{d} = [d_1, d_2, ..., d_n] \in \mathbb{R}^n$, where $n$ is the number of topics or options involved in the decision, is calculated via $\theta = \frac{180}{\pi} \arccos{\frac{\vec{v} \cdot \vec{d}}{\|\vec{v}\| \|\vec{d}\|}}$, and $0\deg \leq \theta \leq 180\deg$.
