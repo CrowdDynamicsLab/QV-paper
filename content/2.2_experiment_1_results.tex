@@ -501,7 +501,7 @@ in our analysis.
     \centering
     \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{content/image/StudentTIndep_VA_traceplot.pdf}
     \caption{
-      Traceplot showing the results of the MCMC estimation. Left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$, and right column shows the corresponding traces. (\lwt{to-do: change to latex expression in figure; more explanation in caption} \tc{add more caption details})
+      Traceplot showing the results of the MCMC estimation. The left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$ of the Student-t distribution. The right column shows the corresponding sampling traces. The color mappings are: red - QV36, orange - QV108, green - QV324, blue - Likert. Note that the modal value for degrees of freedom $\nu$ is 7, confirming our choice of the Student-t distribution instead of the Normal distribution, which usually requires $\nu \geq 30$. Furthermore, the Gelman-Rubin statistic $\hat{R}$ for all parameters were 1, indicating that the multiple sampling chains converged.
     }
     \Description[Traceplot for experiment 1]{Traceplot for experiment 1}
     \label{fig:traceplot_exp1}
@@ -512,7 +512,7 @@ indicating that the multiple sampling chains converged.
 Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, 
 the model also shows good convergence. 
 The posterior distributions in the left column in Fig. \ref{fig:traceplot_exp1} show that the means of the four Student-t distributions that model the similarity angle, one for each experimental condition, vary. 
-In conditions QV108 and QV324 (the overlapping orange and green lines on the left-most side of the four distributions), 
+In conditions QV108 and QV324 (the overlapping orange and green lines on the left-most side of the four distributions),
 the modes of the mean of the Cosine similarity angle 
 (QV108: $44.649 \deg$, QV324: $44.796 \deg$) 
 are smaller than those in the other two conditions, 
@@ -538,7 +538,7 @@ between the means as shown in figure \ref{fig:contrast_exp1}.
   \centering
   \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{"content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf"}
   \caption{
-    The figure shows comparison of the means from the survey-donation alignment likelihood function between the four experimental conditions (Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324 donation alignment). The last column shows contrasts between the Likert donation alignment and the pooled QV donation alignment across three QV conditions. The first row focuses on the un-normalized difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. 
+    The figure shows comparison of the means from the survey-donation alignment likelihood function between the four experimental conditions (Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324 donation alignment). The last column shows contrasts between the Likert donation alignment and the pooled QV donation alignment across three QV conditions. The first row focuses on the absolute difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. The main finding is: survey responses from QV108, QV324 and pooled QV are significantly more aligned with the donation results than Likert responses with a medium effect size.
   }
   \Description[Contrasts for experiment 1]{Contrasts for experiment 1}
   \label{fig:contrast_exp1}
