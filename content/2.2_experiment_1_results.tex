@@ -527,7 +527,7 @@ has the largest mode of the mean ($52.857 \deg$)
 among all four conditions. 
 The posterior distributions of the scale parameter 
 in all four likelihood functions are similar, 
-with a mode ranging from 13.904 and 15.724. 
+with a mode ranging from $13.904$ and $15.724$. 
 (\lwt{to-do: add posterior check in the appendix})
 
 To further confirm how different the means 
@@ -537,23 +537,68 @@ we constructed the distribution
 of the un-normalized difference and 
 the distribution of the effect size 
 (normalized difference) 
-between the means as shown in figure \ref{fig:contrast_exp1}
+between the means as shown in figure \ref{fig:contrast_exp1}.
 
 \begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth, keepaspectratio=true]{"content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf"}
-    \caption{
-      The figure shows comparison of the means from the survey-donation alignment likelihood function between the four experimental conditions (Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324 donation alignment). The last column shows contrasts between the Likert donation alignment and the pooled QV donation alignment across three QV conditions. The first row focuses on the un-normalized difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. 
-    }
-    \Description[Contrasts for experiment 1]{Contrasts for experiment 1}
-    \label{fig:contrast_exp1}
+  \centering
+  \includegraphics[width=\textwidth, keepaspectratio=true]{"content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf"}
+  \caption{
+    The figure shows comparison of the means from the survey-donation alignment likelihood function between the four experimental conditions (Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324 donation alignment). The last column shows contrasts between the Likert donation alignment and the pooled QV donation alignment across three QV conditions. The first row focuses on the un-normalized difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. 
+  }
+  \Description[Contrasts for experiment 1]{Contrasts for experiment 1}
+  \label{fig:contrast_exp1}
 \end{figure}
 
-    
-\subsection{Experiment 1 Qualitative Analysis Results}\label{results-1-qual}
-We ask participants to provide a freeform text response on the reason why they made the choices they made
-when participants filled out the Likert survey or QV survey,
-Of all surveys ($N=394$) across both groups, most participants filled out the surveys ($N=331$) based on what they think are the most important issues to them. %84 percent
-Besides, a small portion of participants ($N=30$) used their instincts when replying to the survey.
-Some participants either think that every aspect is important ($N=7$) or that resources should be equally distributed ($N=7$).
+%Is this enough? 
+The first column compares the difference between the Likert group
+and the donation behavior with the QV group with $36$ votes
+with their donation behaviors. We see a mode of $3.9$
+with High Posterior Density (HPD) interval of [$-2.1$, $10$].
+This implies that the observed differences are not significant.
+The model effect size shows a mode of $0.25$, 
+with HPD interval of [$-0.15$, $0.64$] 
+also indicating the effect size is small.
 
+The second column compares the difference between the Likert group
+and the donation behavior with the QV group with 108 votes
+with their donation behaviors. We see a mode of $8.1$
+with High Posterior Density (HPD) interval of [$2.4$, $14$].
+In this case, the HPD lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 0.1$
+which implies a significant difference that
+QV aligns closer to the donation behaviors.
+In addition, the effect size shows a mode of $0.57$, 
+with HPD interval of [$0.15$, $0.99$] 
+indicating a significant, medium effect size.
+
+In the third column, we compare between Likert group
+and the donation behavior with the QV group with $324$ votes
+with their donation behaviors. We see a mode of $8.2$
+with a High Posterior Density (HPD) interval of [$2.3$, $14$].
+Again, the HPD lies outside a significant ROPE of $0 \pm 0.1$
+which implies a significant difference that
+QV aligns closer to the donation behaviors.
+The effect size shows a mode of $0.55$, 
+with HPD interval of [$0.14$, $0.95$] 
+indicating a significant, medium effect size.
+
+The fourth and final column 
+compares the difference between the Likert group
+and the donation behavior with all three groups of QV
+with their donation behaviors. We see a mode of $6.7$
+with High Posterior Density (HPD) interval of [$1.6$, $12$].
+In this case, the HPD lies outside of ROPE of $0 \pm 0.1$
+implies that there is a significant difference where
+QV, in general, aligns closer to the donation behaviors.
+The effect size shows a mode of $0.56$, 
+with HPD interval of [$0.12$, $1.00$] 
+indicating a significant, medium effect size.
+
+
+
+% Similiar claim that QV allows better alignment to ones true preference
+% can be supported by Qualitative Analysis Results.
+% We ask participants to provide a freeform text response on the reason why they made the choices they made
+% when participants filled out the Likert survey or QV survey,
+% Of all surveys ($N=394$) across both groups, most participants filled out the surveys ($N=331$) based on what they think are the most important issues to them. %84 percent
+% Besides, a small portion of participants ($N=30$) used their instincts when replying to the survey.
+% Some participants either think that every aspect is important ($N=7$) or that resources should be equally distributed ($N=7$).
