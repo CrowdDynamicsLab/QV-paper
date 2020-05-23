@@ -499,7 +499,7 @@ in our analysis.
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/traceplot.png}
+    \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{content/image/StudentTIndep_VA_traceplot.pdf}
     \caption{
       Traceplot showing the results of the MCMC estimation. Left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$, and right column shows the corresponding traces. (\lwt{to-do: change to latex expression in figure; more explanation in caption} \tc{add more caption details})
     }
@@ -507,41 +507,36 @@ in our analysis.
     \label{fig:traceplot_exp1}
 \end{figure}
 
-Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, 
-the model shows good convergence. 
 The Gelman-Rubin statistic $\hat{R}$ for all parameters were 1, 
-indicating that the multiple sampling chains converged. 
-Based on the posterior distributions in the left column in Fig. \ref{fig:traceplot_exp1}, 
-we can see that the means of the four Student-t distributions vary. 
-In the condition QV108 and QV324 (the orange and green lines), 
+indicating that the multiple sampling chains converged.
+Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, 
+the model also shows good convergence. 
+The posterior distributions in the left column in Fig. \ref{fig:traceplot_exp1} show that the means of the four Student-t distributions that model the similarity angle, one for each experimental condition, vary. 
+In conditions QV108 and QV324 (the overlapping orange and green lines on the left-most side of the four distributions), 
 the modes of the mean of the Cosine similarity angle 
 (QV108: $44.649 \deg$, QV324: $44.796 \deg$) 
 are smaller than those in the other two conditions, 
 indicating a better alignment 
 between the survey results and donation behavior. 
-QV36 (the red line) 
-has a mode of the mean 
-in the middle ($49.029 \deg$), 
-and Likert (the blue line) 
-has the largest mode of the mean ($52.857 \deg$) 
+QV36 (the red line in the middle) has a slightly higher mode of the mean than QV108 and QV324 ($49.029 \deg$), and Likert (the blue line) has the largest mode of the mean ($52.857 \deg$) 
 among all four conditions. 
-The posterior distributions of the scale parameter 
+The posterior distributions of the scale parameter $\sigma$
 in all four likelihood functions are similar, 
 with a mode ranging from $13.904$ and $15.724$. 
-(\lwt{to-do: add posterior check in the appendix})
+(\lwt{to-do: add posterior predictive check in the appendix})
 
 To further confirm how different the means 
 of the likelihood functions 
-between each pair of the conditions, 
+between each pair of the conditions are statistically, 
 we constructed the distribution 
-of the un-normalized difference and 
+of the absolute difference and 
 the distribution of the effect size 
 (normalized difference) 
 between the means as shown in figure \ref{fig:contrast_exp1}.
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth, keepaspectratio=true]{"content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf"}
+  \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{"content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf"}
   \caption{
     The figure shows comparison of the means from the survey-donation alignment likelihood function between the four experimental conditions (Likert donation alignment, QV36 donation alignment, QV108 donation alignment, QV324 donation alignment). The last column shows contrasts between the Likert donation alignment and the pooled QV donation alignment across three QV conditions. The first row focuses on the un-normalized difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. 
   }
