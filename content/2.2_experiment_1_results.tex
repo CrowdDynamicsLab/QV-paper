@@ -1,22 +1,22 @@
 \subsection{Experiment 1 Analysis Results} \label{results-1-quan}
 In this section, 
-we will first present descriptive statistics 
+first present descriptive statistics 
 of the raw data in our first experiment. 
-Then, we will explain our feature engineering 
+Then, we explain our feature engineering 
 and data transformation process 
-based on the raw data. 
+of the raw data. 
 Lastly, we will introduce the Bayesian Model 
 we applied in our analysis 
-and present the analysis results.
+and present quantatative analysis results.
 
 \subsubsection{Descriptive Statistics of the Raw Data}
 % -- raw data
 %     describe the dataset, total # of participants in each group before and after dataset cleaning, demographics of each group;
     
-Overall, we collected 223 complete responses in the first experiment. 
-We removed four poor-quality responses 
-either participant responded the qualitative question facetiously 
-or misunderstanding the prompt. 
+We collected 223 complete responses in the first experiment. 
+We removed four poor-quality responses where
+participants responded the qualitative question facetiously 
+or they misunderstood the prompt. 
 Among the 219 remaining responses, 
 56 completed the Likert path, 
 and the rest were distributed relatively evenly 
@@ -29,8 +29,7 @@ were 107, 108, and 111, respectively.
 %(To-do: maybe add a hierarchical graph the represents how responses from different paths are aggregated)
 
 We recruited the participants 
-to construct a sample 
-representative of the US 2019 census data 
+to match that of the US 2019 census data 
 in terms of age and education level. 
 Having a representative sample is critical because of the generalizability of voting and survey tools. 
 Based on Table \ref{table:demo_exp1}, 
@@ -268,16 +267,14 @@ To get an intuitive view of how participants' survey responses and donation beha
 %     describe the calculation of cosine similarity angle theta
 %     mention our test of checking if other factors impact total donation amount -> absolute vs. normalized donation amount
 %     show histogram and other descriptive statistics of the angle data
-
-To answer our research question 
-of how to align Likert and QV survey responses are 
-with people's true opinions 
-reflected by their incentive-compatible behavior, %to-do: is it accurate to use this term here?
-we need to design a metric 
-that can measure the degree of alignment 
-between the two. 
-Before discussing our choice of metric, 
-we first clarify the definition of "alignment" in our analysis. 
+We break our research question on alignment
+into two parts. 
+First, we ask how are these individual survey 
+similiar to a participant's incentive-compatible behavior.
+Then we ask, how does QV and Likert compare overall?
+To answer the first question, 
+we need a metric for alignment.
+We first clarify the definition of "alignment" in our analysis. 
 A perfect alignment 
 between a survey response 
 and the same participant's donation choices
@@ -292,30 +289,48 @@ More formally, it is defined as the following:\par
     are perfectly align if there exists a positive constant $k>0$ that satisfies $k\vec{v} = \vec{d}$.
 \end{quote}
 
-Our alignment focused on the relative strength across opinions for two reasons. 
-First, the results from our four types of surveys 
+Notice now we represent
+the results of Likert survey, QV and donation, 
+with a vector of same length.
+In addition,
+this alignment focused on 
+the relative strength across opinions. 
+The first reason is that 
+results from our four types of surveys 
 and the donation task were not on the same scale. 
 For example, the maximum possible number of votes on a topic 
 in QV36 is 6 
 while the maximum donation amount on a topic is \$35. 
-Second, 
-any two participants might donate differently
-due to other factors such as income level or level of education,
-even if both of them split their total donation amounts in the same way proportionally.
+A relative scale maps each response onto the same space
+The other reason is when
+any two participants might donate differently,
+possibly due to other factors 
+such as income level or level of education,
+we want to capture 
+how they distribute their total donation amounts.
 In other words, 
-participants might donate with the \textit{same} level of preference acorss options 
-but with \textit{different} levels of total amount to donate.
-Hence, we decided to care only about the relative strength in opinions across topics.
+participants might donate 
+with the \textit{same} level of preference acorss options 
+but with \textit{different} levels of total amount one will to donate.
+Hence, we decided to 
+care only about 
+the relative strength in opinions across topics.
 
-The metric for measuring the degree of alignment 
-thus need to be monotonic 
+Next, 
+we need a metric that 
+measures the degree of alignment $k\vec{v} = \vec{d}$.
+This metric needs to be monotonic 
 with respect to the amount of discrepancy 
 between two preference vectors 
 in terms of relative strength in preferences. 
-It would be preferable if the metric is easily interpretable. 
-With these two criteria in mind, 
-we decided to use the angle $\theta$ in the Cosine similarity metric 
-as the alignment metric. 
+In addition,
+this metric need to be easily interpretable. 
+Therefore,
+we decided to represent the difference
+between the survey results and the donation
+with an angle $\theta$,
+and make use of the Cosine similarity metric 
+as out alignment metric. 
 It is formally defined as the following: \par
 
 \begin{quote}
@@ -345,25 +360,30 @@ will yield a Cosine similarity angle of zero,
 while two sets of completely opposite opinions 
 will result in an angle of 180 degree.
 
-Intuitively,
-to compute the Cosine similarity angle 
-for each participant in each group,
-we first translate each response,
-urvey results from Likert, QV36, QV108, QV324, and 
-their corresponding truthful preferences 
-reflected in the donation task,
-into a vector.
+% Intuitively,
+% to compute the Cosine similarity angle 
+% for each participant in each group,
+% we first translate each response,
+% urvey results from Likert, QV36, QV108, QV324, and 
+% their corresponding truthful preferences 
+% reflected in the donation task,
+% into a vector. %mentioned above can repeat if necessary
 For the Likert group, 
-we computed the Cosine similarity angle of a vector 
-of Likert responses (between -2 and 2 for each topic) and 
-a vector of the absolute donation amount of the same individual. 
-In the 3 QV conditions, 
-the angle is between a vector of QV votes and 
-a vector of the absolute donation amount of the same participant. 
-The next step is to set up a Bayesian Model 
-for these four sets of Cosine similarity angle 
-per condition as described in the next subsection.
-
+we map the ordinal responses into a vector
+where each topic ranges from $-2$ to $2$.
+For the three QV conditions,
+the vector of the topics are used as is.
+We then computed the Cosine similarity angle between each vector 
+and the absolute donation amount of the same individual. 
+Once we gathered these data,
+we move on to the next step
+where we uncover how different are these differences
+across the Likert Group (Likert) 
+and the three QV variances (QV36, QV108 and QV324).
+To complete this,
+we set up a Bayesian Model 
+with these four sets of Cosine similarity angle for each 
+condition as described in the next subsection.
 
 \subsubsection{Bayesian Formulation}
 % -- Bayesian formulation
@@ -373,14 +393,14 @@ per condition as described in the next subsection.
 %     choice of prior distributions
 
 Given the four sets of Cosine similarity angle 
-under Likert, QV36, QV108, and QV324 conditions respectively, 
+under Likert, QV36, QV108, and QV324 conditions respectively,
 we employed a Bayesian formulation of the problem 
 to compare the degree of alignment between pairs of the conditions. 
-\textcite{kay2016researcher} introduced a few potential benefits 
+\textcite{kay2016researcher} introduced a few potential benefits  
 for applying Bayesian analysis in the HCI community. 
 A recent study by \textcite{xiao2019should} 
 justified their use of Bayesian formulation 
-with two additional reasons. 
+with two additional reasons.
 Based on benefits proposed by past studies, 
 we argued for our choice of Bayesian formulation 
 with the following three reasons:
