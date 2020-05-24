@@ -133,38 +133,38 @@ their true underlying preferences for nine topics.
     \label{fig:total_don_exp1}
 \end{figure}
 
-Aggregated across all participants,
-the amount of donations for each 
-of the nine charities have a similar trend
-shown in Figure \ref{fig:topic_don_exp1}. 
-Environment-related, health-related, and human-related charities 
-were consistently the more popular 
-compared to the art-related, international-related, and faith-related charities.
-However, there are some differences 
-when observing the population-level preferences 
-towards charities across the four surveying methods. 
-For example, the pets-related charity 
-received far less donation in percentage 
-for the Likert Group compared with the QV groups. 
-This suggests that there was a good amount of variance 
-in people's opinions toward the nine topics, 
-making the surveying task meaningful.
+% Aggregated across all participants,
+% the amount of donations for each 
+% of the nine charities have a similar trend
+% shown in Figure \ref{fig:topic_don_exp1}. 
+% Environment-related, health-related, and human-related charities 
+% were consistently the more popular 
+% compared to the art-related, international-related, and faith-related charities.
+% However, there are some differences 
+% when observing the population-level preferences 
+% towards charities across the four surveying methods. 
+% For example, the pets-related charity 
+% received far less donation in percentage 
+% for the Likert Group compared with the QV groups. 
+% This suggests that there was a good amount of variance 
+% in people's opinions toward the nine topics, 
+% making the surveying task meaningful.
 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/normalized_contributions_per_topic_across_conditions.pdf}
-    \caption{
-      Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions.
-      We see a general trend of the more and less popular charities while some differences across each
-      surveying method within each group.
-    }
-    \Description[Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions for experiment 1]{
-      Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions.
-      We see a general trend of the more and less popular charities while some differences across each
-      surveying method within each group.
-    }
-    \label{fig:topic_don_exp1}
-\end{figure}
+% \begin{figure}[htpb]
+%     \centering
+%     \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/normalized_contributions_per_topic_across_conditions.pdf}
+%     \caption{
+%       Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions.
+%       We see a general trend of the more and less popular charities while some differences across each
+%       surveying method within each group.
+%     }
+%     \Description[Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions for experiment 1]{
+%       Percentage Contribution Amount per Topic with Respect to the Total Donation Amount across Conditions.
+%       We see a general trend of the more and less popular charities while some differences across each
+%       surveying method within each group.
+%     }
+%     \label{fig:topic_don_exp1}
+% \end{figure}
 
 \begin{figure}[htpb]
     \centering
@@ -245,6 +245,21 @@ and complicated calculations with our QV interface.
     }
     \Description[Distribution of QV Responses per Topic for experiment 1]{Distribution of QV Responses per Topic for experiment 1}
     \label{fig:qv3_exp1}
+\end{figure}
+
+% Visualize the raw voting and donation data together to show covariation
+To get an intuitive view of how participants' survey responses and donation behaviors correlate with each other, we plot the raw survey response data and the proportional donation amount of every participants in scatterplots shown in Figure \ref{fig:topic_covariate_exp1}. {\lwt{to-do: add more description for the graph}}
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/vote_donation_covariates.pdf}
+    \caption{
+      Scatterplots showing the relationship between participants' survey response and proportional donation amount for each of the nine topics in all four conditions, Likert, QV36, QV108, and QV324. 
+    }
+    \Description[Raw voting and donation data visualization for experiment 1]{
+      Scatterplots showing the relationship between participants' survey response and proportional donation amount for each of the nine topics in all four conditions, Likert, QV36, QV108, and QV324.
+    }
+    \label{fig:topic_covariate_exp1}
 \end{figure}
 
 
@@ -544,7 +559,6 @@ between the means as shown in figure \ref{fig:contrast_exp1}. The first three co
   \label{fig:contrast_exp1}
 \end{figure}
 
-%Is this enough? 
 We will examine column $2$ (Likert vs. QV108) in detail, and the rest of the columns follow a similar logic of interpretation. The second column shows the contrast of the Cosine similarity angle between the Likert responses and the donation behaviors against the Cosine similarity angle between the QV108 responses and their donation behaviors, as well as its effect size. The contrast is calculated by the angles in Likert group subtracted by the angles in QV108. In the top figure of the second column, the mode of the contrast is $8.1$ with the 94\% High Posterior Density (HPD) interval of [$2.4$, $14$]. This means that the Cosine similarity angles in the Likert group are most frequently $8.1$ degrees larger than the angles in the QV108 group, i.e., Likert responses are most frequently $8.1$ degrees more misaligned with the donation behaviors than responses from QV108. $94\%$ of the increase in misalignment angles lie between [$2.4 \deg$, $14 \deg$]. Since the HPD lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1$, the results implies that there is a significant difference between the two survey instruments. In addition, the bottom figure of the second column shows that the effect size has a modal value of $0.57$, which can be considered as a medium-sized effect\footnote{We use the conventional standard that an effect of 0.2 is considered small, 0.5 is medium, and 0.8 is large.}. The HPD interval of the effect size is [$0.15$, $0.99$], not overlapping with the ROPE of [$0 \pm 0.1$] that consists of half of the small-sized effect value of 0.2, which indicates a statistically significant medium to large effect size.
 
 In the third column, we compare the Cosine similarity angle of the Likert group
