@@ -385,133 +385,167 @@ we set up a Bayesian Model
 with these four sets of Cosine similarity angle for each 
 condition as described in the next subsection.
 
-\subsubsection{Bayesian Formulation}
-% -- Bayesian formulation
-%     why Bayesian
-%     the type of analysis question
-%     choice of the likelihood function
-%     choice of prior distributions
+% \subsubsection{Bayesian Formulation}
+% % -- Bayesian formulation
+% %     why Bayesian
+% %     the type of analysis question
+% %     choice of the likelihood function
+% %     choice of prior distributions
 
-Given the four sets of Cosine similarity angle,
-Likert, QV36, QV108, and QV324 conditions respectively,
-we employed a Bayesian formulation of the problem 
-to compare the degree of alignment between pairs of the conditions. 
-\textcite{kay2016researcher} introduced a few potential benefits  
-for applying Bayesian analysis in the HCI community. 
-A recent study by \textcite{xiao2019should}
-justified their use of Bayesian formulation 
-with two additional reasons.
-Based on benefits proposed by past studies, 
-we argued for our choice of Bayesian formulation 
-with the following three reasons:
+% Given the four sets of Cosine similarity angle,
+% Likert, QV36, QV108, and QV324 conditions respectively,
+% we employed a Bayesian formulation of the problem 
+% to compare the degree of alignment between pairs of the conditions. 
+% \textcite{kay2016researcher} introduced a few potential benefits  
+% for applying Bayesian analysis in the HCI community. 
+% A recent study by \textcite{xiao2019should}
+% justified their use of Bayesian formulation 
+% with two additional reasons.
+% Based on benefits proposed by past studies, 
+% we argued for our choice of Bayesian formulation 
+% with the following three reasons:
 
-\begin{itemize}
-    \item \textbf{Transparency and Fewer Assumptions} 
-    In a t-test or ANOVA, 
-    the data needs to follow several assumptions, 
-    including Normality and Homogeneity of variance. 
-    In our case, both assumptions may be violated. 
-    Hence, we used Bayesian formulation 
-    to relax the assumptions of normality and 
-    equal variances by defining 
-    a non-normal likelihood function 
-    and making variances independent across groups.
-    \item \textbf{Small $n$ Studies} 
-    Traditional statistical tests 
-    that assume normality 
-    required at least a sample size of 30. 
-    Even when a sample size is greater than 30, 
-    a large effect size may still produce 
-    an insignificant p-value 
-    due to a not sufficiently large sample. 
-    On the contrary, 
-    a Bayesian model is valid at every value of $n$. 
-    Given the relatively small sample 
-    of our Likert group, 
-    we chose to use a Bayesian model.
-    \item \textbf{Additional Information} 
-    Compared to traditional statistical analysis 
-    that only produce a single p-value 
-    and a single effect size value, 
-    a Bayesian model is able to produce 
-    the entire distribution of the effect size, 
-    making additional information available 
-    for clearer inference. 
-    In our study, 
-    effect size is in particularly important 
-    because the cost of switching to a new survey tool 
-    is not worthwhile 
-    if the effect size is not substantial 
-    even if we get a significant p-value.
-\end{itemize}
+% \begin{itemize}
+%     \item \textbf{Transparency and Fewer Assumptions} 
+%     In a t-test or ANOVA, 
+%     the data needs to follow several assumptions, 
+%     including Normality and Homogeneity of variance. 
+%     In our case, both assumptions may be violated. 
+%     Hence, we used Bayesian formulation 
+%     to relax the assumptions of normality and 
+%     equal variances by defining 
+%     a non-normal likelihood function 
+%     and making variances independent across groups.
+%     \item \textbf{Small $n$ Studies} 
+%     Traditional statistical tests 
+%     that assume normality 
+%     required at least a sample size of 30. 
+%     Even when a sample size is greater than 30, 
+%     a large effect size may still produce 
+%     an insignificant p-value 
+%     due to a not sufficiently large sample. 
+%     On the contrary, 
+%     a Bayesian model is valid at every value of $n$. 
+%     Given the relatively small sample 
+%     of our Likert group, 
+%     we chose to use a Bayesian model.
+%     \item \textbf{Additional Information} 
+%     Compared to traditional statistical analysis 
+%     that only produce a single p-value 
+%     and a single effect size value, 
+%     a Bayesian model is able to produce 
+%     the entire distribution of the effect size, 
+%     making additional information available 
+%     for clearer inference. 
+%     In our study, 
+%     effect size is in particularly important 
+%     because the cost of switching to a new survey tool 
+%     is not worthwhile 
+%     if the effect size is not substantial 
+%     even if we get a significant p-value.
+% \end{itemize}
 
-In our Bayesian formulation, 
-the outcome variable $\theta_{i|j}$ 
-is the Cosine similarity angle 
-between a survey response vector and 
-a donation amount vector of each participant $i$ 
-under a given experimental condition $j$: 
-Likert donation alignment, QV36 donation alignment, 
-QV108 donation alignment, and QV324 donation alignment. 
-Our goal is to first find four best fitting distributions
-that describe the four sets of $\theta_{i|j}$ respectively, 
-then compare the means of each pair of distributions 
-to see if they differ significantly 
-and substantially via Bayesian analysis.
+\subsubsection{The Bayesian Model}
+\label{exp1:The Bayesian Model}
 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=0.6\textwidth, keepaspectratio=true]{content/image/model_1_diagram.pdf}
-    \caption{
-      Graphical representation of our Bayesian model \tc{Not sure how to add more details to this graph.})
-    }
-    \Description[Graphical representation of our Bayesian model for experiment 1]{Graphical representation of our Bayesian model for experiment 1}
-    \label{fig:bayesian_model_exp1}
-\end{figure}
 
-We chose a Student-t distribution 
-to describe the Cosine similarity angle data per condition, 
-i.e., as the likelihood function in the Bayesian model %this sentence is unclear?
-(note that this is a drawing distribution, not the t-test). 
-A Student-t distribution is similar to a Normal distribution 
-in the overall shape but is heavy-tailed, 
-which is more forgiving about having more extreme values 
-than a Normal distribution with the same variance. 
-We did not want to make the strong assumption of normality 
-and thus decided on a Student-t distribution. 
-In Bayesian modeling, typically, the likelihood function is parametric, 
-meaning that each parameter of the likelihood function is treated as a random variable 
-drawn from a distribution with parameters, 
-i.e., what we also called the prior of the likelihood model parameters. 
-In a Student-t distribution of a given condition $j$, 
-there are three parameters: 
-the mean ($\mu_j$), the scale ($\sigma_j$), and the degrees of freedom ($\nu$). 
-In general, we defined the priors, 
-i.e., likelihood functions of the parameters, 
-based on the criterion of being weakly informative 
-since we did not want to impose any strong assumption on what the model should look like 
-and preferred allowing all possible values for the parameters. 
-The detail Bayesian model is the following (also in Fig. \ref{fig:bayesian_model_exp1}:
 
-\begin{quote}
-    $\theta_{i|j} \sim$ Student-t$(\nu, \mu_j, \sigma_j)$, \hfill likelihood function to model angle in condition $j$ (1) \\
-    $\nu \sim 1 + exp(\lambda)$, \hfill degrees of freedom (2) \\
-    $\mu_j \sim N(M_0, SD_0)$, \hfill modal angle in condition $j$ (3) \\
-    $\sigma_j \sim \Gamma(\alpha, \beta)$, \hfill scale parameter for condition j (4)
-\end{quote}
+Now, we discuss our Bayesian formulation. There is one outcome variable: $\theta_{i \mid j}$, the cosine similarity angle between a survey response vector and  a donation amount vector of each participant $i$  under each of the four experimental conditions $j$: (Likert, and three QV conditions (with 36, 108 and 324 credits). 
 
-We drew the degrees of freedom $\nu$ 
-from a shifted exponential distribution 
-to ensure that $\nu \geq 1$. 
-The mode $\mu_j$ for condition $j$ was drawn 
-from a Normal distribution 
-with mean $M_0$ and scale $SD_0$, 
-where $M_0$ and $SD_0$ were constants that were weakly informative. 
-The scale parameter $\sigma_j$ was drawn from a Gamma distribution 
-with generous $\alpha$ and $\beta$ constant values 
-to ensure the scale parameter was always greater than zero. (\lwt{to-do: do I need to specifiy what the constants are?})
-Now that we have finished introducing our Bayesian model, 
-we present the results of our analysis.
+In a Bayesian formulation, we need to define a likelihood function to model the cosine similarity under each condition. In general, this is a parametric formulation, and consistent with~\textcite{McElreath2015}, the likelihood function represents the modeler's view of the data, and not a claim about the world. The likelihood function is often parametric and we treat each model parameter as a random variable, drawn from a distribution (its prior). Typically, these priors are ``weakly informative''---conservative priors which allow for all possible values of the parameter but chosen in a manner that promotes fast convergence.
+
+% We chose a Student-t distribution 
+% to describe the Cosine similarity angle data per condition, 
+% i.e., as the likelihood function in the Bayesian model %this sentence is unclear?
+% (note that this is a drawing distribution, not the t-test). 
+% A Student-t distribution is similar to a Normal distribution 
+% in the overall shape but is heavy-tailed, 
+% which is more forgiving about having more extreme values 
+% than a Normal distribution with the same variance. 
+% We did not want to make the strong assumption of normality 
+% and thus decided on a Student-t distribution. 
+% In Bayesian modeling, typically, the likelihood function is parametric, 
+% meaning that each parameter of the likelihood function is treated as a random variable 
+% drawn from a distribution with parameters, 
+% i.e., what we also called the prior of the likelihood model parameters. 
+% In a Student-t distribution of a given condition $j$, 
+% there are three parameters: 
+% the mean ($\mu_j$), the scale ($\sigma_j$), and the degrees of freedom ($\nu$). 
+% In general, we defined the priors, 
+% i.e., likelihood functions of the parameters, 
+% based on the criterion of being weakly informative 
+% since we did not want to impose any strong assumption on what the model should look like 
+% and preferred allowing all possible values for the parameters. 
+% The detail Bayesian model is the following (also in Fig. \ref{fig:bayesian_model_exp1}:
+
+
+
+We use a Student-t distribution to characterize the mean (i.e. the expected) angle between the survey instrument (Likert and the three QV conditions). A Student-t, (unlike a Normal distribution) is heavy-tailed, in the sense that the Student-t distribution doesn't fall off as quickly as does a Normal distribution and will thus be able to better account for outliers in the data. The Student-t distribution has three parameters: the degrees of freedom ($\nu$), the experimental condition dependent mean ($\mu_j$) and scale ($\sigma_j$).  These parameters are random variables and we need to define their priors. Since our goal is to model the \textit{average} angle, the fact that the Student-t is unbounded while the angle $\theta \in [0, \pi]$ is bounded is unimportant.
+
+\begin{align}
+  \theta_{i \mid j} \sim & \mathrm{Student-t}(\nu, \mu_j, \sigma_j),   & \text{likelihood function to model donation} \label{eq:bayesian formulation} \\
+  \nu \sim & 1 + exp(\lambda), & \text{degrees of freedom} \\
+  \mu_j \sim & N(M_0, \sigma_0), & \text{modal angle in condition } j \\
+  \sigma_j \sim & \Gamma(\alpha, \beta), & \text{scale parameter for condition } j
+\end{align}
+ 
+\Cref{eq:bayesian formulation} says that the response $\theta_{i \mid j}$ of each group $j$ is modeled as a $\mathrm{Student-t}$ distribution with mode $\mu_j$,  scale $\sigma_j$ and with $\nu$ degrees of freedom. Next, we explain model parameters.
+
+
+\begin{description}
+    \item[Degrees of Freedom:] We draw the degrees of freedom $\nu$ from a shifted exponential distribution, to ensure $\nu \geq 1$; $\nu=\infty$, corresponds to a Normal distribution assumption.
+    \item[Modal contribution $\mu_j$ in each condition $j$:] The mode $\mu_j$ corresponding to each group is drawn from a Normally distributed random variables with constant mean $M_0$ and variance $\sigma_0$. 
+    \item[Scale $\sigma_j$ of each condition $j$:]  The scale $\sigma_j$ of the likelihood function is drawn from a Gamma distribution $\Gamma(\alpha, \beta)$, with mode $\alpha$ and scale $\beta$; this prior on $\sigma_j$ ensures that $\sigma_j > 0$. 
+    \item[Constants:] The constants $M_0, \sigma_0, \alpha, beta$ are set so that the priors are generous but weakly informative so that despite exploring all possible values, we ensure rapid MCMC convergence.
+\end{description}
+
+
+Having introduced our model, now we examine the results of the data analysis.
+
+% In our Bayesian formulation, 
+% the outcome variable $\theta_{i \mid j}$ 
+% is the Cosine similarity angle 
+% between a survey response vector and 
+% a donation amount vector of each participant $i$ 
+% under a given experimental condition $j$: 
+% Likert donation alignment, QV36 donation alignment, 
+% QV108 donation alignment, and QV324 donation alignment. 
+% Our goal is to first find four best fitting distributions
+% that describe the four sets of $\theta_{i \mid j}$ respectively, 
+% then compare the means of each pair of distributions 
+% to see if they differ significantly 
+% and substantially via Bayesian analysis.
+
+% \begin{figure}[htpb]
+%     \centering
+%     \includegraphics[width=0.6\textwidth, keepaspectratio=true]{content/image/model_1_diagram.pdf}
+%     \caption{
+%       Graphical representation of our Bayesian model \tc{Not sure how to add more details to this graph.})
+%     }
+%     \Description[Graphical representation of our Bayesian model for experiment 1]{Graphical representation of our Bayesian model for experiment 1}
+%     \label{fig:bayesian_model_exp1}
+% \end{figure}
+
+
+% \begin{quote}
+%     $\theta_{i \mid j} \sim$ Student-t$(\nu, \mu_j, \sigma_j)$, \hfill likelihood function to model angle in condition $j$ (1) \\
+%     $\nu \sim 1 + exp(\lambda)$, \hfill degrees of freedom (2) \\
+%     $\mu_j \sim N(M_0, SD_0)$, \hfill modal angle in condition $j$ (3) \\
+%     $\sigma_j \sim \Gamma(\alpha, \beta)$, \hfill scale parameter for condition j (4)
+% \end{quote}
+
+% We drew the degrees of freedom $\nu$ 
+% from a shifted exponential distribution 
+% to ensure that $\nu \geq 1$. 
+% The mode $\mu_j$ for condition $j$ was drawn 
+% from a Normal distribution 
+% with mean $M_0$ and scale $SD_0$, 
+% where $M_0$ and $SD_0$ were constants that were weakly informative. 
+% The scale parameter $\sigma_j$ was drawn from a Gamma distribution 
+% with generous $\alpha$ and $\beta$ constant values 
+% to ensure the scale parameter was always greater than zero. (\lwt{to-do: do I need to specifiy what the constants are?})
+% Now that we have finished introducing our Bayesian model, 
+% we present the results of our analysis.
 
 \subsubsection{Results Analysis}
     
@@ -529,24 +563,25 @@ a stochastic sampling technique.
 It samples the posterior distribution $P(\theta | D)$, 
 the distribution functions of the parameters 
 in the likelihood function given the data observations $D$. 
-We used the No-U Turn Sampler (NUTS) specifically 
-in our analysis. 
+% We used the No-U Turn Sampler (NUTS) specifically 
+% in our analysis. 
 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{content/image/StudentTIndep_VA_traceplot.pdf}
-    \caption{
-      Traceplot showing the results of the MCMC estimation. The left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$ of the Student-t distribution. The right column shows the corresponding sampling traces. The color mappings are: red - QV36, orange - QV108, green - QV324, blue - Likert. Note that the modal value for degrees of freedom $\nu$ is 7, confirming our choice of the Student-t distribution instead of the Normal distribution, which usually requires $\nu \geq 30$. Furthermore, the Gelman-Rubin statistic $\hat{R}$ for all parameters were 1, indicating that the multiple sampling chains converged.
-    }
-    \Description[Traceplot for experiment 1]{Traceplot for experiment 1}
-    \label{fig:traceplot_exp1}
-\end{figure}
 
-The Gelman-Rubin statistic $\hat{R}$ for all parameters were 1, 
-indicating that the multiple sampling chains converged.
-Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, 
-the model also shows good convergence. 
-The posterior distributions in the left column in Fig. \ref{fig:traceplot_exp1} show that the means of the four Student-t distributions that model the similarity angle, one for each experimental condition, vary. 
+\begin{sidewaysfigure*}
+  \centering
+  \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{content/image/StudentTIndep_VA_traceplot.pdf}
+  \caption{
+    Traceplot showing the results of the MCMC estimation. The left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$ of the Student-t distribution. The right column shows the corresponding sampling traces. The color mappings are: red (QV36), orange (QV108), green (QV324), blue (Likert). Notice that QV108 and QV324 cases are similar, and distinct from the QV36 and Likert. Likert shows the worst alignment: as a reminder, the ideal alignment angle should be $0^o$. Note also, that the modal value for degrees of freedom $\nu \approx 7$, confirming our choice of the Student-t distribution instead of the Normal distribution, which usually requires $\nu \geq 30$. Furthermore, the Gelman-Rubin statistic $\hat{R}$ for all parameters was 1, indicating  convergence of the sampling MCMC chains.
+  }
+  \Description[Traceplot for experiment 1]{Traceplot for experiment 1}
+  \label{fig:traceplot_exp1}
+\end{sidewaysfigure*}
+
+
+We show the traceplots of the MCMC chains in~\Cref{fig:traceplot_exp1}. The Gelman-Rubin statistic (a measure of MCMC convergence) $\hat{R}$ for all parameters was 1, indicating that the multiple sampling chains converged.
+% Based on the traceplots in Fig. \ref{fig:traceplot_exp1}, 
+% the model also shows good convergence. 
+The posterior distributions in the left column in~\Cref{fig:traceplot_exp1} show that the means of the four Student-t distributions that model the similarity angle, one for each experimental condition, vary. 
 In conditions QV108 and QV324 (the overlapping orange and green lines on the left-most side of the four distributions),
 the modes of the mean of the Cosine similarity angle 
 (QV108: $44.649 \deg$, QV324: $44.796 \deg$) 

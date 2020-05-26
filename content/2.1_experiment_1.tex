@@ -1,3 +1,60 @@
+\section{A Bayesian Approach}
+\label{A Bayesian Approach}
+
+Given the four sets of Cosine similarity angle,
+Likert, QV36, QV108, and QV324 conditions respectively,
+we employed a Bayesian formulation of the problem 
+to compare the degree of alignment between pairs of the conditions. 
+\textcite{kay2016researcher} introduced a few potential benefits  
+for applying Bayesian analysis in the HCI community. 
+A recent study by \textcite{xiao2019should}
+justified their use of Bayesian formulation 
+with two additional reasons.
+Based on benefits proposed by past studies, 
+we argued for our choice of Bayesian formulation 
+with the following three reasons:
+
+\begin{description}
+    \item[Transparency and Fewer Assumptions]
+    In a t-test or ANOVA, 
+    the data needs to follow several assumptions, 
+    including Normality and Homogeneity of variance. 
+    In our case, both assumptions may be violated. 
+    Hence, we used Bayesian formulation 
+    to relax the assumptions of normality and 
+    equal variances by defining 
+    a non-normal likelihood function 
+    and making variances independent across groups.
+    \item[Small $n$ Studies] 
+    Traditional statistical tests 
+    that assume normality 
+    required at least a sample size of 30. 
+    Even when a sample size is greater than 30, 
+    a large effect size may still produce 
+    an insignificant p-value 
+    due to a not sufficiently large sample. 
+    On the contrary, 
+    a Bayesian model is valid at every value of $n$. 
+    Given the relatively small sample 
+    of our Likert group, 
+    we chose to use a Bayesian model.
+    \item[Additional Information] 
+    Compared to traditional statistical analysis 
+    that only produce a single p-value 
+    and a single effect size value, 
+    a Bayesian model is able to produce 
+    the entire distribution of the effect size, 
+    making additional information available 
+    for clearer inference. 
+    In our study, 
+    effect size is in particularly important 
+    because the cost of switching to a new survey tool 
+    is not worthwhile 
+    if the effect size is not substantial 
+    even if we get a significant p-value.
+\end{description}
+
+
 \section{Experiment 1: Quadratic Voting, Likert surveys, and Donation}
 \subsection{Methodology} \label{method-1}
 % Experiment overview
