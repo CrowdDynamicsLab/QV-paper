@@ -1,93 +1,48 @@
 \subsection{Experiment 1 Analysis Results} \label{results-1-quan}
-In this section, 
-first present descriptive statistics 
-of the raw data in our first experiment. 
-Then, we explain our feature engineering 
-and data transformation process 
-of the raw data. 
-Lastly, we will introduce the Bayesian Model 
-we applied in our analysis 
-and present quantatative analysis results.
+In this section,  first present descriptive statistics  of the raw data in our first experiment.  Then, we explain our feature engineering  and data transformation process  of the raw data.  Lastly, we will introduce the Bayesian Model  we applied in our analysis  and present quantitative analysis results.
 
 \subsubsection{Descriptive Statistics of the Raw Data}
 % -- raw data
 %     describe the dataset, total # of participants in each group before and after dataset cleaning, demographics of each group;
     
-We collected 223 complete responses in the first experiment. 
-We removed four poor-quality responses where
-participants responded the qualitative question facetiously 
-or they misunderstood the prompt. 
-Among the 219 remaining responses, 
-56 completed the Likert path, 
-and the rest were distributed relatively evenly 
-across the remaining six subgroups with various orders of QV, 
-ranging from 24 to 28 responses per subgroup. 
-Aggregating responses from all six subgroups, 
-the number of responses collected for QV with 36 credits (QV36), 
-QV with 108 credits (QV108) and QV with 324 credits (QV324) 
-were 107, 108, and 111, respectively. 
+We collected 223 complete responses in the first experiment.  We removed four poor-quality responses where participants responded the qualitative question facetiously  or they misunderstood the prompt.  Among the 219 remaining responses,  56 completed the Likert path,  and the rest were distributed relatively evenly  across the remaining six subgroups with various orders of QV,  ranging from 24 to 28 responses per subgroup.  Aggregating responses from all six subgroups,  the number of responses collected for QV with 36 credits (QV36),  QV with 108 credits (QV108) and QV with 324 credits (QV324)  were 107, 108, and 111, respectively. 
 %(To-do: maybe add a hierarchical graph the represents how responses from different paths are aggregated)
 
-We recruited the participants 
-to match that of the US 2019 census data 
-in terms of age and education level. 
-Having a representative sample is critical because of the generalizability of voting and survey tools. 
-Based on Table \ref{table:demo_exp1}, 
-all the groups followed the demographics in both age and education level. 
-This ensured unbiased results toward any subgroup of the population, 
-which is generally hard to achieve in MTurk studies without specific control \cite{difallah2018demographics}.
+We recruited the participants  to match that of the US 2019 census data  in terms of age and education level.  Having a representative sample is critical because of the generalizability of voting and survey tools.  Based on Table \ref{table:demo_exp1},  all the groups followed the demographics in both age and education level.  This ensured unbiased results toward any subgroup of the population,  which is generally hard to achieve in MTurk studies without specific control \cite{difallah2018demographics}.
+
 
 \begin{table}
-    \centering
-    \caption{
-        Experiment one's sample demographics statistics aligns closely with 2019 US census across all groups and subgroup.
-    }
-    \Description[Experiment one's sample demographics statistics aligns closely with 2019 US census across all groups and subgroup.]{
-        Experiment one's sample demographics statistics aligns closely with 2019 US census across all groups and subgroup.
-    }
-    \label{table:demo_exp1}
-    \begin{tabular}{|c|ccccc|c|} 
-    \hline
-     & \begin{tabular}[c]{@{}c@{}}Likert\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}QV36\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}QV108\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}QV324\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}Total\\Perc \end{tabular} & \begin{tabular}[c]{@{}c@{}}Census\\Perc* \end{tabular} \\ 
-    \hline
-    No High School & 16.07\% & 14.02\% & 13.89\% & 14.41\% & 14.61\% & 10.22\% \\
-    High School & 25.00\% & 27.10\% & 25.93\% & 26.13\% & 26.03\% & 27.73\% \\
-    Some College  Associate & 28.57\% & 26.17\% & 34.26\% & 34.23\% & 32.88\% & 33.09\% \\
-    Bachelor's Degree above & 30.36\% & 32.71\% & 34.26\% & 34.23\% & 32.88\% & 33.09\% \\ 
-    \hline
-    18 - 24 & 21.43\% & 15.89\% & 14.81\% & 15.32\% & 16.89\% & 13.65\% \\
-    25 - 39 & 26.79\% & 29.91\% & 30.56\% & 29.73\% & 29.22\% & 30.74\% \\
-    40 - 54 & 25.00\% & 29.91\% & 28.70\% & 29.73\% & 28.31\% & 28.32\% \\
-    55 - 69 & 26.79\% & 24.30\% & 25.93\% & 25.23\% & 25.57\% & 27.29\% \\
-    \hline
-    \end{tabular}
-    \vspace{-10px} %tempoary
+  \centering
+  \caption{Experiment one's sample demographics statistics aligns closely with 2019 US census across all groups and subgroup.} \label{table:demo_exp1}
+  \sisetup{
+    table-number-alignment = center, 
+    table-figures-integer = 2, 
+    table-figures-decimal = 2,
+    round-mode = figures,
+    round-precision = 3,
+    detect-weight=true
+    % mode=text
+  } \begin{tabularx}{0.98\textwidth}
+    {@{}>{\raggedleft\arraybackslash}XSSSS>{\bfseries}SS@{}}
+    \toprule
+    Demographics & {Likert (\si{\percent})} &  {QV36 (\si{\percent})} & {QV108 (\si{\percent})} & {QV324 (\si{\percent})} & {All (\si{\percent})} & {Census (\si{\percent})} \\
+    \midrule
+    No High School & 16.07  & 14.02  & 13.89  & 14.41  & 14.61  & 10.22  \\
+    High School & 25.00  & 27.10  & 25.93  & 26.13  & 26.03  & 27.73  \\
+    College  Associate & 28.57  & 26.17  & 34.26  & 34.23  & 32.88  & 33.09  \\
+    Bachelor's Degree and above & 30.36  & 32.71  & 34.26  & 34.23  & 32.88  & 33.09  \\ 
+    18 - 24 & 21.43  & 15.89  & 14.81  & 15.32  & 16.89  & 13.65  \\
+    25 - 39 & 26.79  & 29.91  & 30.56  & 29.73  & 29.22  & 30.74  \\
+    40 - 54 & 25.00  & 29.91  & 28.70  & 29.73  & 28.31  & 28.32  \\
+    55 - 69 & 26.79  & 24.30  & 25.93  & 25.23  & 25.57  & 27.29  \\
+    \bottomrule\end{tabularx}
 \end{table}
 
+
 % donation descriptive statistics: perc of non-zero donation, total donation amount comparison across groups, donation distribution across topics between groups
-We can match each survey response, 
-either a Likert or QV response,
-to the set of donation decisions
-made by a participant.
-Since we use the donation outcome of a participant 
-as a proxy of their true preferences 
-across the nine societal causes, 
-we could only analyze
-participants who donated a non-zero amount of money.
-Therefore, we further filtered the dataset 
-to keep only the responses 
-that had a non-zero total donation amount.
-Across all the conditions, 
-the average non-zero donation rate was $73.3\%$,
-consistent with the results provided by \textcite{fehr2007human} in \citeyear{fehr2007human},
-which suggested that about $30\%$ of the population 
-would always free-ride in public goods provision 
-regardless of what others do. 
-The donation rate in each condition 
-closely centered around the average donation rate, 
-ranging from $70.37\%$ (in QV108) and $77.19\%$ (in Likert).
-The number of valid responses after filtering out zero-donation participants for
-Likert, QV36, QV108, and QV324 were $44$, $76$, $76$ and $84$ respectively.
+
+
+We can match each survey response,  either a Likert or QV response, to the set of donation decisions made by a participant. Since we use the donation outcome of a participant  as a proxy of their true preferences  across the nine societal causes,  we could only analyze participants who donated a non-zero amount of money. Therefore, we further filtered the dataset  to keep only the responses  that had a non-zero total donation amount. Across all the conditions,  the average non-zero donation rate was $73.3\%$, consistent with the results provided by \textcite{fehr2007human} in \citeyear{fehr2007human}, which suggested that about $30\%$ of the population  would always free-ride in public goods provision  regardless of what others do.  The donation rate in each condition  closely centered around the average donation rate,  ranging from $70.37\%$ (in QV108) and $77.19\%$ (in Likert). The number of valid responses after filtering out zero-donation participants for Likert, QV36, QV108, and QV324 were $44$, $76$, $76$ and $84$ respectively.
 
 Among those who donated a non-zero amount,
 participants exhibited different behaviors
