@@ -342,6 +342,67 @@ we set up a Bayesian Model
 with these four sets of Cosine similarity angle for each 
 condition as described in the next subsection.
 
+\subsection{A Bayesian Approach}
+\label{A Bayesian Approach}
+
+In many survey analysis experiments, researchers relied heavily on the null hypothesis statistical tests (NHST) to determine whether a phenomenon is statistically significant or not, to support their hypothesis. This method leads to controversies in the field for a very long time. One major challenge of NHST came from its goal: rejecting the null hypothesis. Instead of answering the alternative directly, this made NHST easy to overstate the evidence against the null hypothesis \cite{david2000NHST}. In addition, some researchers \cite{kruschke2010bayesian} argued that it is easy to `p-hack' an experiment by replicating an experiment repetitively and only reporting the ones with significant results. There are heated debates upon confidence intervals, alpha values, the sample size decision, and many others when discussing related issues of NHST.
+
+Therefore, some researchers advocated the use of Bayesian data analysis. The core concept of Bayesian analysis is updating and reallocating the belief as one gathered more information with the use of Bayes rules. Kay et al. \cite{kay2016researcher} introduced a few potential benefits to using this analysis method. First, when working with Bayesian, the process is more transparent and requires fewer assumptions. In a t-test or ANOVA, the data needs to follow several assumptions, including normality and homogeneity of variance. Second, traditional statistical tests that assume normality required at least a sample size of 30. Even when the sample size is greater than 30, a large effect size may still produce an insignificant p-value due to an insufficiently large sample. On the contrary, a Bayesian model is valid at every value of the sample size. Last but not least, Bayesian provides more insights from the outcome. When comparing traditional statistical analysis that only produces a single p-value and a unique effect size value, a Bayesian model can provide the entire distribution of the effect size, making additional information available for a clear inference.
+
+Given the four sets of Cosine similarity angle,
+Likert, QV36, QV108, and QV324 conditions respectively,
+we employed a Bayesian formulation of the problem 
+to compare the degree of alignment between pairs of the conditions. 
+\textcite{kay2016researcher} introduced a few potential benefits  
+for applying Bayesian analysis in the HCI community. 
+A recent study by \textcite{xiao2019should}
+justified their use of Bayesian formulation 
+with two additional reasons.
+Based on benefits proposed by past studies, 
+we argued for our choice of Bayesian formulation 
+with the following three reasons:
+
+\begin{description}
+    \item[Transparency and Fewer Assumptions]
+    In a t-test or ANOVA, 
+    the data needs to follow several assumptions, 
+    including Normality and Homogeneity of variance. 
+    In our case, both assumptions may be violated. 
+    Hence, we used Bayesian formulation 
+    to relax the assumptions of normality and 
+    equal variances by defining 
+    a non-normal likelihood function 
+    and making variances independent across groups.
+    \item[Small $n$ Studies] 
+    Traditional statistical tests 
+    that assume normality 
+    required at least a sample size of 30. 
+    Even when a sample size is greater than 30, 
+    a large effect size may still produce 
+    an insignificant p-value 
+    due to a not sufficiently large sample. 
+    On the contrary, 
+    a Bayesian model is valid at every value of $n$. 
+    Given the relatively small sample 
+    of our Likert group, 
+    we chose to use a Bayesian model.
+    \item[Additional Information] 
+    Compared to traditional statistical analysis 
+    that only produce a single p-value 
+    and a single effect size value, 
+    a Bayesian model is able to produce 
+    the entire distribution of the effect size, 
+    making additional information available 
+    for clearer inference. 
+    In our study, 
+    effect size is in particularly important 
+    because the cost of switching to a new survey tool 
+    is not worthwhile 
+    if the effect size is not substantial 
+    even if we get a significant p-value.
+\end{description}
+
+
 % \subsubsection{Bayesian Formulation}
 % % -- Bayesian formulation
 % %     why Bayesian
