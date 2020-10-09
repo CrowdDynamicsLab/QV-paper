@@ -1,9 +1,14 @@
-\section{Experiment 1: Quadratic Voting, Likert surveys, and Donation}
-We designed a between-subject experiment to answer RQ1 and RQ3. We recruited participants from Amazon Mechanical Turk (MTurk) and divided them into two groups: the Likert group and the QV group. Participants in both groups received compensation once they completed the experiment. The Likert Group received \$0.75, and the QV Group received \$1.75 due to the difference in the length of the study. The goal of a between-subject study is to understand how different the two survey tools yield results independently.
+\section{Methods -- Experiment 1: Importance of Societal Causes}~\label{method_exp1}
 
-To conduct the comparison of the QV and Likert survey, we ought to collect the participant's true preferences as a baseline. This baseline comes from the amount of donation that participants donated to a charity. We believe that an individual's donation behavior is similar to their attitude of whom they contributed. We believe donation is a suitable task because of the following reasons. First, donation tasks are easily relatable, given that they occurred in real life. Adult individuals regularly exercise monetary behaviors and make financial decisions daily. These characteristics of the donation task mean that participants should not have challenges completing this task. Second, donations are simple to conduct, even on a large scale. It does not require in-person interactions. Third, donation tasks appeared in many experiments \cite{Xiao2019, benz2008people, gendall2010effect} as a valid indicator of participants' behavior. Fourth, donating is a behavior that contains complimentary and homogenous choices, and each of the options is independent. The donation task is a clear example of choosing one out of $K$ in a real-life setting.
+We designed a between-subject randomized controlled experiment to answer RQ1 and RQ3. We recruited participants with diverse demographics located in the US from Amazon Mechanical Turk (MTurk) and randomly assigned them into two groups: the Likert group and the QV group. Participants in the Likert group received \$0.75, and those in the QV group received \$2.5 due to longer study lengths. 
 
-\section{Experiment Flow}
+We introduced the study to the participants as an effort to understand their opinions towards \texti{the importance of various societal causes}, such as the environment, education, veteran. We focused on the topic of societal causes because public goods and resource allocation across societal causes is a problem relevant to every citizens (citation needed). Due to resource constraints, this problem is a typical example of choosing among $K$ paralleled options.
+
+For each participant, they completed one of the two kinds of surveys on the importance of the nine societal causes and a donation task for nine charities, one from each societal cause. We detail the flow of our experiment in this section.
+
+
+
+\subsection{Experimental Flow}
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/exp1_flow.pdf}
@@ -13,58 +18,155 @@ To conduct the comparison of the QV and Likert survey, we ought to collect the p
     \label{fig:exp1_image_flow}
 \end{figure}
 
-We summarize the experiment procedure in \Cref{fig:exp1_image_flow}. The experiment consisted of four steps: Participants filled out the demographic survey as the first step. Based on the demographics, participants completed one or more surveys, as highlighted in the figure. Participants in the Likert group filled out one Likert survey, while participants in the QV group completed two QV surveys. After that, participants filled out another survey, the distraction survey, to divert their attention before completing the final task. We ask participants to donate to a list of charities. We explain each of these steps in detail.
+\Cref{fig:exp1_image_flow} summarizes the experimental procedure. The experiment consisted of four steps: 1) demographic survey, 2) Likert or QV survey, 3) distraction survey, and 4) donation task. We provide the detailed surveys in the supplementary materials.
 
-Before starting the experiment, we told participants in the consent form that this study aimed to understand their opinions on several social causes and required them to complete a donation task. Participants completed a demographic survey after confirming the consent form. We collected the participant's gender, ethnicity, age range, household income level, education level, and current occupation. Based on the age and education level, we divided participants into seven groups and ensured that each group contained similar distribution as to the 2019 United States census. This experiment further categorized into seven groups: the Likert Group (Group 1) and the QV Group (Group 2 to Group 7).\par
+% Participants filled out the demographic survey as the first step. Based on the demographics, participants completed one or more surveys, as highlighted in the figure. Participants in the Likert group filled out one Likert survey, while participants in the QV group completed two QV surveys. After that, participants filled out another survey, the distraction survey, to divert their attention before completing the final task. We ask participants to donate to a list of charities. We explain each of these steps in detail.
 
-The Likert Group, shown as the upper path in the shaded area of \Cref{fig:exp1_image_flow}, expressed their opinion using a Likert survey. The QV Group, shown as the lower path in the shaded area of \Cref{fig:exp1_image_flow}, revealed their opinions by completing two QVs, each with a different number of voice credits. We divided the QV Group into six subgroups to answer research question three, which, investigated how the number of voice credits impacted the survey results.Participants were randomly assigned to two voice credits from three possible values: $N \times O$, $N^{1.5} \times O$, and $N^2 \times O$. Here, $N$ is the number of options in the survey, and $O$ is the number of levels excluding neutral on the Likert survey. In this experiment, participants answered their opinion to $9$ societal causes, therefore $N=9$. We used a five-point Likert survey, which translated to $O=4$. Thus, the three possible voice credits in the experiment were $36$, $108$, and $324$. With these three possible values, each of the six subgroups represented a combination of any two voice credits.\par
+\subsubsection{Step 1: Demographic Survey}
+% Before starting the experiment, we told participants in the consent form that this study aimed to understand their opinions on several social causes and required them to complete a donation task. 
+After signing the consent form, participants completed a demographic survey that asked for their gender, ethnicity, age, household income level, education level, and current occupation. We recruited participants in a manner that aligned the participants' age and education level distributions in each experimental group with those of the US population based on the 2019 United States census. 
+% This experiment further categorized into seven groups: the Likert Group (Group 1) and the QV Group (Group 2 to Group 7).\par
 
-We knew that a voice credit too little will bar participants from expressing their opinion. Therefore, we want to make sure that even with QV that had the lowest voice credit, participants can strategically express the same result in QV as if they were in Likert. Given that we used a 5-point Likert scale in the experiment, which the participant can select up to ``very agree''  or ``very disagree'', the participant would need at least four voice credits to express the same level of responses in a QV scenario. Participants do not need to use all their voice credits, so the maximum amount of voice credit participants need to express any combination of the response of a Likert is $N \times O$. To test how larger voice credits impacted people's choices, we set an exponential increase based on the number of options on the survey that changed from power of $1$, $1.5$ to $2$.\par
+\subsubsection{Step 2.1: Likert Survey}
+The experiment randomly assigned some of the participants to the Likert group, shown in the upper path of \Cref{fig:exp1_image_flow}. In the prompt, we explicitly told the participants that there are limited resources in society, and people have different preferences at allocating resources to various societal causes. The survey focused on nine societal issues, including 1) pets and animals, 2) arts, culture and humanities, 3) education, 4) environment, 5) health, 6) human services, 7) international causes, 8) faith and spiritual causes, and 9) veteran\footnote{For detail definitions of each cause, please refer to~\Cref{cause_def}}. We derived the nine societal causes from the categorization of charity groups on Amazon Smile, a popular donation website that has accumulated over 100 million dollars of donations.
 
-For the Likert group, the survey looked identical to a typical five-point Likert survey. We assumed that participants had prior knowledge in Likert surveys. Participants were presented with the nine societal causes, and were asked the importance each of these causes: With options ranging from ``Very important'' to ``Very Unimportant.''
+We asked the participants to rate each of the nine societal issues on a 5-point Likert scale: 
+``For each of the issues listed below, how important do you think the issue is to you and that more effort and resources should be contributed toward the issue?''. The 5-point Likert options ranged from ``Very important'' to ``Very Unimportant.'' We used a 5-point Likert scale as invented by Rensis Likert \cite{likert1932technique}. Some researchers also argue that 5, 7 , or 10 point Likert surveys are comparable and transferable \cite{dawes2008data}.
 
-For the QV group, we asked participants to watch a prerecorded tutorial video of QV's concept and how to operate the QV interface. The experiment allowed participants unlimited time to interact with a demo QV interface to make sure that they were comfortable working with QV. This process is what the ``tutorial on quadratic voting'' stands for in \Cref{fig:exp1_image_flow}. To ensure that participants paid attention to the video and understood QV, we asked participants to answer a quiz containing five multiple-choice questions. They would continue with the survey if they answered at least three questions correctly. Once participants passed the quiz, participants will encounter a QV with either 36, 108, or 324 voice credits. They vote in QV using these voice credits on the nine identical options presented to the Likert Group. Participants would repeat this action using a different voice credit. We show these two QV surveys as two QV icons in \Cref{fig:exp1_image_flow}.
 
-After both groups of participants completed their surveys in the opinion collection stage, they finished a short answer question asking their thoughts related to another set of societal issues. These societal issues in this survey were unrelated to any presented in the previous stage. We designed this survey to distract participants intentionally. We do not want participants to connect their survey responses directly to their behaviors in the donation task.
+\subsubsection{Step 2.2: QV Survey}
+The QV group took the lower path in \Cref{fig:exp1_image_flow}. We first asked participants to watch a pre-recorded tutorial video that introduced how QV works and how to operate our QV interface. Participants had unlimited time to interact with a demo QV interface to familiarize themselves with QV. To ensure that the participants paid attention and understood QV, they needed to answer at least three out of five multiple-choice quiz questions related to QV correctly to continue with the study.
 
-The last step of this experiment was asking participants to complete a donation task. This task presented participants with nine organizations, each referring to one of the nine societal causes that we listed during the opinion collection phase. Participants could donate any amount to any of the organizations listed on the donation page as long as the total donation value did not exceed \$$35$ dollars. While participants did not donate out of their pocket, to ensure incentive compatibility, we designed a mechanism so that participants did not donate imaginatively. Participants were aware that everyone in $70$ participants would win $35$ U.S. dollars. Assuming winning the \$$35$ U.S. dollars, we asked participants if they would want to donate some money to any of the nine charity groups. Participants are also aware that they keep the remaining amount of undonated cash if they win the lottery. Further, participants were aware that the research team would match one dollar to each dollar they donated to an organization if they won the lottery. This setup meant that the donation behavior carried an underlying cost.
 
-To minimize the difference across groups in the study, we used the same prompt across the Likert survey, QV, and the donation task. We explicitly told the participants that there are limited resources in society, and people have different preferences at allocating resources. We asked the participants, 
-``What societal issues need more support?'' across all our surveys.
+Once they passed the quiz, participants encountered two of the three versions of the QV surveys at random. The three versions of QV had 36, 108, and 324 voice credits, respectively. We showed them the same prompt and instructed them to answer the same question for the nine identical issues in the Likert group, but using QV instead. They may cast positive votes for important causes in their opinion, and negative votes for issues there were unimportant to them.
+% They vote in QV using these voice credits on the nine identical options presented to the Likert Group. Participants would repeat this action using a different voice credit. We show these two QV surveys as two QV icons in \Cref{fig:exp1_image_flow}.
 
-To ensure that the nine societal causes covered a broad spectrum of categories. We used the categorization of charity groups on Amazon Smile, a popular donation website that has accumulated over 100 million dollars of donations, as our topics of the societal causes. The categories include:
-\begin{enumerate}[label={},leftmargin=\parindent]
-    \item (1) Pets and Animals: Animal Rights, Welfare, and Services; Wildlife Conservation; Zoos and Aquariums
-    \item (2) Arts, Culture, Humanities: Libraries, Historical Societies, and Landmark Preservation; Museums; Performing Arts; Public Broadcasting and Media
-    \item (3) Education: Early Childhood Programs and Services; Youth Education Programs and Services; Adult Education Programs and Services; Special Education; Education Policy and Reform; Scholarship and Financial Support
-    \item (4) Environment: Environmental Protection and Conservation; Botanical Gardens, Parks and Nature Centers
-    \item (5) Health: Diseases, Disorders, and Disciplines; Patient and Family Support; Treatment and Prevention Services; Medical Research
-    \item (6) Human Services: Children's and Family Services; Youth Development, Shelter, and Crisis Services; Food Banks, Food Pantries, and Food Distribution; Multipurpose Human Service Organizations; Homeless Services; Social Services
-    \item (7) International: Development and Relief Services; International Peace, Security, and Affairs; Humanitarian Relief Supplies
-    \item (8) Faith and Spiritual: Religious Activities; Religious Media and Broadcasting
-    \item (9) Veteran: Wounded Troops Services, Military Social Services, Military Family Support
-\end{enumerate}
-Within each of these categories, we selected one charity organization from Amazon Smile to represent the subject matter used in the donation task. We provide the surveys and the donation task in the appendix.
+We designed three versions of the QV survey and divided the QV group participants into six subgroups to answer RQ3 -- how may the number of voice credits in QV impact the survey results empirically. We investigated three levels of voice credits: $N \times O$, $N^{1.5} \times O$, and $N^2 \times O$. Here, $N$ is the number of items in the survey. $O$ is the number of credits required to express an attitude in QV that is equivalent to the strongest attitude in a 5-point Likert survey, where ``Neutral" in Likert = 0 vote in QV and one level in Likert = one vote in QV. In this experiment, $N=9$ corresponded to the $9$ societal causes. We used a five-point Likert survey with extreme levels at $+/-2$; hence the participant would need four voice credits ($2^2=4$) to express the extreme Likert levels in QV, which translated to $O=4$. Thus, the three levels of voice credits in the experiment were $36$ (QV36), $108$ (QV108), and $324$ (QV324). In all three cases, participants could afford to express any results from Likert in the form of QV. To examine how larger voice credit budgets impacted people's choices, we set an exponential increase based on the number of items on the survey ($N^1$, $N^{1.5}$ to $N^2$).
 
-\section{System Design}
-For this experiment, we redesigned many elements of the experiment platform used in the pretest. We used Python Flask for the back-end implementation and MongoDB Atlas for the database. Different from pretest, we rewrote a more compact and clean interface with Angular.js. The experiment source code is publicly available \footnote{https://github.com/a2975667/QV-app}, and so is the QV interface \footnote{https://github.com/hank0982/QV-app}. The QV interface repository is a stand-alone repository written in Angular and Flask.
+% We knew that a voice credit too little will bar participants from expressing their opinion. Therefore, we want to make sure that even with QV that had the lowest voice credit, participants can strategically express the same result in QV as if they were in Likert. Given that we used a 5-point Likert scale in the experiment, which the participant can select up to ``very agree''  or ``very disagree'', the participant would need at least four voice credits to express the same level of responses in a QV scenario. Participants do not need to use all their voice credits, so the maximum amount of voice credit participants need to express any combination of the response of a Likert is $N \times O$. \par
+
+\subsubsection{Step 3: Distraction Survey}
+After both groups of participants completed their surveys on the nine societal causes, they had to answer a free-form text question about their thoughts about another set of societal issues, unrelated to those presented in the previous stage. Since we did not want participants to directly connect their survey responses with their decisions in the donation task, we designed this survey to distract participants intentionally. 
+
+\subsubsection{Step 4: Donation Task}
+The last step of the experiment involved a donation task. Participants needed to decide which organization(s) among the nine listed organizations to support via donation. Each charity was selected via Amazon Smile and corresponded to one of the nine societal causes during the opinion collection phase. We included an introduction and an official website for each organization, but we chose not to show their mapping to the causes explicitly to the participants to maintain as much independence between the survey responses and the donation decisions as possible. 
+
+We designed the donation task to collect the approximated ground-truth of the participants' preferences towards the nine societal issues, i.e., their donation amount should reflect how much they truly care about the issues. We compared both Likert and QV survey responses to this approximated ground-truth in our analysis. To elicit their most truthful beliefs, we designed a donation mechanism that was incentive-compatible -- to the best of their interest, they should donate more to organization A than organization B only if they care more about the cause of organization A. 
+
+Participants were aware that every one in $70$ participants would win $\$35$ as a bonus. We asked them whether they would like to donate part of the bonus to any of the nine charity groups, if they were the winner. They would keep the remaining amount from the $\$35$ after donation to themselves. While participants could donate any amount to any of the organizations as long as the total donation value did not exceed \$$35$ dollars, they would want to maximize their bonus, which encouraged them to be incentive-compatible. To increase participants' chance of donating a non-zero total amount, the research team promised to match $\$1$ to each dollar they donated to an organization and execute the donation on their behalf if they won the lottery. 
+% This setup meant that the donation behavior carried an underlying cost.
+
+
+We believe donation was a suitable task to collect the approximated ground-truth of the participants' preferences towards the nine societal issues. First, donation tasks are easily relatable, given that they occur in real-life settings. Second, donations are simple to conduct online and on a large scale. Lastly, donation tasks appeared in many experiments \cite{Xiao2019, benz2008people, gendall2010effect} as an indicator of participants' behavior. 
+% Fourth, donating is a behavior that contains complimentary and homogenous choices, and each of the options is independent. The donation task is a clear example of choosing one out of $K$ in a real-life setting.
+% Adult individuals regularly exercise monetary behaviors and make financial decisions daily. These characteristics of the donation task mean that participants should not have challenges completing this task. 
+
+% To minimize the difference across groups in the study, we used the same prompt across the Likert survey, QV, and the donation task. We explicitly told the participants that there are limited resources in society, and people have different preferences at allocating resources. We asked the participants, 
+% ``What societal issues need more support?'' across all our surveys.
+
+
+\subsection{System Design}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.7\textwidth, keepaspectratio=true]{content/image/qv-donation.png}
     \caption{
-        The QV voting interface used in the experiments. 
+        Our QV interface design in the experiments. 
         We omitted the prompt in this figure.
-        After mutiple iterations, 
-        the interface allows participants to vote, 
-        with real time feedback of how the votes allocats. 
-        The progress bar implementation 
-        were inspired by knapsack voting interface by \cite{goel2015knapsack}.
+        After multiple design iterations, 
+        the final interface allows participants to vote, with real-time feedback of how the credits are allocated. 
+        The progress bar design was inspired by the knapsack voting interface by \cite{goel2015knapsack}.
     }
     \label{fig:qv_donation}
 \end{figure}
 
-The QV interface (\Cref{fig:qv_donation}) added more visual information than the pretest interface to reduce the participant's cognitive load. In this figure, we omitted the prompted on top of the page. The body section is the voting panel that contained all options to vote. To the left of each option, participants vote using the plus and minus buttons. Buttons were automatically disabled if the number of voice credits remaining does not permit the next vote of that item. Instead of cluttering information beneath each option in QV, we presented the information about that option to the left-hand side. We provided participants a bar right of the option, which showed the proportion of voice credits used to that option with text associated with the visual. We changed the color for the icons for ``for'' and ``against'' votes to improve accessibility. We floated the summary panel to the bottom of the page to ensure visibility. In the summary panel, we displayed a progress bar that showed the number of voice credits the participants have and have not used.\par
+We designed the QV interface through an iterative design process, with the goal to use visual information to reduce participants' cognitive load. \Cref{fig:qv_donation} shows the body section of the voting panel that contained a list of options to vote on. To the left of each option, participants voted using the plus and minus buttons. Buttons for an item were automatically disabled if the number of voice credits remaining did not permit an additional vote for that item. The number of blue or yellow icons next to the item represented the number of ``for'' and ``against'' votes. We provided participants a bar with percentages to the right of each option, which showed the proportion of voice credits used for that option.  In the summary panel, a progress bar showed the number of voice credits the participants have and have not used out of the total budget. We floated the summary panel at the bottom of the page at anytime to ensure visibility.
+
+For our experimental system, we used Angular.js for the front-end, Python Flask for the back-end implementation, and MongoDB Atlas for the database. The experimental system source code is publicly available \footnote{https://github.com/a2975667/QV-app}, and so is the code for the standalone QV interface \footnote{https://github.com/hank0982/QV-app}. 
+% The QV interface repository is a stand-alone repository written in Angular and Flask.
+
+
+\subsection{Analysis Method -- Opinions Alignment Metric}~\label{alignment_metric}
+% -- data transformation to alignment measurement
+%     describe the calculation of cosine similarity angle theta
+%     mention our test of checking if other factors impact total donation amount -> absolute vs. normalized donation amount
+%     show histogram and other descriptive statistics of the angle data
+We break our research question on alignment into two parts. First, we ask how similar these individual survey responses are to a participant's incentive-compatible behavior. Then we ask, how does QV and Likert compare overall in terms of the degree of alignment? To answer the first question, we need a metric for alignment.
+
+We first clarify the definition of "alignment" in our analysis. A perfect alignment between a survey response and the same participant's donation choices requires an individual to express their preferences in survey with the same relative strength as their donation amount. More formally, it is defined as the following:
+
+\begin{quote}
+    A set of survey response $\vec{v} = [v_1, v_2, ..., v_n]$, and a set of donation amount $\vec{d} = [d_1, d_2, ..., d_n]$, where $n$ is the number of topics or options involved in the decision, are perfectly aligned if there exists a positive constant $k>0$ that satisfies $k\vec{v} = \vec{d}$.
+\end{quote}
+
+Notice now we represent the a participant's response in Likert survey, QV, and donation each with a vector of the same length. In addition, we focus the definition of alignment on the \textit{relative} strength across opinions for two reasons. First, the results from our four types of surveys (Likert, QV36, QV108, QV324) 
+and the donation task were not on the same scale. 
+For example, the maximum possible number of votes on a topic in QV36 was 6, while the maximum donation amount on a topic was \$35. A relative scale maps each response onto the same space. The other reason is when any two participants donated different absolute amounts, possibly due to other factors such as income level or level of education, we want to capture how they \textit{distributed} their total donation amounts. In other words, participants might donate with the \textit{same} set of preferences across topics, but with \textit{different} levels of total amount they were willing to donate. Hence, we decided to care only about 
+the relative strength in opinions across topics.
+
+Next, we need a metric that measures the degree of alignment. This metric needs to be monotonic with respect to the amount of discrepancy between two preference vectors in terms of the relative strength across preferences. In addition, this metric needs to be easily interpretable. Therefore, we decided to make use of the Cosine similarity metric as our alignment metric and represent the difference between the survey results and the donation amount with an angle $\theta$. It is formally defined as the following:
+
+\begin{quote}
+    The Cosine similarity angle $\theta$ between a set of survey response $\vec{v} = [v_1, v_2, ..., v_n] \in \mathbb{R}^n$, and a set of donation amount $\vec{d} = [d_1, d_2, ..., d_n] \in \mathbb{R}^n$, where $n$ is the number of topics or options involved in the decision, is calculated via $\theta = \frac{180}{\pi} \arccos{\frac{\vec{v} \cdot \vec{d}}{\|\vec{v}\| \|\vec{d}\|}}$, and $0\deg \leq \theta \leq 180\deg$.
+\end{quote}
+
+Cosine similarity is a commonly used similarity metric 
+that measures the cosine of the angle between two non-zero vectors \cite{singhal2001modern}. Instead of resulting in a value between $0$ and $1$, we use the the angle degree for Cosine similarity, which represents the same information but provides more intuitive interpretation.
+%The definition of the angle of Cosine similarity fits our need perfectly. 
+It is monotonic with respect to the relative orientations of the two vectors, i.e., the relative strength in opinions, and does not take into account the magnitude of the vectors, i.e., absolute vote or donation amount. Two sets of perfectly align opinions 
+will yield a Cosine similarity angle of zero, while two sets of completely opposite opinions will result in an angle of 180 degree.
+
+% Intuitively,
+% to compute the Cosine similarity angle 
+% for each participant in each group,
+% we first translate each response,
+% urvey results from Likert, QV36, QV108, QV324, and 
+% their corresponding truthful preferences 
+% reflected in the donation task,
+% into a vector. %mentioned above can repeat if necessary
+For the Likert group, we map the ordinal responses into a vector where the result for each topic ranges from $-2$ to $2$. For each of the three QV conditions, the vector contains the number of votes of the topics as is. Then, for each individual, we computed the Cosine similarity angle between the Likert or QV vector and the absolute donation amount of the same individual. 
+
+Once we gather these data, we move on to the next step where we uncover how the Cosine similarity angles compare across the Likert group and the three QV variances (QV36, QV108 and QV324). To complete this,
+we set up a Bayesian Model with these four sets of Cosine similarity angle for each condition, as described in the next subsection.
+
+\subsection{Analysis Method -- A Bayesian Approach}
+\label{exp1:The Bayesian Model}
+
+
+In many survey analysis experiments, researchers relied heavily on the null hypothesis statistical tests (NHST) to determine whether a phenomenon is statistically significant or not, to support their hypothesis. This method leads to controversies in the field for a very long time. One major challenge of NHST came from its goal: rejecting the null hypothesis. Instead of answering the alternative directly, this made NHST easy to overstate the evidence against the null hypothesis \cite{david2000NHST}. In addition, some researchers \cite{kruschke2010bayesian} argued that it is easy to `p-hack' an experiment by replicating an experiment repetitively and only reporting the ones with significant results. There are heated debates upon confidence intervals, alpha values, the sample size decision, and many others when discussing related issues of NHST.
+
+Therefore, some researchers advocated the use of Bayesian data analysis. The core concept of Bayesian analysis is updating and reallocating the belief as one gather more information with the use of Bayes rules. Kay et al. \cite{kay2016researcher} introduced a few potential benefits to using this analysis method. First, when working with Bayesian, the process is more transparent and requires fewer assumptions. In a t-test or ANOVA, the data needs to follow several assumptions, including normality and homogeneity of variance. Second, traditional statistical tests that assume normality required at least a sample size of 30. Even when the sample size is greater than 30, a large effect size may still produce an insignificant p-value due to an insufficiently large sample. On the contrary, a Bayesian model is valid at every value of the sample size. Last but not least, Bayesian provides more insights from the outcome. When comparing traditional statistical analysis that only produces a single p-value and a unique effect size value, a Bayesian model can provide the entire distribution of the effect size, making additional information available for a clear inference.
+
+
+Now, we discuss our Bayesian formulation. There is one outcome variable: $\theta_{i \mid j}$, the cosine similarity angle between a survey response vector and a donation amount vector of each participant $i$  under each of the four experimental conditions $j$: Likert, and three QV conditions (with 36, 108 and 324 credits). In summary, we aim to fit a distribution for the mean (i.e. the expected) angle between each survey instrument and the donation amount. Then we compare how different the four distributions are. 
+
+In a Bayesian formulation, we need to define a likelihood function to model the cosine similarity under each condition. In general, this is a parametric formulation, and consistent with~\textcite{McElreath2015}. The likelihood function represents the modeler's view of the data, and not a claim about the world. The likelihood function is often parametric and we treat each model parameter as a random variable, drawn from a distribution (its prior). Typically, these priors are ``weakly informative''---conservative priors which allow for all possible values of the parameter but chosen in a manner that promotes fast convergence.
+
+
+We use a Student-t distribution to characterize the mean (i.e. the expected) angle between the survey instrument (Likert and the three QV conditions). A Student-t, (unlike a Normal distribution) is heavy-tailed, in the sense that the Student-t distribution doesn't fall off as quickly as does a Normal distribution and will thus be able to better account for outliers in the data. The Student-t distribution has three parameters: the degrees of freedom ($\nu$), the experimental condition dependent mean ($\mu_j$) and scale ($\sigma_j$).  These parameters are random variables and we need to define their priors. Since our goal is to model the \textit{average} angle, the fact that the Student-t is unbounded while the angle $\theta \in [0, \pi]$ is bounded is unimportant.
+
+\begin{align}
+  \theta_{i \mid j} \sim & \mathrm{Student-t}(\nu, \mu_j, \sigma_j),   & \text{likelihood function to model donation} \label{eq:bayesian formulation} \\
+  \nu \sim & 1 + exp(\lambda), & \text{degrees of freedom} \\
+  \mu_j \sim & N(M_0, \sigma_0), & \text{modal angle in condition } j \\
+  \sigma_j \sim & \Gamma(\alpha, \beta), & \text{scale parameter for condition } j
+\end{align}
+ 
+\Cref{eq:bayesian formulation} says that the response $\theta_{i \mid j}$ of each group $j$ is modeled as a $\mathrm{Student-t}$ distribution with mode $\mu_j$,  scale $\sigma_j$ and with $\nu$ degrees of freedom. Next, we explain the model parameters.
+
+
+\begin{description}
+    \item[Degrees of Freedom:] We draw the degrees of freedom $\nu$ from a shifted exponential distribution, to ensure $\nu \geq 1$; $\nu=\infty$, corresponds to a Normal distribution assumption.
+    \item[Modal contribution $\mu_j$ in each condition $j$:] The mode $\mu_j$ corresponding to each group is drawn from a Normally distributed random variables with constant mean $M_0$ and variance $\sigma_0$. 
+    \item[Scale $\sigma_j$ of each condition $j$:]  The scale $\sigma_j$ of the likelihood function is drawn from a Gamma distribution $\Gamma(\alpha, \beta)$, with mode $\alpha$ and scale $\beta$; this prior on $\sigma_j$ ensures that $\sigma_j > 0$. 
+    \item[Constants:] The constants $M_0, \sigma_0, \alpha, \beta$ are set so that the priors are generous but weakly informative so that despite exploring all possible values, we ensure rapid MCMC convergence.
+\end{description}
+
+We performed the Bayesian analysis using PyMC3 \cite{salvatier2016probabilistic}, 
+a popular Bayesian inference framework. We used one of the common computational techniques for Bayesian inference, Markov Chain Monte Carlo (MCMC), a stochastic sampling technique. It samples the posterior distribution $P(\theta | D)$, the distribution functions of the parameters in the likelihood function given the data observations $D$. 
+% We used the No-U Turn Sampler (NUTS) specifically 
+% in our analysis. 
+
 
 %% Old draft text
 % % Experiment overview

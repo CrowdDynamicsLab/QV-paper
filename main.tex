@@ -3,6 +3,7 @@
 \documentclass[format=acmsmall, natbib=false, anonymous=true]{acmart}
 
 \usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}  % another package that works for figures
 \usepackage{lscape}
 \usepackage{wrapfig}
@@ -15,6 +16,7 @@
 \usepackage{siunitx}
 \usepackage{tabularx}
 
+
 \RequirePackage{rotating}
 
 % % using biblatex
@@ -26,9 +28,10 @@
 \renewcommand{\bibfont}{\Small}
 
 %% author color
-\newcommand{\hs}[1]{\textcolor{red}{#1}}
-\newcommand{\tc}[1]{\textcolor{blue}{#1}}
-\newcommand{\lwt}[1]{\textcolor{purple}{#1}}
+\newcommand{\hs}[1]{{\color{red}{#1}}}
+\newcommand{\tc}[1]{{\color{blue}{#1}}}
+\newcommand{\lwt}[1]{{\color{olive}{#1}}}
+\newcommand{\kk}[1]{{\color{violet}{#1}}}
 
 %% other packages
 \usepackage[ruled]{algorithm2e} % For algorithms
@@ -100,7 +103,7 @@ Comparing Quadratic Voting with Likert Surveys at aligning respondents' preferen
   \institution{University of Illinois at Urbana-Champaign}
 }
 
-\author{Wenting Li}
+\author{Tiffany Wenting Li}
 \authornotemark[1]
 \email{wenting7@illinois.edu}
 \affiliation{%
@@ -192,6 +195,7 @@ Comparing Quadratic Voting with Likert Surveys at aligning respondents' preferen
 \input{content/4_discussion.tex}
 \input{content/5_conclusion.tex}
 \input{content/98_acks.tex}
+\input{content/99_appendix}
 
 % \bibliography{reference}
 % \bibliographystyle{ACM-Reference-Format}
