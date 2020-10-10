@@ -55,6 +55,19 @@ the Likert group required less effort compared to that of QV, and participants f
 \subsection{Posterior Predictive Check}
 TO-DO
 
+\section{Experiment 2 Methods}
+
+\subsection{Definition of the Five Video Elements}~\label{elem_def}
+In experiment 2, we designed the research scenario to answer the following question: ``Given a video with unsatisfying quality, under limited bandwidth, how should the bandwidth be allocated to enhance the five video and audio elements, including the motion smoothness \cite{huynh2008temporal}, audio stability \cite{hardman1998successful}, audio quality \cite{knoche2008low}, video resolution \cite{knoche2005can}, and audio-video synchronization \cite{steinmetz1996human}, to obtain an acceptable video streaming experience from the viewers' perspective?'' We selected the five video playback elements based on prior work and below are their definitions: 
+
+\begin{itemize}
+    \item Motion Smoothness \cite{huynh2008temporal, oeldorf2012bad}: refers to how smooth the visuals of the video are. The number of frames transferred from the server to the viewer per second may be impacted under limited bandwidth. Having a low frame rate means that the video feels jerky and slow.
+    \item Audio Stability \cite{hardman1998successful}: refers to how smoothly the audio of the video plays. With limited bandwidth, there may be lost audio packets. This creates short intervals of silence during playback, undermining the interpretability of the audio. The higher probability an audio packet may be lost, the more stuttered the audio sounds.
+    \item Video Resolution \cite{oeldorf2012bad, knoche2005can}: refers to how sharp the visuals in the video look. With limited bandwidth, one may reduce the video's size by providing a lower resolution. At a lower resolution, the video imagery becomes pixelated and unclear. 
+    \item Audio Quality \cite{oeldorf2012bad, noll1993wideband}: refers to how clear and crisp the audio sounds. A lower audio sampling rate needs lower bandwidth to transmit. With a lower audio sampling rate, the audio sounds more muffled and unclear.
+    \item Audio-Video Synchronization \cite{steinmetz1996human}: refers to how well video visuals are matched with the audio playback. Our experiment focused only on the type of asynchronization where the audio plays ahead of the video. Under bandwidth constraint, visuals and audio may be out of sync due to packet loss in visuals or audio.
+\end{itemize}
+
 \subsection{Part Two}
 
 Etiam commodo feugiat nisl pulvinar pellentesque. Etiam auctor sodales
