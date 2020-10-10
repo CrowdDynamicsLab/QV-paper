@@ -47,8 +47,6 @@ In the next section, we describe how we conducted the video elements trade-off e
 \end{figure}
 
 \subsection{Experimental Flow}
-
-% To compare how well the Likert survey and QV reflect people's underlying preferences, we designed the following experiment. 
 We recruited participants through MTurk. Like our first experiment, we used a demographic survey to match the participants' distribution with the U.S. population in age and education. All participants followed six steps, as shown in \Cref{fig:exp2_flow}. The six steps were (1) demographic survey, (2) tutorials and attention checks, (3) a video playground, (4) Likert and QV surveys, (5) a distraction survey, and (6) a design task. The experiment took X minutes to complete on average. Turkers received a compensation of \$6 given quality completions and a bonus up to \$2. Now we explain the six steps in detail. We provide the experiment protocol as supplementary materials.
 
 \subsubsection{Step 1. Demographic Survey}
@@ -84,15 +82,15 @@ To help participants better understand the impact of various enhancement levels 
 For each element, we provided a slider with four levels, Level 0 at the lowest quality and Level 4 at the highest. We designed the intermediate levels based on prior research such that the changes between each level of an element had a quasi-linear impact on viewers' perception. The four levels of the five video elements are listed below, from Level 0 to Level 3:
 \begin{itemize}
     %20\%, 8\%, 4\%, and 0\%
-    \item Motion Smoothness \cite{huynh2008temporal}: 32\%, 20\%, 8\%, 4\%, and 0\%
+    \item Motion Smoothness \cite{huynh2008temporal}: 2.5 fps, 6.25 fps, 8 fps, and 25 fps
     %20\%, 8\%, 4\%, and 0\%
-    \item Audio Stability \cite{hardman1998successful}: 32\%, 20\%, 8\%, 4\%, and 0\%
+    \item Audio Stability \cite{hardman1998successful}: 20\%, 10\%, 5\%, and 0\% probability in packet loss
     %210x280, 294x392, 364x486, and 420x560     
-    \item Video Resolution \cite{knoche2005can}: 210x280, 294x392, 364x486, 420x560, and 600x800 
+    \item Video Resolution \cite{knoche2005can}: 120x90 at 32K bit rate, 168x126 at 64K bit rate, 240x180 at 96K bit rate, and 240x180 at 224K bit rate all encoded using the wmv2 (Windows Media Video 8) codec 
     %8kHz, 11kHz, 16kHz, and 48kHz 
-    \item Audio Quality \cite{knoche2008low, noll1993wideband}: 8kHz, 11kHz, 16kHz, 48kHz, and 96kHz
+    \item Audio Quality \cite{knoche2008low, noll1993wideband}: 8kHz, 16kHz, 24kHz, 32kHz encoded using the aac (Advanced Audio Coding) codec
     %1850, 1615, 1050, or 0 ms ahead
-    \item Audio-Video Synchronization \cite{steinmetz1996human}: 2250ms, 1850ms,  1615ms, 1050ms, or 0ms ahead
+    \item Audio-Video Synchronization \cite{steinmetz1996human}: 2000ms, 1250ms,  750ms or 0ms
 \end{itemize}
 
 
