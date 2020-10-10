@@ -16,18 +16,33 @@ Another difference between Likert and QV is the boundaries on the survey. Likert
 
 
 
-% - open questions on QV
-%    - a better way to analyze likert, ordinal vs scalar. we had this issue, we are aware. we tried to introduce bahviors to mitage/minimize this impact. Doees 5/7 pt likert make a difference
-%    - knapsack voting, rank based voting: allocating a budget, but not quadratic, it's inteeresting fo how it compares, rank-based voting shows reltaive preference 
-%    - does the number of options matter. Is there a upper limit to voice credits (upper bound)
-%    - we scoped for question 1 in K, are there questions that QV does not work. what we looked in. what what we did not look in. 
-%    - interface problem, interface design
-%    - continuative/carryover voice credits. <-- not so related. 
-%    - mental model
+\subsection{Open questions to QV}
+Understanding the idea way to make use of QV in real work setting and proving it an effective and better aligned tool is not trivial. During the design, execution and analysis of this research, we identified various open questions that we yet to address. 
 
-% - wider implications
-%    - summary of prior sections of disccusions
-%    - but we are not saying likert is bad
+\subsubsection{Aligning Ordinal Data With Scalar Values}
+Analyzing ordinal Likert data has been a challenge ever since Likert was introduced. It is debatable whether our approach mapping Likert data to metric values is the best approach. At the same time, identifying the best measure to compare Likert results with QV is difficult. Future research could explore if there are alternatives to perform such comparison that circumvents the challenge of mapping ordinal data. 
+
+\subsubsection{Comparing other QV with other surveying methods}
+Even though Likert surveys are always bounded in terms of choice one can express, a 5, 7 or 100-point Likert survey, one unanswered question lies in how different would the number of choices on a Likert survey differ with QV? In addition, despite Likert survey considered one of the most used surveying technique, one might argue that instead of Likert, there are other voting mechanisms that brings in the concept of resource constraint and preference eleicination such as but not limited to knapsack voting \cite{goel2015knapsack} and ranked-base voting \cite{ledo2018evaluation}. The difference between QV and knapsack voting lies in the way costs were produced, where one's costs grows quadratically and the other linearly. On the other hand, ranked based voting does not show the magnitude of differences between options individuals prefer. Both of these comparsions with QV remains an open question.
+
+\subsubsection{Upper bound of voice credits and options}
+In experiment one, quantative data showed that performance of QV does not come through before reaching an excessive amount of voice credits, as we see that QV with 36 voice credits unperformed QV with 108 and 324 voice credits. Qualitatively, when participants were given less credits in their second QV survey, many participants voiced their need to make hard cuts. \texttt{P9e5e6} said, ``I think I covered the bare basics.'' and \texttt{Pe37f2} said, ``Less to go around, so had to knuckle down and allocate the most to what I think is most important.'' This suggests that this diluted participant's preferences, making it similiar to Likert results. We also observed that some participants when given increased voice credits in their second QV survey, expressed the increased degree of freedom to express their opinions. \texttt{Pcc4aa} reported, ``with more credits i can show what i really like.'' and \texttt{P2d9da} stated, ``Because now that I have a lot more credits, I felt that I could vote on more issues that mean something to me.'' This could explain why QV with more voice credit performed better in the first experiment. However, we did not identify an upper bound where too many voice credits start creating excessive cognitive loads to participants. The question of how to identify \textit{what} number of voice credits to use is still an open question.
+
+In addition to voice credits, we were also not able to tackle the question of locating the upper bound for the number of options on a QV survey. Once can imagine the difficulty for QV participants to vote among hundreds or even thousands of questions. In fact, a work by Iyengar et al. \cite{iyengar2000choice} observed that more choices might not necessary bring more satisfaction to individuals. Humans are not good at making choices across a large array of options. Therefore, the same question lies: ``Is there a limit of how many options could be on a QV survey that remains high quality in data collection?''
+
+\subsubsection{Generalizability to different forms of questions}
+In this study, we did not examine the type of questions that work on QV and those that does not. There are many other types of surveys that made use of Likert scale to make collective decisions. For example, surveys that consists of independent questions that does not connect with one another. It remains unbclear whether researchers should make QV surveys for these type of questions.
+
+\subsubsection{Mental models and Interface design}
+The last but not least open question is QV interface design. We believe that different QV interfaces can impact how individuales make decisions. Similiar to how design of ballots can interfere with election results. Compare a plus/minus button with a drag-and-drop interface that shows two demensions on both ends, both of these designs could nudge individules think differently about their voting baseline. Furthermore, designing mobile QV voting itnerfaces is qually important. Both of these questions requires some understanding the mental models of individules, to identify potential issues in the current interface, and build componenets that can assit their decision making. 
+
+\subsection{Implications}
+It is important to reaffirm that this study is not to express how Likert is inferior than QV, in fact, the opposite. With the advancement in technology, we want to experiment and understand if an alternative voting mechanism can elicit better performance at aggregating collective's decision making. Our results that under given conditions QV aligns better to individual's true preferences opens an oppurtunity for researchers in the area to try QV. As aforementioned, there exists many more questions for us to fully understand the neuances in QV.
+
+
+
+
+
 %    - researchers consider cost at educatiing people on it
 
 
@@ -39,84 +54,70 @@ Another difference between Likert and QV is the boundaries on the survey. Likert
 
 
 
-\subsection{Where are QV's limitations}
-Experiment two shows a slightly different and more nuanced result.
-It is important to know that
-the characteristics of the ballot options 
-are different compared to experiment one.
-On this ballot, the options are \textit{multiple aspects}
-of a same question.
-In other words, 
-one requires all options 
-to form the result of the final outcome.
-Let us use an analogy:
-If experiment one asks you
-``how much do you prefer between
-coke, fries, and burgers'',
-the second experiment asks you
-``how important do you think
-freshness, taste, and texture 
-of your beef patty are?''
-Notice the options in the first question 
-are independent while 
-those in the second question 
-collectively decide how good a beef patty is.
+% \subsection{Where are QV's limitations}
+% Experiment two shows a slightly different and more nuanced result.
+% It is important to know that
+% the characteristics of the ballot options 
+% are different compared to experiment one.
+% On this ballot, the options are \textit{multiple aspects}
+% of a same question.
+% In other words, 
+% one requires all options 
+% to form the result of the final outcome.
+% Let us use an analogy:
+% If experiment one asks you
+% ``how much do you prefer between
+% coke, fries, and burgers'',
+% the second experiment asks you
+% ``how important do you think
+% freshness, taste, and texture 
+% of your beef patty are?''
+% Notice the options in the first question 
+% are independent while 
+% those in the second question 
+% collectively decide how good a beef patty is.
 
-From an intensity perspective 
-of the aggregated opinions, 
-qualitatively we can observe that 
-the preference result from QV aligns closer 
-to the true preference than that from Likert. 
-We have yet to examine its statistical significance 
-due to an experiment design limitation. 
-From a preference ranking perspective, 
-neither of the results from the Likert survey 
-and QV survey
-diverged significantly 
-from the incentive-compatible behaviors 
-that the buyback group demonstrated. 
-However, part of the Likert results 
-did diverge significantly from the QV results, 
-since aspects in Likert results clustered 
-in the higher rankings, 
-while aspects in the QV results 
-spread out more across the lower rankings. 
-Such finding echoes part of the conclusion 
-in the first experiment, 
-where QV is able to show finer-grained preference results 
-than Likert.
+% From an intensity perspective 
+% of the aggregated opinions, 
+% qualitatively we can observe that 
+% the preference result from QV aligns closer 
+% to the true preference than that from Likert. 
+% We have yet to examine its statistical significance 
+% due to an experiment design limitation. 
+% From a preference ranking perspective, 
+% neither of the results from the Likert survey 
+% and QV survey
+% diverged significantly 
+% from the incentive-compatible behaviors 
+% that the buyback group demonstrated. 
+% However, part of the Likert results 
+% did diverge significantly from the QV results, 
+% since aspects in Likert results clustered 
+% in the higher rankings, 
+% while aspects in the QV results 
+% spread out more across the lower rankings. 
+% Such finding echoes part of the conclusion 
+% in the first experiment, 
+% where QV is able to show finer-grained preference results 
+% than Likert.
 
-In conclusion,
-we can conclude that QV with a sufficient budget outperforms Likert surveys when the survey aims to elicit preferences in a 1 in $K$ setting.
-There is not enough statistical evidence yet to conclude whether QV aligns to true preference better than Likert if the survey options are multiple aspects of the same subject. Nevertheless, both experiments demonstrated that QV elicits finer grain preferences from people than Likert in both cases, which is an advantage survey designer could leverage to gain more in-depth understanding of people's opinions.
+% In conclusion,
+% we can conclude that QV with a sufficient budget outperforms Likert surveys when the survey aims to elicit preferences in a 1 in $K$ setting.
+% There is not enough statistical evidence yet to conclude whether QV aligns to true preference better than Likert if the survey options are multiple aspects of the same subject. Nevertheless, both experiments demonstrated that QV elicits finer grain preferences from people than Likert in both cases, which is an advantage survey designer could leverage to gain more in-depth understanding of people's opinions.
 
-\subsection{Impact of QV voice credits}
-In experiment one, we also confirmed our hypothesis that the number of voice credits does impact the results. 
-In fact, given a fixed set of voice credits, there exists is a finite set of ways one could allocate their votes. 
-Different from Likert surveys, the votes change according to the number of options present.
-Yet, the performance of QV does not come through before reaching an excessive amount of voice credits, as we see that QV with 36 voice credits unperformed QV with 108 and 324 voice credits.
 
-From the change in participant's responses as the number of voice credits changed, we found supporting evidence that participants require enough votes to demonstrate their preferences.
-For example, some participants that had a drastic increase of voice credits, from 36 to 324 voice credits, expressed devoting some options that originally had zero votes. 
-\texttt{P2d9da} stated, ``Because now that I have a lot more credits, I felt that I could vote on more issues that mean something to me.'' The participant initially only voted for Environment; however, with 324 votes, the participants voted for all but Faith and Spiritual. This supports our quantitative finding that a limited amount of voice credits suppressed the performance of QV. Participants also reported being freer and submitted more fine-grain opinions. As one participant (\texttt{P54f23}) responded: ``The greater voice quantity allowed me to vary the differences in choices'' more and similarly \texttt{Pcc4aa} reported, ``with more credits i can show what i really like.''
-This reflects that additional credits pushed participants to express more fine-grain preferences.
-% If the number of voice credits increased, as expected, some participants uniformly increased the number of votes across all nine options, stating that they try to be fair. Also, logically, other participants would devote the additional voice credits to the items of their likes or dislikes. 
 
-On the contrary, participants are forced to downsize their preferences if credits decreased. Many participants voiced their need to make trade-offs. \texttt{P9e5e6} said, ``I think I covered the bare basics.'' and \texttt{Pe37f2} said, ``Less to go around, so had to knuckle down and allocate the most to what I think is most important.'' 
-Again, this means that it is crucial to have enough points if we want to reflect participant's preferences and they're intensity accurately.
-The question of how to identify \textit{what} number of voice credits to use is still unknown.
-
-\subsection{Design Implications}
-Given these discussions, 
-we propose the following design implications. 
-First, QV provides more fine-grain results,
-including the preference and the level of intensity,
-a group has on a particular topic,
-when deciding among one in $K$ options.
-In the CSCW community,
-we believe this can be applied to 
-many collective decision-making processes.
-Form electing a great project among many,
-to redistributing limited resources among those in need,
-QV serves as an alternative tool 
-than traditional Likert surveys.
+% \subsection{Design Implications}
+% Given these discussions, 
+% we propose the following design implications. 
+% First, QV provides more fine-grain results,
+% including the preference and the level of intensity,
+% a group has on a particular topic,
+% when deciding among one in $K$ options.
+% In the CSCW community,
+% we believe this can be applied to 
+% many collective decision-making processes.
+% Form electing a great project among many,
+% to redistributing limited resources among those in need,
+% QV serves as an alternative tool 
+% than traditional Likert surveys.
