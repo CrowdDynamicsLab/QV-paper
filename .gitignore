@@ -27,6 +27,7 @@ __latexindent_temp.tex
 
 ## main pdf
 main.pdf
+output_filename.pdf
 
 # mac os x
 .DS_Store
