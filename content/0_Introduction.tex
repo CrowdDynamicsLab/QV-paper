@@ -1,46 +1,103 @@
 \section{Introduction}
+Decision makers often utilize surveys to aggregate opinions from the crowd to inform decisions. For example, Pew research center deployed a 3-point Likert-scale to understand individual's preferences at how participants would make up budgets for the federal government. As a policy maker, when a person make decisions, there are at least three questions to ask -- what are the budget constraints?; how would I prioritize the subjects?; and for each subject, how do I value these subjects? Understanding a crowd's preferences across a set of options and prioritizing the options under resource constraints like this example is a common reason to deploy surveys, from choosing the best designs in a human-computer interaction (HCI) interface \cite{ledo2018evaluation}, to prioritizing what products to stock in grocery stores \cite{nielsen}.
 
-%% Survey, decision making, and everyone
-Distribution of surveys for resource-constraint decision making is pervasive in everyday life and these surveys have been effective at aggregating people's attitudes to form consensus. Think tanks designed and deployed large-scale ordinal scale polls \cite{pew} to understand public opinions on government policies given limited government resources. Supermarkets collect individuals' shopping experiences across products because there are limited shelves \cite{nielsen}. 
+% In order to find truthful answers, researchers have developed various forms of surveys to elicit \textit{truthful} self-reported preferences \cite{stone1999science}. 
+Rating and ranking-based surveys are two major variants of survey methodology \cite{moors2016two}. Participants express their levels of agreement or satisfaction when they express their opinions using a rating-based survey \cite{moors2016two}. Likert surveys, a type of rating-based technique, allows participants expressed their \textit{strength} of preferences towards each statement along a scale of intensity \cite{likert1932technique}. As to any rating-based instruments, despite their ease of understanding and administering, Likert survey is prone to reduced data quality. Since each statement of Likert survey is independent when answering, \textcite{alwin1985measurement} found participants respond with the first acceptable answer instead of compiling an optimal solution. Another fallacy follows similar logic where participants would express opinions to the extreme, exaggerating one's actual belief \cite{araujo2017much, vavreck2007exaggerated}. This is due to Likert survey's nature of not incorporating the notion of resource constraints in the real word where it actually exists, for example, in the case of allocating budget for government spending. Participants in the example could express having large budgets for all causes, which in reality, in not possible because the budget is limited. Some researchers tried to introduce constraints to rating based surveys, for instance knapsack voting, developed by \textcite{goel2015knapsack}, forces participants to elect agreement only if the sum of the cost for the selected items is less than a given budget.
 
-%% electronic decision making surveys merely transform from paper, but hasn't done much extra with the computational power; 
-Before the 1980s, research surveys required large-scale in-person participation. Slowly, surveys evolved into mail-in, telephone, and, eventually, online formats. In the early 1980s, researchers introduced electronic surveys to individuals as internet-connected devices popularized. Electronic surveys aimed to reduce research costs, reduce human labor required to conducted surveys, and added additional flexibility in survey design\cite{kiesler1986response}. While the \textit{medium} of how researchers conducted the surveys moved offline to online, researchers did not make noticeable changes on the \textit{survey mechanisms} that unleashes the power of computation. We argue that electronic-meditated surveys merely translate paper-based surveys onto a webpage. Given the computing power of computers today and the omnipresence of computers at any individual's hands, can a better surveying mechanism harness computational advantages to obtain more accurate survey results?
+Alternatively, survey designers utilized rank-based surveying techniques to elicit participants' preferences. This method projects not the level of agreements but the participants' sequence of priorities \cite{moors2016two}. Ranking scales for example was invented by \textcite{starch1923methods} in 1923 where participants ranked a list of options in the order of their preference. Though researchers believe ranking demonstrated better reflects individuals' accordance, they are harder to statistically analysis and more cognitive demanding to participants \cite{moors2016two}. In other words, people are better at ranking compared to value setting, 
 
-% QV is an example of utilizing the computational power, and have xxx, xxx, xxx proven benefits in previous work; 
-Quadratic voting (QV) is an alternative collaborative decision-making surveying method developed by Weyl at al. \cite{posner2018radical} in 2015. In QV, each participant receives an equal budget of voice credits to spend to cast votes for one or more options. Participants may cast multiple votes for each option, but it costs $n^2$ voice credits to cast $n$ votes for a given option; i.e. the more votes a participant casts for an option, the higher the cost in voice credits. Weyl at al. argued that this mechanism more efficiently makes decisions than 1-person-1-vote systems because it minimizes welfare loss. Prior works demonstrated that QV outcomes were normal-distributed compared to Likert scale survey results, in which the latter resulting in many polarized responses on highly-debated topics \cite{quarfoot2017quadratic}.
 
-% In this study, , given that quadratic computations are difficult to conduct on paper or verbally due to the required cognitive load.
+Results from ranked based voting elicits the value for money -- ranks 
 
-% we also want to confirm if QV is "accurate" enough in soliciting people's opinions
-% Since Likert is the most commonly used form of a survey; we compare QV's accuracy with Likert's; 
-Since surveys were deployed to accurately understand people's attitudes, this paper aimed to understand how QV aligns with what participants genuinely believe and act. To the best of our knowledge, there have not been any empirical studies that investigated to what degree does QV results align with participants' underlying true preferences. In this paper, we focus our comparison between QV and Likert surveys. Likert surveys, one of the most widely used surveying technique invented in 1932, ask participants to express their attitudes using a scale for a given topic or question on a scale of 1 to 5. Researchers would use collected responses to make their decision. This paper focuses on collective decision-making tasks aimed at eliciting group preferences among a set of choices among $K$ options. Questions such as: ``Which interface do users like most?'', ``What are some products that customers are satisfied with?'', and  ``What public policies do constituents feel more important?'' are examples of eliciting group preferences among $K$ options.
+%In fact, all three methods, Likert, ranked-based voting and participatory budgeting surveys were forced to make trade-offs when choosing \textit{what} to ignore.
 
-In this paper, we ask three research questions: 
+However, since early 1980s when investigators start to distribute surveys using internet-connected devices, electronic-mediated surveys merely translate paper-based surveys onto a webpage. Researchers did not make noticeable changes on the \textit{survey mechanisms} that unleashes the power of computation. Given the computing power of computers today and the omnipresence of computers at any individual's hands, can a better surveying mechanism harness computational advantages to obtain more accurate survey results?
 
-\textit{RQ1.} How does results from QV, Likert survey align with people's incentive-compatible behavior when surveying societal issues? 
+In this paper, we examine an alternative, Quadratic Voting (QV), a relatively new voting mechanism proposed by \textcite{posner2018radical}, to elicit more truthful self-reported responses in resource-constrained collective decision making processes. (We argue that among the three types of survey, Likert surveys are the most prominent and widely adopted surveying method due to the ease of use and simple instrumentation. Given that Likert is one of the most widely used surveying technique), we decided to compare QV to Likert survey in cases of resource constraint. 
 
-Unlike prior works, we designed an experiment that collects the participant's donation behaviors, comparing it with survey results of QV and Likert surveys. We applied Bayesian analysis and qualitative analysis to the results. We hypothesized that the results from QV better reflect individuals' true beliefs as reflected by their monetary donations.
+In QV, expressing an opinion is not free -- each participant pays a quadratic cost for the votes they cast, i.e., casting $n$ votes for or against an option costs $n^2$ voice credits. Participants vary the number of votes to represent the strength of their preference. But as the number of votes on an option increases, the marginal cost for each extra vote increases as well; in other words, each additional vote becomes more expensive. Participants may cast as many votes as they choose on any option, as long as the total costs for the votes do not exceed a fixed given budget of voice credits. \textcite{posner2018radical} argued that results from this mechanism are more optimal than those from one-person-one-vote (such as Likert, ...) systems because QV minimizes welfare loss. Prior work further demonstrated that QV outcomes approximated a normal distribution, as opposed to the polarized responses from Likert scale survey results on highly-debated topics \cite{quarfoot2017quadratic}. However, to the best of our knowledge, no one has empirically explored whether QV processes elicit more truthful self-reported preferences. 
 
-\textit{RQ2.} How do results from QV, Likert-scale align with people's incentive-compatible behavior with a choice of HCI research questions? 
-To the best of our knowledge, no  HCI studies used QV in their studies. Similar to the first experiment, we compare results from QV and Likert surveys with participant's behaviors for a video-element HCI experiment. We hypothesis that QV more accurately reflects the intensity of individuals' true beliefs. 
+In our study, we examined QV's ability to elicit truthful self-reported responses. To interrogate our findings, we compared QV to Likert processes \cite{likert1932technique} in a resource constrained setting. one of the most widely used surveying techniques, to see how well their results aligned with individuals' true beliefs. In particular, we were interested in QV's performance in resource-constrained collective decision making processes, in which the survey goal is to elicit a crowd's relative preferences among a set of options. With this survey goal, we identified two distinct types of survey questions: (1) choosing among $K$ paralleled options of the same subject matter, and (2) choosing among $K$ aspects that jointly contribute to the same subject matter. To give an analogy, scenario one is about choosing among different flavors for an ice cream, while scenario two is understanding what an individual cares more about among the flavor, texture, or ingredients of an ice cream. Therefore, we analyzed them as two separate research questions:
+% ask participants to express their attitudes using a scale for a given topic or question on a scale of 1 to 5. Researchers would use collected responses to make their decision. This paper focuses on collective decision-making tasks aimed at eliciting group preferences among a set of choices among $K$ options. Questions such as: ``Which interface do users like most?'', ``What are some products that customers are satisfied with?'', and  ``What public policies do constituents feel more important?'' are examples of eliciting group preferences among $K$ options.
 
-\textit{RQ3.} How do different amounts of voice credits impact the results of QV empirically?
-We did not find studies on how many voice credits a participant should receive for QV in related literature. In conjunction with RQ1, we provide participants with a different number of voice credits. We suspect different outcomes from QV when participants have a different number of voice credits.
+
+\begin{itemize}[leftmargin=0.6in]
+    \item[\textbf{RQ 1}] How well do results from QV align with people's incentive-compatible preferences compared to Likert scale when the survey aims to choose among $K$ independent options of the same subject matter?
+    \begin{itemize}[leftmargin=0.6in]
+        \item[\textbf{RQ 1(a)}] How does the amount of voice credits given to QV survey takers impact QV's ability to elicit incentive-compatible preferences in RQ1.1?
+    \end{itemize}
+    \item[\textbf{RQ 2}] How well do results from QV align with people's incentive-compatible preferences compared to Likert scale when the survey aims to choose among $K$ dependent options that jointly contribute to the same subject matter? 
+\end{itemize}
+
+To answer RQ1.1, we designed a survey in the context of a public polling about participants' opinions on what social causes need more support, a typical scenario to choose among $K$ paralleled options. To measure participants' truthful opinions on the same topic, we created an incentive-compatible donation task, in which participants should only donate more for a cause if they truly care more about it. Participants on Mechanical Turk (MTurk) completed either the Likert scale version or the QV version of the survey, and the donation task in a randomized controlled experiment. Since we were not aware of any prior work that provided guidance on how to determine the budget of voice credits in QV empirically, we asked RQ1.2 and explored three variations of the QV survey with small ($O(K)$), medium ($O(K^{3/2})$), and large ($O(K^2)$) budget in the experiment. We measured the similarity between each individual's survey result and their truthful opinion as reflected in the donation task, and applied Bayesian analysis to compare the degree of similarity in QV and Likert scale.
+
+For the case of choosing among $K$ aspects that jointly contribute to the same subject matter in RQ2, we used an example of an HCI user study, understanding how users make trade-offs across visual and audio elements in a video streaming experience given limited internet bandwidth. We used QV and Likert scale surveys to obtain participants' self-reported responses, and designed a incentive-compatible product design and pricing task to elicit their truthful willingness-to-pay for each video element. Similar to the first experiment, we conducted this randomized controlled experiment on MTurk and analyzed the results with Bayesian analysis.
+
+% \textit{RQ1.} How do results from QV, Likert survey align with people's incentive-compatible behavior when surveying societal issues? 
+
+% We designed an experiment to compare how participants donate with QV and Likert survey results. We analyzed data using Bayesian analysis and qualitative analysis. We hypothesized that QV results better portray individuals' true beliefs as reflected by their monetary donations.
+
+% \textit{RQ2.} How do results from QV and Likert-scale align with people's incentive-compatible behavior with a choice of HCI research questions? 
+% To the best of our knowledge, no HCI studies used QV in their studies. Similar to the first experiment, we compare results from QV and Likert surveys with participant's behaviors in a video-element HCI experiment. We hypothesize that QV more accurately reflects the intensity of individuals' true beliefs. 
+
+% \textit{RQ3.} How do different quantities of voice credits impact the results of QV empirically?
+% We did not find studies on how many voice credits a participant should receive for QV in related literature. In conjunction with RQ1, we provide participants with a different number of voice credits. We suspect different outcomes from QV when participants have a different number of voice credits.
 
 
 \textbf{Contributions}
-This paper contains three major contributions.
+This paper offers three major contributions.
 First, we designed two empirical studies and found that QV aligns better with the participant's underlying preferences when surveying people's preferences among $K$ options. The first experiment looked at eliciting societal causes while the other experiment pertains to HCI. Both of these experiments used participant behaviors as a baseline to measure these differences, which we argue is much stronger than the direct comparison to Likert that prior studies lean on. The results allowed us to argue that researchers should harness computers' power to utilize and benefit from deploying QV in studies if the study aims to understand people's preferences among $K$ options.
 
 Second, we demonstrate that QV results depend on the voice credit budget. To the best of our knowledge, little did researchers discussed the effect of the number of voice credits in prior works. In this study, we discovered that participants need a large enough voice credit to obtain an accurate QV result.
 
-The third contribution is that we demonstrated the application of QV in the HCI domain. We are not aware of prior studies in HCI that utilize QV, and we believe that our experiment and software deliverable provides a template to use QV in later research.
+The third contribution demonstrates the application of QV in the HCI domain. We are not aware of prior studies in HCI that utilize QV, and we believe that our experiment and software deliverable provides a template to use QV in later research.
 
 These findings are critical to QV applications in the wild. It is important to stress that the goal of this research is \textit{not} to convince a replacement of Likert Surveys. Instead, we believe QV as an additional tool inside the researcher's toolkit to facilitate better decision making. We also think this study opens the door to many future directions, such as investigating interface designs for QV.
 
 
 
 
+
+
+
+
+
+
+
+
+
+% Distribution of surveys for resource-constrained decision making is pervasive in everyday life and these surveys have been effective at aggregating people's attitudes to form consensus. Think tanks design and deploy large-scale ordinal scale polls \cite{pew} to understand public opinions on government policies given limited government resources. Supermarkets collect individuals' shopping experiences across products because there are limited shelves \cite{nielsen}. 
+
+%% electronic decision making surveys merely transform from paper, but hasn't done much extra with the computational power; 
+% Before the 1980s, research surveys required large-scale in-person participation. Slowly, surveys evolved into mail-in, telephone, and, eventually, online formats. In the early 1980s, researchers introduced electronic surveys to individuals as internet-connected devices became accessible. \kk{How did people take these? Not too many people had ISP service in the 80s. Which companies administered them?} \tc{They are limited to international companies and fortune 500 in 1985.} Electronic surveys aimed to reduce research costs, reduce human labor required to conducted surveys, and add additional flexibility in survey design\cite{kiesler1986response}. While the \textit{medium} of how researchers conducted the surveys moved from offline to online, researchers did not make noticeable changes on the \textit{survey mechanisms} that unleashes the power of computation. We argue that electronic-mediated surveys merely translate paper-based surveys onto a webpage. Given the computing power of computers today and the omnipresence of computers at any individual's hands, can a better surveying mechanism harness computational advantages to obtain more accurate survey results?
+
+% QV is an example of utilizing the computational power, and have xxx, xxx, xxx proven benefits in previous work; 
+
+% In this study, , given that quadratic computations are difficult to conduct on paper or verbally due to the required cognitive load.
+
+% we also want to confirm if QV is "accurate" enough in soliciting people's opinions
+% Since Likert is the most commonly used form of a survey; we compare QV's accuracy with Likert's; 
+% Since surveys are deployed to accurately understand people's attitudes, this paper aims to understand how how well QV survey results align with real world behaviors and beliefs?. To the best of our knowledge, there have not been any empirical studies that investigated to what degree does QV results align with participants' underlying true preferences. 
+
+
+%Self reported data, that is data supplied by the survey participant is at the core of such surveys across a wide range of disciplines, from medicine to social services \cite{stone1999science}. To address this, researchers, have designed different types of survey mechanisms throughout the past century. In 1923, 
+%In another survey approach, pairwise preference, developed by \textcite{scheffe1952analysis} in 1952, participants compared two choices by stating their preferences in one of seven intensity levels. Researchers developed these methods to better elicit individual attitudes under different settings and for different goals. Many of the proposed methods, however, fail in capturing authentic signals due to self-reporting bias or <define it>.
+% how to use a survey and when to use it is also important
+%To mitigate self-reporting bias, researchers \cite{converse1986survey} introduced strategies such as anchoring time frames, randomizing question order, creating a factorial design, and improving survey interfaces \cite{roster2015exploring, hodge2003phrase}. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%----------------------------%%
 
 
 

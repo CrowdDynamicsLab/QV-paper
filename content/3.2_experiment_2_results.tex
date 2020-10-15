@@ -1,12 +1,12 @@
 \section{Experiment 2 Results} \label{results-2}
 In this section, we first describe the participants' demographic in the second experiment. Then, we present descriptive statistics for the raw data. Lastly, we discuss results from our Bayesian analysis.
 
-\subsection{Participants Demographic}
-We collected N complete responses in the second experiment. We removed X poor-quality responses where participants responded the qualitative question facetiously and put the same survey rating across all video elements. Similar to experiment 1, we recruited the participants to match the demographic distribution in the US 2019 census data in terms of age and education level, as shown in \Cref{table:demo_exp2}.
+\subsection{Participant Demographics}
+We collected 101 complete responses in the second experiment. We removed 8 poor-quality responses where participants responded to the qualitative questions facetiously and put the same survey rating across all video elements. Among the remaining 93 participants, 55 of them identified as male and 38 as female. Around 80\% of the participants were White, 13\% were Black or African American, 5\% were Asian, and the remaining 2\% preferred not to disclose their racial information. Similar to experiment 1, we aligned the participants' age and education level distribution to match that in the US 2018 census estimates \cite{census2018}, as shown in \Cref{table:demo_exp2}.
 
 \begin{table}
   \centering
-  \caption{Experiment 2 sample demographics statistics align closely with 2019 US census. (To be updated with final data) } \label{table:demo_exp2}
+  \caption{Experiment 2 sample demographics statistics align closely with 2018 US census. } \label{table:demo_exp2}
   \sisetup{
     table-number-alignment = center, 
     table-figures-integer = 2, 
@@ -21,21 +21,21 @@ We collected N complete responses in the second experiment. We removed X poor-qu
     Demographics & {Sample (\si{\percent})} & {Census (\si{\percent})} \\
     \midrule
     \textsc{\bfseries Education} & &\\
-    No High School & 16.07 & 10.22  \\
-    High School & 25.00 & 27.73  \\
-    College  Associate & 28.57 & 33.09  \\
-    Bachelor's Degree and above & 30.36 & 33.09  \\ 
+    No High School & 4.30 & 10.22  \\
+    High School & 27.96 & 27.73  \\
+    College  Associate & 31.18 & 33.09  \\
+    Bachelor's Degree and above & 36.56 & 33.09  \\ 
     \textsc{\bfseries Age} & &\\
-    18--24 & 21.43 & 13.65  \\
-    25--39 & 26.79 & 30.74  \\
-    40--54 & 25.00 & 28.32  \\
-    55--69 & 26.79 & 27.29  \\
+    18--24 & 9.68 & 13.65  \\
+    25--39 & 39.78 & 30.74  \\
+    40--54 & 27.96 & 28.32  \\
+    55--69 & 22.58 & 27.29  \\
     \bottomrule\end{tabularx}
 \end{table}
 
 \subsection{Descriptive Statistics}
 
-As shown in \Cref{fig:likert_exp2} and \Cref{fig:qv3_exp2}, on an aggregated level, participants expressed similar relative preferences across the five video elements in both Likert and QV. Audio quality ranked the highest in both cases, while motion smoothness and audio-video synchronization had the lowest ranks. While the aggregated preference were similar between Likert and QV, we will discuss their differences on an individual level in the next subsection. Similar to experiment 1, a majority of the Likert response distributions were left-skewed; in contrast, QV response distributions approximated a Normal distribution. (add QV budget usage)
+As shown in \Cref{fig:likert_exp2} and \Cref{fig:qv3_exp2}, on an aggregated level, participants expressed similar relative preferences across the five video elements in both Likert and QV. Audio quality ranked the highest in both cases, while motion smoothness and audio-video synchronization had the lowest ranks. While the aggregated preference were similar between Likert and QV, we will discuss their differences on an individual participant level in the next subsection. Similar to experiment 1, a majority of the Likert response distributions skewed to the left; in contrast, QV response distributions approximated a Normal distribution. With a budget of 100 voice credits in QV, 57\% of the participants used at least 98\% of the budget and 82.8\% of them used over 90\% of the budget, suggesting that most participants actively made use of the majority of the budget.
 
 \begin{figure}[htpb]
 \centering
@@ -67,7 +67,7 @@ As shown in \Cref{fig:likert_exp2} and \Cref{fig:qv3_exp2}, on an aggregated lev
       Distribution of prices set by participants per video elements in Boxen plot. 
       Prices ranged from \$0 to \$4. Compared to the survey response distributions, elements with a higher rating of importance in surveys also had higher prices during product design.
     }
-    \Description[Distribution of prices per element in experiment 2 in Boxen plot]{Distribution of prices set for each element in experiment 2 in Boxen plot}
+    \Description[Distribution of prices per element during the product design task in experiment 2 in Boxen plot]{Distribution of prices set for each element in experiment 2 in Boxen plot}
     \label{fig:price_exp2}
 \end{figure}
 
@@ -105,7 +105,7 @@ Similar to experiment 1, we are interested in the degree of alignment between su
 
 Overall, our Bayesian analysis for experiment 2 showed that QV survey responses aligned significantly better with the price setting behaviors than Likert responses with a medium to high effect size (0.5 - 0.6). The first graph in the left column of~\Cref{fig:traceplot_exp2}, which contains traceplots for the MCMC estimations, shows that the distribution of the mean Cosine similarity angle for QV (orange line) is to the left of that for Llikert (blue line). Since a perfect alignment means a zero angle, QV had better alignment with the set prices relative to Likert. 
 
-To confirm if the difference was statistical significant, we constructed the distribution of the absolute difference between the means and the distribution of the corresponding effect size (normalized difference), as shown in \Cref{fig:contrast_exp2}. In the subfigure on the left, the mode of the contrast is $6.8$, meaning that the Cosine similarity angles in the Likert group were most frequently $6.8$ degrees larger than the angles in the QV group. Since the HPD of [$2.8$, $11$] lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1 \deg$, there was a significant difference between the alignment levels of the two survey instruments. The medium to high effect size is significant based on the figure on the right, with a modal value of $0.6$ and a HPD interval of [$0.25$, $0.98$].
+To confirm if the difference was statistical significant, we constructed the distribution of the absolute difference between the means and the distribution of the corresponding effect size (normalized difference), as shown in \Cref{fig:contrast_exp2}. In the subfigure on the left, the mode of the contrast is $6.1$, meaning that the Cosine similarity angles in the Likert group were most frequently $6.1$ degrees larger than the angles in the QV group. Since the HPD of [$1.9$, $9.6$] lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1 \deg$, there was a significant difference between the alignment levels of the two survey instruments. The medium to high effect size is significant based on the figure on the right, with a modal value of $0.51$ and a HPD interval of [$0.15$, $0.84$].
 
 
 \begin{sidewaysfigure*}
