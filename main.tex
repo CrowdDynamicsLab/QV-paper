@@ -9,7 +9,7 @@
 \usepackage{wrapfig}
 \usepackage{booktabs} % For formal tables
 \usepackage{cleveref} % for better references
-\usepackage{subfig,caption}
+\usepackage{caption,subcaption}
 \usepackage[english]{babel}% Recommended
 \usepackage{csquotes}% Recommended
 \usepackage[abbreviate=true, dateabbrev=true, natbib=true, isbn=false, doi=false, eprint=false, urldate=comp, url=false, maxbibnames=9, maxcitenames=2,  backref=false, backend=biber, style=ACM-Reference-Format]{biblatex}
@@ -48,8 +48,8 @@
 %% the commands and values with those provided to you when you
 %% complete the rights form.
 \setcopyright{acmcopyright}
-\copyrightyear{2020}
-\acmYear{2020}
+\copyrightyear{2021}
+\acmYear{2021}
 \acmDOI{10.1145/1122445.1122456}
 
 %% These commands are for a PROCEEDINGS abstract or paper.
@@ -142,8 +142,8 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  % tc: td after fixing the intro
-  Decision makers frequently aggregate self-reported data from crowds to inform their decisions. One common case of collective decision making involves prioritizing a subset of given options under resource constraints. Researchers have developed a wide range of surveying techniques over the past century, yet eliciting truthful and rich self-reported responses in a resource-constrained context remains a challenge. In this study, we examined Quadratic Voting (QV), an alternative survey instrument recently developed by \textcite{posner2018radical}, and argue that it could elicit more truthful self-reported responses compared to Likert scale when the survey goal is to understand relative preferences under resource constraints. We conducted two randomized controlled experiments on Mechanical Turk, one in the context of public opinion polling and the other in a human-computer interaction user study. Based on results from our Bayesian analysis, Quadratic Voting (QV) with a sufficient amount of voice credits aligned significantly closer to participants' incentive-compatible behaviors than Likert surveys with a medium to high effect size. While our study has shown QV's potential in obtaining more truthful self-reported relative preferences than Likert, the goal is not to claim that one survey instrument should replace another. Instead, we propose open questions about QV and encourage future research to consider promising alternative survey instruments that enhance self-reporting accuracy.
+  Decision-makers frequently aggregate self-reported data from the crowd to inform their decisions. One common case of collective decision-making involves prioritizing a subset of given options under resource constraints. Researchers have developed a wide range of surveying techniques,  such as ratings and rankings approaches, over the past century. However, it remains a challenge to eliciting accurate and rich self-reported responses in a resource-constrained context. In this study, we examine Quadratic Voting (QV), an alternative voting mechanism recently developed by \textcite{posner2018radical}, and argue that it could elicit self-reported responses more accurately compared to Likert scale when the survey goal is to understand relative preferences under resource constraints. We conducted two randomized controlled experiments on Amazon Mechanical Turk, one in the context of public opinion polling and the other in a human-computer interaction user study. Based on our Bayesian analysis results, a QV survey, with a sufficient amount of voice credits, aligned significantly closer to participants' incentive-compatible behaviors than a Likert scale survey, with a medium to high effect size. In addition, we extended QV’s application scenario from typical public policy and education research to a problem setting familiar to the CSCW community: a prototypical HCI user study. Our experiment results, QV survey design, and QV interface serve as a stepping stone for HCI researchers to further explore this surveying methodology in their studies and encourage decision-makers from other fields to consider QV as a promising alternative.
+%   While our study has shown QV's potential in obtaining more truthful self-reported relative preferences than Likert, the goal is not to claim that one survey instrument should replace another. Instead, we propose open questions about QV and encourage future research to consider promising alternative survey instruments that enhance self-reporting accuracy.
 % Survey is a common approach to elicit individuals self-reported opinions in various fields. 
 \end{abstract}
 
@@ -178,7 +178,7 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Quadratic Voting, Likert Survey, Empirical Studies, Collaborative Decision Making}
+\keywords{Quadratic Voting, Likert scale, Empirical studies, Collective decision-making}
 
 
 %%

@@ -1,4 +1,4 @@
-\section{Experiment 1 Results} \label{results-1-quan}
+\section{Experiment One Results} \label{results-1-quan}
 In this section, we first describe the demographic distribution of the participants. Then, we present the descriptive statistics of the data in our first experiment. Lastly, we discuss results from our Bayesian analysis approach.
 
 \subsection{Participant Demographics}
@@ -13,7 +13,7 @@ We recruited the participants to match the demographic distribution in the US 20
 
 \begin{table}
   \centering
-  \caption{Experiment 1 sample demographics statistics align closely with 2019 US census across all groups and subgroup. Of a total of 219 experimental subjects, 56 subjects took the Likert survey, 107 subjects took the QV36 survey, 108 the QV108 survey and 111 subjects took the QV324 survey.} \label{table:demo_exp1}
+  \caption{Experiment one sample demographics statistics align closely with 2019 US census across all groups and subgroup. Of a total of 219 experimental subjects, 56 subjects took the Likert scale survey, 107 subjects took the QV36 survey, 108 the QV108 survey and 111 subjects took the QV324 survey.} \label{table:demo_exp1}
   \sisetup{
     table-number-alignment = center, 
     table-figures-integer = 2, 
@@ -49,8 +49,7 @@ Overall, 48.18\% of the participants identified with male, 50.45\% with female, 
 Since cosine similarity angle, our metric that measured the degree of alignment between survey responses and donation amount, could not take on all-zero vectors, we could only analyze participants who donated a non-zero amount. Therefore, we further filtered the dataset to keep only the responses that had a non-zero total donation amount. Across all the conditions, the average non-zero donation rate was $73.3\%$, consistent with the results provided by \textcite{fehr2007human} in \citeyear{fehr2007human}, which suggested that about $30\%$ of the population would always free-ride in public goods provision regardless of what others do. The number of valid responses after dropping zero-donation participants for Likert, QV36, QV108, and QV324 were $44$, $76$, $76$ and $84$ respectively.
 % The donation rate in each condition closely centered around the average donation rate, ranging from $70.37\%$ (in QV108) and $77.19\%$ (in Likert).
 
-Overall, we found that the total amount of donation per participant was large enough to be distributed across charities in a way that could represent the full picture of 
-their true underlying preferences for nine topics in most cases. Among those who donated a non-zero amount, about 60\% of them donated part of the lottery winning amount (\$5 - \$20) but still kept a significant portion for themselves. Another 25\% of the participants contributed a majority of the lottery reward ($\geq \$33$), if not the full amount. The total donation amount distribution across four surveying methods were relatively consistent, except that almost twice the proportion of participants in the Likert condition donated almost the full amount compared to the other QV conditions. For more details, please refer to \Cref{total_donation}.
+Overall, we found that the total amount of donation per participant was large enough to be distributed across charities in a way that could represent the full picture of their true underlying preferences for nine topics in most cases. Among those who donated a non-zero amount, about 60\% of them donated part of the lottery winning amount (\$5 - \$20) but still kept a significant portion for themselves. Another 25\% of the participants contributed a majority of the lottery reward ($\geq \$33$), if not the full amount. The total donation amount distribution across four surveying methods were relatively consistent, except that almost twice the proportion of participants in the Likert condition donated almost the full amount compared to the other QV conditions. For more details, please refer to \Cref{total_donation}.
 
 
 % Aggregated across all participants,
@@ -90,12 +89,12 @@ their true underlying preferences for nine topics in most cases. Among those who
     \centering
     \includegraphics[width=0.4\textwidth, keepaspectratio=true]{content/image/likert_distribution_per_topic.pdf}
     \caption{
-      Distribution of Likert responses per societal causes in Boxen plot. 
+      Distribution of Likert scale responses per societal causes in Boxen plot. 
       Each level from -2 to 2 corresponds to 
       ``Very unimportant'', ``Unimportant'', ``Neutral'', ``Important'', and ``Very important''.
       The distributions across all groups vary in their shapes, suggesting that participants showed their relative preferences even in the Likert group.
     }
-    \Description[Distribution of Likert Responses per Topic for experiment 1 in Boxen plot]{Distribution of Likert Responses per Topic for experiment 1 in Boxen plot}
+    \Description[Distribution of Likert Scale Responses per Topic for experiment one in Boxen plot]{Distribution of Likert Scale Responses per Topic for experiment one in Boxen plot}
     \label{fig:likert_exp1}
 \end{figure}
 
@@ -116,7 +115,7 @@ Comparing across the three QV surveys, the response distributions were similar b
     \caption{
       Distribution of QV responses per societal causes in QV36, QV108 and QV324 in Boxen plots. The maximum possible number of votes on a topic was 6 votes in QV36, 10 votes in QV108, and 18 votes in QV324. Most distributions in all three QV set-ups follow a normal distribution. The medians of the distributions in QV36 varied less compared to those in QV108 and QV324. The tails stretch out longer as the number of total credits increases. 
     }
-    \Description[Distribution of QV Responses per Topic for experiment 1]{Distribution of QV Responses per Topic for experiment 1}
+    \Description[Distribution of QV Responses per Topic for experiment one]{Distribution of QV Responses per Topic for experiment one}
     \label{fig:qv3_exp1}
 \end{figure}
 
@@ -125,11 +124,11 @@ Since we are interested in the alignment between survey responses and donation b
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/vote_donation_covariates.pdf}
+    \includegraphics[width=0.85\textwidth, keepaspectratio=true]{content/image/vote_donation_covariates.pdf}
     \caption{
-      Scatterplots showing the relationship between participants' normalized survey response and proportional donation amount for nine topics in all four conditions, Likert, QV36, QV108, and QV324. Each row is one topic, and each column is one survey condition.
+      Scatterplots showing the relationship between participants' normalized survey response and proportional donation amount for nine topics in all four conditions, Likert, QV36, QV108, and QV324. Each row is one topic, and each column is one survey condition. \textbf{The main finding} is: notice that for all subplots, the points showed a positive correlation between survey responses and donation behaviors. We also observed that slopes in the QV plots were more positive than that of Likert in most topics. This observation suggests a stronger correlation between QV survey responses and donation behaviors.
     }
-    \Description[Correlation scatterplots between normalized survey response and donation data for experiment 1]{
+    \Description[Correlation scatterplots between normalized survey response and donation data for experiment one]{
       Scatterplots showing the relationship between participants' survey response and proportional donation amount for each of the nine topics in all four conditions, Likert, QV36, QV108, and QV324.
     }
     \label{fig:topic_covariate_exp1}
@@ -138,9 +137,10 @@ Since we are interested in the alignment between survey responses and donation b
 
 
 \subsection{Bayesian Analysis Results}
-Overall, we concluded from our analysis that survey responses from QV108, QV324 and averaged QV aligned significantly better with the donation results than Likert responses with a medium effect size (0.5 - 0.6). 
+Overall, we concluded from our analysis that survey responses from QV108, QV324 and averaged QV aligned significantly better with the donation results than Likert scale responses with a medium effect size (0.5 - 0.6). 
 
-Recall in \Cref{exp1:The Bayesian Model}, we estimated the posterior distributions of the mean ($\mu_{1-4}$), standard deviation ($\sigma_{1-4}$), and degrees of freedom $\nu$ of the Student-t distributions that characterized the average cosine similarity angle for the four conditions, Likert, QV36, QV108, and QV324. Traceplots of the MCMC chains in~\Cref{fig:traceplot_exp1} show the results of MCMC estimation. The Gelman-Rubin statistic (a measure of MCMC convergence) $\hat{R}$ for all parameters was 1, indicating that the multiple sampling chains converged. To check if the fitted distributions described the data well, please refer to the discussion about posterior predictive check in 
+Recall in \Cref{exp1:The Bayesian Model}, we estimated the posterior distributions of the mean ($\mu_{1-4}$), standard deviation ($\sigma_{1-4}$), and degrees of freedom $\nu$ of the Student-t distributions that characterized the average cosine similarity angle for the four conditions, Likert, QV36, QV108, and QV324. Traceplots of the MCMC chains in~\Cref{fig:traceplot_exp1} show the results of MCMC estimation. The Gelman-Rubin statistic (a measure of MCMC convergence) $\hat{R}$ for all parameters was 1, indicating that the multiple sampling chains converged. 
+% To check if the fitted distributions described the data well, please refer to the discussion about posterior predictive check in 
 
 The first graph in the left column of~\Cref{fig:traceplot_exp1} shows that the mean cosine similarity angle of the four conditions varied. In QV108 and QV324 (the overlapping orange and green distributions on the left-most side), the modes of the mean cosine similarity angle (QV108: mode = $44.649 \deg$, QV324: mode = $44.796 \deg$) were smaller than those in the other two conditions, indicating a better alignment between the survey results and donation behavior in QV108 and QV324. The modal value of the average angle in QV36 (mode = $49.029 \deg$, the red distribution in the middle) was slightly higher than that of QV108 and QV324. Likert (the blue line) had the largest model value ($52.857 \deg$) among all four conditions. 
 % The posterior distributions of the scale parameter $\sigma$ in all four likelihood functions are similar, with a mode ranging from $13.904$ and $15.724$.
@@ -151,18 +151,18 @@ To compare how different the mean cosine similarity angles are statistically bet
   \centering
   \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{"content/image/Votes_vs_Absolute_Donation_StudentT_differences_and_effects.pdf"}
   \caption{
-    The figure shows the contrasts distribution of the mean cosine similarity angles between the four experimental conditions. The four columns show the contrasts between the Likert and QV36, QV108, QV324 and the averaged QV condition respectively. The first row shows the absolute difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. The main finding is: survey responses from QV108, QV324 and averaged QV aligned significantly better with the donation behaviors than Likert responses with a medium effect size.
+    The figure shows the contrasts distribution of the mean cosine similarity angles between the four experimental conditions. The four columns show the contrasts between the Likert and QV36, QV108, QV324 and the averaged QV condition respectively. The first row shows the absolute difference while the second row is about the effect size. Since we are highlighting contrasts, each sub-figure shows an orange vertical line located at 0. \textbf{The main finding} is: survey responses from QV108, QV324 and averaged QV aligned significantly better with the donation behaviors than Likert responses with a medium effect size.
   }
-  \Description[Contrasts distribution of the mean cosine similarity angles between the four experimental conditions for experiment 1]{Contrasts distribution of the mean cosine similarity angles between the four experimental conditions for experiment 1}
+  \Description[Contrasts distribution of the mean cosine similarity angles between the four experimental conditions for experiment one]{Contrasts distribution of the mean cosine similarity angles between the four experimental conditions for experiment one}
   \label{fig:contrast_exp1}
 \end{figure}
 
-We now examine column $2$ (Likert vs. QV108) in detail, and the rest of the columns follow a similar logic of interpretation. The second column shows the absolute contrast and its effect size of the mean cosine similarity angle between Likert and QV108. The absolute contrast equals to the angles in Likert group subtracted by the angles in QV108. In the top figure of the second column, the mode of the contrast is $8.1$ with the 94\% High Posterior Density (HPD) interval of [$2.4$, $14$]. This means that the cosine similarity angles in the Likert group were most frequently $8.1$ degrees larger than the angles in the QV108 group, i.e., Likert responses were most frequently $8.1$ degrees more misaligned with the donation behaviors than responses from QV108. $94\%$ of the difference in misalignment angles lie between [$2.4 \deg$, $14 \deg$]. Since the HPD lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1 \deg$, there was a significant difference between the alignment levels of the two survey instruments. In addition, the bottom figure of the second column shows that the effect size has a modal value of $0.57$, a medium-sized effect\footnote{We use the conventional standard that an effect of 0.2 is considered small, 0.5 is medium, and 0.8 is large.}. The HPD interval of the effect size is [$0.15$, $0.99$], not overlapping with the ROPE of [$0 \pm 0.1$], which consists of half of the small effect size of 0.2, indicating a statistically significant medium to large effect size.
+We now examine column $2$ (Likert vs. QV108) in detail, and the rest of the columns follow a similar logic of interpretation. The second column shows the absolute contrast and its effect size of the mean cosine similarity angle between Likert and QV108. The absolute contrast equals to the angles in Likert group subtracted by the angles in QV108. In the top figure of the second column, the mode of the contrast is $8.1$ with the 94\% High Posterior Density (HPD) interval of [$2.4$, $14$]. This means that the cosine similarity angles in the Likert group were most frequently $8.1$ degrees larger than the angles in the QV108 group, i.e., Likert responses were most frequently $8.1$ degrees more misaligned with the donation behaviors than responses from QV108. $94\%$ of the difference in misalignment angles lie between [$2.4 \deg$, $14 \deg$]. Since the HPD lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1 \deg$, there was a significant difference between the alignment levels of the two survey methods. In addition, the bottom figure of the second column shows that the effect size has a modal value of $0.57$, a medium-sized effect\footnote{We use the conventional standard that an effect of 0.2 is considered small, 0.5 is medium, and 0.8 is large.}. The HPD interval of the effect size is [$0.15$, $0.99$], not overlapping with the ROPE of [$0 \pm 0.1$], which consists of half of the small effect size of 0.2, indicating a statistically significant medium to large effect size.
 
 In the third column, we compare the mean cosine similarity angle of the Likert group
 against that of the QV324. The interpretation of this column is very similar to that of the second column above. It has a mode of $8.2$ with a 94\% High Posterior Density (HPD) interval of [$2.3$, $14$] for the contrast. Again, the HPD lies outside the ROPE of $0 \pm 1$ which implies that QV324 responses aligned significantly closer to the donation behaviors than Likert responses. Similarly, the effect size has a mode of $0.55$ with a 94\% HPD interval of [$0.14$, $0.95$], indicating a significant, medium to large-sized effect.
 
-The first column shows a different result. It compares the degree of misalignment of the Likert group against that of QV36. The mode of the contrast is $3.9$, with a 94\% High Posterior Density (HPD) interval of [$-2.1$, $10$]. While the mode is positive, the HPD interval overlaps with a ROPE of $0 \pm 1$, implying that the observed differences are not significant. The corresponding effect size shows a mode of $0.25$ and a HPD interval of [$-0.15$, $0.64$]. About 18.9\% of the HPD is to the left of zero, also indicating an insignificant effect size. The result suggests that QV survey with only 36 voice credits did not outperform Likert survey significantly in terms of alignment with the donation behaviors.
+The first column shows a different result. It compares the degree of misalignment of the Likert group against that of QV36. The mode of the contrast is $3.9$, with a 94\% High Posterior Density (HPD) interval of [$-2.1$, $10$]. While the mode is positive, the HPD interval overlaps with a ROPE of $0 \pm 1$, implying that the observed differences are not significant. The corresponding effect size shows a mode of $0.25$ and a HPD interval of [$-0.15$, $0.64$]. About 18.9\% of the HPD is to the left of zero, also indicating an insignificant effect size. The result suggests that QV survey with only 36 voice credits did not outperform Likert scale survey significantly in terms of alignment with the donation behaviors.
 
 At last, the fourth and final column compares the degree of misalignment with donation behaviors between the Likert group and the averaged QV condition, by pooling three groups of QV together. We see a mode of $6.7$ with an High Posterior Density (HPD) interval of [$1.6$, $12$]. Following the same interpretation logic, the pooled QV condition aligned significantly closer to the donation behaviors than Likert condition. The modal effect size is $0.56$, with an HPD interval of [$0.12$, $1.00$], indicating a significant medium to large effect size.
 % The posterior of the pooled QV condition is simply the averages of the values of the posteriors from QV36, QV108 and QV324 for every step in the MCMC, because the MCMC jointly estimates the posteriors of all variables at every step. 
@@ -172,9 +172,9 @@ At last, the fourth and final column compares the degree of misalignment with do
   \centering
   \includegraphics[trim= 2in 0in 2in 0in, clip, width=\textwidth, keepaspectratio=true]{content/image/StudentTIndep_VA_traceplot.pdf}
   \caption{
-    Traceplot showing the results of the MCMC estimation in experiment 1. The left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$ of the Student-t distribution. The right column shows the corresponding sampling traces. The color mappings are: red (QV36), orange (QV108), green (QV324), blue (Likert). Notice that QV108 and QV324 have similar distributions for $\mu_{1-4}$ and are to the left of QV36 and Likert, meaning a better alignment with donation behaviors. Likert shows the worst alignment: as a reminder, the ideal alignment angle should be $0^o$. Note also, that the modal value for degrees of freedom $\nu \approx 7$, confirming our choice of the Student-t distribution instead of the Normal distribution, which usually requires $\nu \geq 30$. Furthermore, the Gelman-Rubin statistic $\hat{R}$ for all parameters was 1, indicating  convergence of the sampling MCMC chains.
+    Traceplot showing the results of the MCMC estimation in experiment one. The left column is the posterior distributions for $\mu_{1-4}$, $\sigma_{1-4}$, and $\nu$ of the Student-t distribution. The right column shows the corresponding sampling traces. The color mappings are: red (QV36), orange (QV108), green (QV324), blue (Likert). Notice that QV108 and QV324 have similar distributions for $\mu_{1-4}$ and are to the left of QV36 and Likert, meaning a better alignment with donation behaviors. Likert shows the worst alignment: as a reminder, the ideal alignment angle should be $0^o$. Note also, that the modal value for degrees of freedom $\nu \approx 7$, confirming our choice of the Student-t distribution instead of the Normal distribution, which usually requires $\nu \geq 30$. Furthermore, the Gelman-Rubin statistic $\hat{R}$ for all parameters was 1, indicating  convergence of the sampling MCMC chains.
   }
-  \Description[Traceplot for the MCMC estimation in experiment 1 Bayesian model]{Traceplot for the MCMC estimation in experiment 1 Bayesian model}
+  \Description[Traceplot for the MCMC estimation in experiment one Bayesian model]{Traceplot for the MCMC estimation in experiment one Bayesian model}
   \label{fig:traceplot_exp1}
 \end{sidewaysfigure*}
 
