@@ -36,17 +36,10 @@ Prior work suggested that the type of video affected users' perceptions for vide
 In the next section, we describe how we conducted the video elements trade-off experiment to compare QV and Likert scale's ability in truthfully reflecting users' preferences across the video elements.
 % answering the research question in identifying the video/audio elements that impact participants' streaming experience the most.
 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/exp2_procedure.pdf}
-    \caption{
-        We used a within-subjects design for experiment two. We randomly assigned participants into two groups: one group would complete the Likert scale first and then quadratic voting; the other group experienced them in a reversed order.
-    }
-    \label{fig:exp2_flow}
-\end{figure}
+
 
 \subsection{Experimental Flow}
-We recruited participants on Mechanical Turk through the CloudResearch platform \cite{litman2017turkprime}. Like our first experiment, we used a pre-survey to match the participants' distribution with the U.S. population in age and education based on 2018 US census estimates. The average completion time was 35 minutes 42 seconds and all participants received \$6 as base pay and a bonus up to \$2. All participants followed six steps, as shown in \Cref{fig:exp2_flow}. The six steps were (1) demographic survey, (2) tutorials and attention checks, (3) a video playground, (4) Likert and QV surveys, (5) a distraction survey, and (6) a design task. Now we explain the six steps in detail. We provide the experiment protocol as supplementary materials.
+We recruited participants on Mechanical Turk through the CloudResearch platform \cite{litman2017turkprime}. Like our first experiment, we used a pre-survey to match the participants' distribution with the U.S. population in age and education based on 2018 US census estimates. The average completion time was 35 minutes 42 seconds and all participants received \$6 as base pay and a bonus up to \$2. All participants followed six steps. The six steps were (1) demographic survey, (2) tutorials and attention checks, (3) a video playground, (4) Likert and QV surveys, (5) a distraction survey, and (6) a design task. Now we explain the six steps in detail. \tc{We provide the experiment flow diagram in the appendix and present the experiment protocol as supplementary materials.}
 
 \textbf{Step 1. Demographic Survey} We greeted participants with a consent form. In the consent form, we presented the goal of the study as understanding how people think about the importance of the different elements during video streaming. We did not reveal to the participants that this experiment aimed to compare Likert and QV until they completed the survey. Once participants gave their consent, they would fill out a demographic survey that contained questions identical to those in the first experiment.
 
@@ -93,21 +86,12 @@ For each element, we provided a slider with four levels, Level 0 at the lowest q
 
 % The instruction also told participants to consider that each element is associated with a cost, and the buyer will need to pay each element's cost. We told participants that if the buyer decides to purchase the product, they will receive 10\% of the final price they proposed as their commission. 
 
-We guided participants to complete the task in two steps. \Cref{fig:exp2_store} shows the two interfaces. In the first step, participants needed to select one of the two qualities for each video element, a lower quality and a higher quality, and ``assemble'' the product. Quality one refers to level 0 in the playground, the worst one they had experienced. For quality two, we selected the quality levels in the playground that matched what prior research showed to be the ``acceptable level''\footnote{Motion smoothness: 6.25 fps; Audio stability: 10\% packet loss rate; Video resolution: 240x180 at 96 kbit/s; Audio quality: 16kHz sampling rate; Audio-video synchronization: visuals play 750ms ahead of the audio}. Participants saw real-time changes to the video as they updated the qualities. Participants were essentially making a binary decision of whether a video element was ``important'' or ``not important'' for them, and equivalently for the buyer that had similar preferences as them. 
+We guided participants to complete the task in two steps.  In the first step, participants needed to select one of the two qualities for each video element, a lower quality and a higher quality, and ``assemble'' the product. Quality one refers to level 0 in the playground, the worst one they had experienced. For quality two, we selected the quality levels in the playground that matched what prior research showed to be the ``acceptable level''\footnote{Motion smoothness: 6.25 fps; Audio stability: 10\% packet loss rate; Video resolution: 240x180 at 96 kbit/s; Audio quality: 16kHz sampling rate; Audio-video synchronization: visuals play 750ms ahead of the audio}. Participants saw real-time changes to the video as they updated the qualities. Participants were essentially making a binary decision of whether a video element was ``important'' or ``not important'' for them, and equivalently for the buyer that had similar preferences as them. 
 % This binary design prevents us from bounding participants' choices when provided a slider. 
 
 In the second step, participants set a price they thought to be reasonable for each of the five elements between \$0 - \$4 based on the qualities they selected and how much they thought the buyer would value them. The sum of these prices was the total price of the product. We reminded participants throughout the task that the higher they priced the elements, the more their bonus could be. However, if they overpriced any element from the buyer's perspective, the buyer might not purchase their design and they would fail to gain any bonus. 
 
 The goal of this design was to elicit the truthful willingness-to-pay for each participant as the their true preferences. Our set-up was incentive-compatible and the best strategy for the participants was to price based on how they themselves valued each of the elements. If they priced the product higher than their accurate valuations, the ``buyer'' with similar demographic and consumption preferences as them would reject their proposal, given that the buyer would likely value the elements the same way. Vice versa, if the participants set their prices to be lower than their actual willingness-to-pay, they would lose out on earning a higher bonus.
-
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth, keepaspectratio=true]{content/image/design_task.png}
-    \caption{
-        The two steps participants encountered when completing Step 6 of the survey. Participants would first need to select which one of the two qualities they would include in their video streaming product. Participants could see real-time changes to the video as they updated the qualities. Once they made their decisions, participants would price each of the elements between \$0 and \$4. Participants would receive a commission worth 10\% of the total price if the buyer accepted their product at their set prices.
-    }
-    \label{fig:exp2_store}
-\end{figure}
 
 % Notice that instead of giving participants the power to select the quality over various levels as they did in the video playground in step three. We only provide two qualities for each video element. 
 
