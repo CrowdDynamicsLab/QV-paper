@@ -36,6 +36,16 @@ Though QV elicits true preferences more accurately, it is less known among the c
 \section{Limitations and Future Work}
 QV is a relatively new area of research. Comparing the alignment of Likert scale and QV with users' true preferences is challenging. During the study, we identified various open questions that we've yet to address. In this subsection, we address our limitations and propose open questions for future research. 
 
+\tc{
+\subsection{Donation Limitations}
+One limitation lies in the design of using donations to measure an individual's truthful preferences. 
+There were limited prior work that used donations to elicit participants' actual preferences, but donating is an ecologically valid behavior expected in a daily scenario.
+We are aware that donating to a specific organization can be difficult to represent an individual's \textit{exact} preference of a broader social cause.
+To address this, we surveyed the participant's perception of these organizations and found no significant confound between their donation behavior and their responses (see Appendix X.)
+In addition, we focused on the proportion of donations spread across the charities instead of using the exact donation value. In other words, we are looking at how much one is willing to donate to a charity \textit{relative} to the other organizations.
+One could view the donation behaviors as an approximation of an individual's true belief, yet, the question of how accurate donation can infer an individual's exact preference is not the focus of this paper, but rather, how does QV reflect individuals behaviors.
+}
+
 \subsection{Comparing Ordinal Data with Numerical Data}
 To compare ordinal Likert scale responses with numerical donation amounts or set prices, we mapped the 5-point Likert scale to integers in the range of $[-2, 2]$. We used the number of votes in QV directly since they are numerical. We made this decision because selecting "Neutral" (mapped value = 0) in the Likert scale had a similar meaning as casting a zero vote in QV.
 
@@ -66,7 +76,10 @@ Different interface designs could nudge users to behave in specific ways. How th
 % Besides, showing an individual how they had allocated their votes could also potentially interfere and encourage voters to vote for or against an option
 
 \subsection{Quality of Data Collection via MTurk}
-Our experiments, like all other experiments conducted on MTurk, suffered the risk of recruiting uncommitted Turkers that do not complete the experiment carefully. To mitigate the risk, we implemented multiple tutorials, quizzes, and attention checks, filtered out responses with facetious free-form text responses, and introduced incentive-compatible tasks with financial incentives. Yet, we acknowledge the limitation that we cannot guarantee that all participants joined the study with good faith or participated in the incentive-compatible tasks with a rational mindset.
+Our experiments, like all other experiments conducted on MTurk, suffered the risk of recruiting uncommitted Turkers that do not complete the experiment carefully. \tc{More specifically, Turkers have a stronger motive to earn money then to contribute their time and effort supplying truthful responses.} To mitigate the risk, we implemented multiple tutorials, quizzes, and attention checks, filtered out responses with facetious free-form text responses, and introduced incentive-compatible tasks with financial incentives. Yet, we acknowledge the limitation that we cannot guarantee that all participants joined the study with good faith or participated in the incentive-compatible tasks with a rational mindset.
+
+
+
 
 %We showed promising results of QV in our study -- QV elicited true preferences more accurately from participants than a 5-point Likert scale when making a collective decision to choose among $K$ options. Given the popularity of Likert scale surveys in a wide range of disciplines that involve self-reporting, our research asks an intriguing question -- whether there is an alternative survey method that can elicit accurate opinions by leveraging computational power. However, it is critical to reaffirm that the goal of this study is not to claim one survey method should replace another. As mentioned above, there still exist many open questions to understand the nuances in QV. Survey creators should carefully consider the strengths and weaknesses (e.g., higher cost to educate participants, higher cognitive cost for participants) of QV and select the best suiting survey method in their contexts.
 
