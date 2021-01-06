@@ -31,3 +31,6 @@ output_filename.pdf
 
 # mac os x
 .DS_Store
+
+#WSL
+*.Identifier
