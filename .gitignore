@@ -34,3 +34,6 @@ output_filename.pdf
 
 #WSL
 *.Identifier
+
+#Others
+*.txt
