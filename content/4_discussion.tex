@@ -15,7 +15,6 @@ In conditions where a survey aims to understand how people make trade-offs among
 Another potential reason why QV aligned better with incentive-compatible behaviors is that, with a large enough budget, QV allowed participants more flexibility to express their opinions. A 5-point Likert scale provides only five choices for each question, limiting the way a participant can voice their opinion. One Likert group participant in the first experiment explicitly mentioned ``[\textellipsis] I would answer otherwise, if there were other options, such as not much, or a little bit.'' Participants wanted to express more fine-grained attitudes while a 5-point Likert scale forced them to map their preferences onto a limited fixed scale. QV, in contrast, allows participants to specify the relative distance between two options with greater flexibility, as long as the total cost does not exceed the given credits. The flexibility may enable participants to stay closer to their incentive-compatible preferences when rating the options.
 
 We compared QV to a 5-point Likert scale in this study because the 5-point Likert scale is one of the most commonly used Likert scales in various fields \cite{malhotra2006basic}, including public policy and HCI. One may conjecture that a 7-point or 11-point Likert scale may allow more flexibility than a 5-point Likert scale. Debates about the scale format in Likert scale surveys started in 1965 \cite{komorita1965number}. Some studies found that results among different scale formats were transferable while others found certain differences \cite{dawes2008data}. We leave the comparison of Likert scale surveys in other scale formats and QV surveys as an open question for future research.
-% This research showed that if the options are homogeneous, a two-point Likert scale yields as high-reliability coefficient as a multi-category system. The research also emphasized that reliability should not be the only metric when deciding which scale is better than the other scale, much more the opposite. It implies that a scale should be chosen for the purpose it aims to serve and the context it is used in. However, in modern research that utilize Likert surveys, there was often little to no discussions describing why the researchers used a specific type of Likert survey. 
 
 \subsection{Effects of the Amount of Voice Credits}
 In RQ1, we investigated how the number of voice credits available to participants impacted the QV survey results empirically. In experiment one, Bayesian analysis showed that QV results did not align with true preferences significantly better than a 5-point Likert scale until a sufficient amount of voice credits was used. We saw that QV with 36 voice credits ($O(K)$) under-performed QV with 108 ($O(K^{1.5})$) and 324 ($O(K^{2})$) voice credits. We found potential explanations through participants' free-form text responses. 
@@ -36,14 +35,13 @@ Though QV elicits true preferences more accurately, it is less known among the c
 \section{Limitations and Future Work}
 QV is a relatively new area of research. Comparing the alignment of Likert scale and QV with users' true preferences is challenging. During the study, we identified various open questions that we've yet to address. In this subsection, we address our limitations and propose open questions for future research. 
 
-
 \subsection{Comparing Ordinal Data with Numerical Data}
 To compare ordinal Likert scale responses with numerical donation amounts or set prices, we mapped the 5-point Likert scale to integers in the range of $[-2, 2]$. We used the number of votes in QV directly since they are numerical. We made this decision because selecting "Neutral" (mapped value = 0) in the Likert scale had a similar meaning as casting a zero vote in QV.
 
 Whether our approach of mapping Likert data to metric values is the best approach to compare ordinal data with numerical data is debatable. At the same time, identifying the best measure to do so is challenging -- the best way to analyze ordinal Likert data is still open to debate today \cite{gob2007ordinal}. Future research could explore if there are alternatives for such a comparison that circumvent the challenge of mapping ordinal data. 
 
 \subsection{Comparing QV with Other Surveying Methods}
-% In the previous subsection, we mentioned that Likert survey choices could limit individuals' degree of freedom to express their attitudes. One open question includes investigating if another type of Likert survey influences participants' behavior compared to QV. In addition,
+
 Despite Likert scale being one of the most-used surveying techniques, we are curious about how other voting mechanisms that capture the concept of resource constraints or relative-preference elicitation perform compared to QV. Examples include but are not limited to knapsack voting \cite{goel2015knapsack} and ranked-based voting \cite{ledo2018evaluation}. Knapsack voting similarly uses a budget, but the cost of QV's vote grows quadratically while the cost of an option in knapsack voting is fixed. Ranked-based voting elicits relative rankings among options, which incurs trade-off thinking, but does not show the magnitude of differences between the options, unlike QV. The coexistence of differences and similarities of these voting mechanisms with QV makes the comparison of their performances an interesting open question.
 
 \subsection{Upper Bound of the Number of Options}
@@ -57,10 +55,10 @@ In the first experiment, the survey asked participants to choose among $K$ indep
 
 Similarly, our study only tested QV in the context of public policy and an HCI user study. Many other disciplines make use of Likert scale surveys to help make collective decisions. Future research can explore if QV better elicits true preferences than Likert scale in other domains.
 
-\lwt{
+{\change{
 \subsection{Generalizability to Non-US Population}
 While our experiment samples covered a wide range of ages and education levels, we targeted only the US population due to limited resources. Prior studies have found that cultural background affected response patterns in Likert scale surveys \cite{davey2007one}. Thus, future research needs to explore if cultural background also impacts people's interaction with QV and whether our results hold under those circumstances.
-}
+}}
 
 \subsection{User Study on QV}
 Understanding how individuals learn about, feel about, and use QV is an important topic. Without a doubt, understanding how QV works requires more cognitive load than traditional voting and surveying techniques, and using QV takes more time and effort. In addition, examining respondents' mental models of QV and how the models impact individuals decision-making process may help decision-makers further understand the effectiveness of QV empirically and design better QV surveys and interfaces. Our study only scratched the surface of the above questions by using the responses from a few free-form text questions. Thus, future work may conduct a rigorous user study to explore these questions.
@@ -69,91 +67,16 @@ Understanding how individuals learn about, feel about, and use QV is an importan
 The final open question is designing a simple, intuitive QV interface for empirical use. QV involves more complicated calculations than Likert. A well-designed interface should reduce a user's cognitive load to help them make accurate decisions easily. Currently, after our iterative-design process, we provided participants information such as the number of votes per option, voice credits used and voice credits remaining, and how they allocate the voice credits to each option. 
 
 Different interface designs could nudge users to behave in specific ways. How the interface should provide voters with this information in an optimal way remains an open question. Finally, we need to investigate QV interface designs for mobile and tablet devices.
-% Besides, showing an individual how they had allocated their votes could also potentially interfere and encourage voters to vote for or against an option
 
-\tc{
+{\change{
 \subsection{Donation as True Preferences}
 While much prior work used binding voluntary donations with real monetary consequences to elicit participants' true preferences \cite{zawojska2015re, getzner2000hypothetical, ready2010using, benz2008people, gendall2010effect}, we acknowledge the limitations of such an approach. For example, factors, including the prior experience with a charity, may impact the donation amount. Thus, we surveyed the participants' impressions across the listed organizations before completing the donation task to detect possible confound. We confirmed that, since the impression distributions of the chosen charities were similar across all experimental groups, impact from impressions should not exhibit much within-group differences.
 
 Another limitation is whether donation results on MTurk are a reasonable estimation of MTurk workers' true preferences. MTurkers may be less likely to donate due to a stronger incentive to earn money. However, as~\textcite{Shah2015a} argue, individuals with scarce resources, including money, are \textit{more} likely to exhibit the idealized rational behavior than those without resource scarcity. Thus, we might expect little or no donation from MTurkers. Assuming that MTurk workers reduce their donation amount equally across all causes, we minimized this limitation by focusing on the \textit{proportion} of donations across the charities instead of using the absolute donation value. In other words, we were looking at how much more one was willing to donate to a charity \textit{relative} to the other organizations.
 
 That individuals donate to public goods, including charities, is puzzle to economists since game theory predicts that rational individuals will free-ride, and thus there ought to be no contributions to public goods, including charities.~\textcite{Andreoni1989} further develops the theory of `warm-glow giving' which suggests that individuals donate to public-goods in order to receive social acclaim or to avoid scorn. The theory developed by~\textcite{Andreoni1989} is that of `impure altruim' and is consistent with empirical observations of charitable giving.
-
-}
+}}
 
 \subsection{Quality of Data Collection via MTurk}
-Our experiments, like all other experiments conducted on MTurk, suffered from the limitation that not all participants joined the study with good faith or participated in the incentive-compatible tasks with a rational mindset. To mitigate the risk, we implemented multiple tutorials, quizzes, and attention checks, filtered out responses with facetious free-form text responses, and introduced incentive-compatible tasks with financial incentives. \lwt{To ensure response quality, we confirmed that most participants used up almost all QV budgets and donated to more than one charities as shown in \Cref{total_donation} and \Cref{individual_donation}.}
+Our experiments, like all other experiments conducted on MTurk, suffered {\change{from the limitation that not all participants joined the study with good faith or participated in the incentive-compatible tasks with a rational mindset.}} To mitigate the risk, we implemented multiple tutorials, quizzes, and attention checks, filtered out responses with facetious free-form text responses, and introduced incentive-compatible tasks with financial incentives. {\change{To ensure response quality, we confirmed that most participants used up almost all QV budgets and donated to more than one charities as shown in~\Cref{total_donation} and~\Cref{individual_donation}.}}
 
-
-
-%We showed promising results of QV in our study -- QV elicited true preferences more accurately from participants than a 5-point Likert scale when making a collective decision to choose among $K$ options. Given the popularity of Likert scale surveys in a wide range of disciplines that involve self-reporting, our research asks an intriguing question -- whether there is an alternative survey method that can elicit accurate opinions by leveraging computational power. However, it is critical to reaffirm that the goal of this study is not to claim one survey method should replace another. As mentioned above, there still exist many open questions to understand the nuances in QV. Survey creators should carefully consider the strengths and weaknesses (e.g., higher cost to educate participants, higher cognitive cost for participants) of QV and select the best suiting survey method in their contexts.
-
-
-
-% \subsection{Where are QV's limitations}
-% Experiment two shows a slightly different and more nuanced result.
-% It is important to know that
-% the characteristics of the ballot options 
-% are different compared to experiment one.
-% On this ballot, the options are \textit{multiple aspects}
-% of a same question.
-% In other words, 
-% one requires all options 
-% to form the result of the final outcome.
-% Let us use an analogy:
-% If experiment one asks you
-% ``how much do you prefer between
-% coke, fries, and burgers'',
-% the second experiment asks you
-% ``how important do you think
-% freshness, taste, and texture 
-% of your beef patty are?''
-% Notice the options in the first question 
-% are independent while 
-% those in the second question 
-% collectively decide how good a beef patty is.
-
-% From an intensity perspective 
-% of the aggregated opinions, 
-% qualitatively we can observe that 
-% the preference result from QV aligns closer 
-% to the true preference than that from Likert. 
-% We have yet to examine its statistical significance 
-% due to an experiment design limitation. 
-% From a preference ranking perspective, 
-% neither of the results from the Likert survey 
-% and QV survey
-% diverged significantly 
-% from the incentive-compatible behaviors 
-% that the buyback group demonstrated. 
-% However, part of the Likert results 
-% did diverge significantly from the QV results, 
-% since aspects in Likert results clustered 
-% in the higher rankings, 
-% while aspects in the QV results 
-% spread out more across the lower rankings. 
-% Such finding echoes part of the conclusion 
-% in the first experiment, 
-% where QV is able to show finer-grained preference results 
-% than Likert.
-
-% In conclusion,
-% we can conclude that QV with a sufficient budget outperforms Likert surveys when the survey aims to elicit preferences in a 1 in $K$ setting.
-% There is not enough statistical evidence yet to conclude whether QV aligns to true preference better than Likert if the survey options are multiple aspects of the same subject. Nevertheless, both experiments demonstrated that QV elicits finer grain preferences from people than Likert in both cases, which is an advantage survey designer could leverage to gain more in-depth understanding of people's opinions.
-
-
-
-% \subsection{Design Implications}
-% Given these discussions, 
-% we propose the following design implications. 
-% First, QV provides more fine-grain results,
-% including the preference and the level of intensity,
-% a group has on a particular topic,
-% when deciding among one in $K$ options.
-% In the CSCW community,
-% we believe this can be applied to 
-% many collective decision-making processes.
-% Form electing a great project among many,
-% to redistributing limited resources among those in need,
-% QV serves as an alternative tool 
-% than traditional Likert surveys.
