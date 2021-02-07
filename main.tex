@@ -1,6 +1,6 @@
 % \documentclass[format=acmsmall, natbib=false, review=false, authordraft=false, anonymous=true, screen=true]{acmart}
 \RequirePackage{rotating}
-\documentclass[format=acmsmall, natbib=false, anonymous=true, review=true]{acmart}
+\documentclass[format=acmsmall, natbib=false, anonymous=false, review=false]{acmart}
 
 \usepackage{enumitem}
 \usepackage{graphicx}  % another package that works for figures
@@ -50,17 +50,27 @@
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-\setcopyright{acmcopyright}
-\copyrightyear{2021}
-\acmYear{2021}
-\acmDOI{10.1145/1122445.1122456}
+% \setcopyright{acmcopyright}
+% \copyrightyear{2021}
+% \acmYear{2021}
+% \acmDOI{10.1145/1122445.1122456}
 
-%% These commands are for a PROCEEDINGS abstract or paper.
-\acmConference[CSCW '21]{CSCW '21: The 24rd ACM Conference on Computer-Supported Cooperative Work and Social Computing}{Nov 03 -- 07, 2021}{Toronto, Canada}
-\acmBooktitle{CSCW '21: The 24rd ACM Conference on Computer-Supported Cooperative Work and Social Computing,
-Nov 03 -- 07, 2021, Toronto, Canada}
-\acmPrice{15.00}
-\acmISBN{978-1-4503-9999-9/18/06}
+\setcopyright{acmlicensed}
+\acmJournal{PACMHCI}
+\acmYear{2021} \acmVolume{5} \acmNumber{CSCW1} \acmArticle{182} \acmMonth{4} \acmPrice{15.00}\acmDOI{10.1145/3449281}
+
+% For Articles 180-195:
+\received{October 2020}
+\received[revised]{January 2021}
+\received[accepted]{January 2021}
+
+
+% %% These commands are for a PROCEEDINGS abstract or paper.
+% \acmConference[CSCW '21]{CSCW '21: The 24rd ACM Conference on Computer-Supported Cooperative Work and Social Computing}{Nov 03 -- 07, 2021}{Toronto, Canada}
+% \acmBooktitle{CSCW '21: The 24rd ACM Conference on Computer-Supported Cooperative Work and Social Computing,
+% Nov 03 -- 07, 2021, Toronto, Canada}
+% \acmPrice{15.00}
+% \acmISBN{978-1-4503-9999-9/18/06}
 
 
 %%
@@ -68,7 +78,7 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 %% Use this when submitting an article to a sponsored event. You'll
 %% receive a unique submission ID from the organizers
 %% of the event, and this ID should be used as the parameter to this command.
-\acmSubmissionID{123-A56-BU3}
+\acmSubmissionID{V5cscw182}
 
 %%
 %% The majority of ACM publications use numbered citations and
@@ -101,15 +111,13 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 %% Of note is the shared affiliation of the first two authors, and the
 %% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
+
 \author{Ti-Chung Cheng}
 \authornote{Both authors contributed equally to this research.}
 \email{tcheng10@illinois.edu}
-\affiliation{%
-  \institution{University of Illinois at Urbana-Champaign}
-}
-
+\orcid{1234-5678-9012}
 \author{Tiffany Wenting Li}
-
+\authornotemark[1]
 \email{wenting7@illinois.edu}
 \affiliation{%
   \institution{University of Illinois at Urbana-Champaign}
@@ -118,7 +126,7 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 \author{Yi-Hong Chou}
 \email{hank0982@link.cuhk.edu.hk}
 \affiliation{%
-  \institution{Independent Researcher}
+  \institution{The Chinese University of Hong Kong}
 }
 
 \author{Karrie Karahalios}
@@ -139,7 +147,7 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 % %% other information printed in the page headers. This command allows
 % %% the author to define a more concise list
 % %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Ti-Chung Cheng and Wenting Li, et al.}
+\renewcommand{\shortauthors}{Cheng and Li, et al.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -179,7 +187,7 @@ Nov 03 -- 07, 2021, Toronto, Canada}
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{Quadratic Voting, Likert scale, Empirical studies, Collective decision-making}
+\keywords{Quadratic Voting; Likert scale; Empirical studies; Collective decision-making}
 
 
 %%
