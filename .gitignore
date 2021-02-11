@@ -18,6 +18,7 @@
 *.gz
 *.cut
 main*
+m2.bbl
 
 ## Intermediate documents:
 *.dvi
