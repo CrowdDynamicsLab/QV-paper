@@ -117,7 +117,7 @@ In experiment two, we designed the research scenario to answer the following que
 \end{figure}
 
 \subsection{Experiment two video interface implementation detials}~\label{appx_video_interface}
-For this experimental setup, we used AngularJS and bootstrap for the front-end implementation powered by Flask web framework written in Python. We used MongoDB Atlas to store data and Heroku to serve the system. Survey.js rendered all types of surveys besides the QV interface in our experiment. The experiment source code is publicly available \footnote{https://github.com/a2975667/QV-buyback} and so is the standalone QV interface \footnote{https://github.com/hank0982/QV-app}.
+For this experimental setup, we used AngularJS and bootstrap for the front-end implementation powered by Flask web framework written in Python. We used MongoDB Atlas to store data and Heroku to serve the system. Survey.js rendered all types of surveys besides the QV interface in our experiment. The experiment source code is publicly available \footnote{https://github.com/a2975667/QV-buyback} and so is the standalone QV interface \footnote{https://github.com/hank0982/SimpleQV}.
 
 In this experiment, the most challenging component is to design a stable, reliable, and real-time video rendering interface for participants to experience how changes in different video element quality contribute to their overall experience. Since we provided four possible levels of adjustments for each element, there will be $4^5 = 1024$ possible combinations, which is impossible to pre-generate and serve to the participants. Therefore, we need a real-time rendering video playback system in our experiment. 
 
