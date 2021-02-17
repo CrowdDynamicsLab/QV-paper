@@ -17,7 +17,6 @@
 *.fdb_latexmk
 *.gz
 *.cut
-main*
 m2.bbl
 
 ## Intermediate documents:
@@ -30,7 +29,6 @@ __latexindent_temp.tex
 .vscode
 
 ## main pdf
-main.pdf
 m2.pdf
 output_filename.pdf
 

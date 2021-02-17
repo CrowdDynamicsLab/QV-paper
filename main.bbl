@@ -1,0 +1,2680 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{colorado_qv}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{title}{\$120 million in requests and \$40 million in the bank. How an obscure theory helped prioritize the Colorado budget.}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://coloradosun.com/2019/05/28/quadratic-voting-colorado-house-budget/
+      \endverb
+      \verb{url}
+      \verb https://coloradosun.com/2019/05/28/quadratic-voting-colorado-house-budget/
+      \endverb
+    \endentry
+    \entry{alwin1985measurement}{article}{}
+      \name{author}{2}{}{%
+        {{hash=163e9b23f9a6d54eb86843f9f1fb9794}{%
+           family={Alwin},
+           familyi={A\bibinitperiod},
+           given={Duane\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a5089c9f0c9a15ef61c2cb7f543c5a2e}{%
+           family={Krosnick},
+           familyi={K\bibinitperiod},
+           given={Jon\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{e1c32cab99a6797371b2024bc89d2944}
+      \strng{fullhash}{e1c32cab99a6797371b2024bc89d2944}
+      \strng{bibnamehash}{e1c32cab99a6797371b2024bc89d2944}
+      \strng{authorbibnamehash}{e1c32cab99a6797371b2024bc89d2944}
+      \strng{authornamehash}{e1c32cab99a6797371b2024bc89d2944}
+      \strng{authorfullhash}{e1c32cab99a6797371b2024bc89d2944}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Opinion Quarterly}
+      \field{number}{4}
+      \field{title}{The measurement of values in surveys: A comparison of ratings and rankings}
+      \field{volume}{49}
+      \field{year}{1985}
+      \field{pages}{535\bibrangedash 552}
+      \range{pages}{18}
+    \endentry
+    \entry{Andreoni1989}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5a2f659a503a3810cffa08f5c6ae817b}{%
+           family={Andreoni},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The University of Chicago Press}%
+      }
+      \strng{namehash}{5a2f659a503a3810cffa08f5c6ae817b}
+      \strng{fullhash}{5a2f659a503a3810cffa08f5c6ae817b}
+      \strng{bibnamehash}{5a2f659a503a3810cffa08f5c6ae817b}
+      \strng{authorbibnamehash}{5a2f659a503a3810cffa08f5c6ae817b}
+      \strng{authornamehash}{5a2f659a503a3810cffa08f5c6ae817b}
+      \strng{authorfullhash}{5a2f659a503a3810cffa08f5c6ae817b}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of political Economy}
+      \field{number}{6}
+      \field{title}{Giving with impure altruism: Applications to charity and Ricardian equivalence}
+      \field{volume}{97}
+      \field{year}{1989}
+      \field{pages}{1447\bibrangedash 1458}
+      \range{pages}{12}
+    \endentry
+    \entry{araujo2017much}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c65a5b424e24622ac946ec7e4a124c6e}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cdef557b6795a4bfc654e945ad31ea87}{%
+           family={Wonneberger},
+           familyi={W\bibinitperiod},
+           given={Anke},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ca8c26b6afe46012f1ed9fabdf7e08bc}{%
+           family={Neijens},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=48be10c4ba00a65907bf884648ce0bf5}{%
+           family={Vreese},
+           familyi={V\bibinitperiod},
+           given={Claes},
+           giveni={C\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{6cb445c975961a41ca0ac45f9ee2af84}
+      \strng{fullhash}{c2adc93a9a8c76f9b37b3c231265b51d}
+      \strng{bibnamehash}{c2adc93a9a8c76f9b37b3c231265b51d}
+      \strng{authorbibnamehash}{c2adc93a9a8c76f9b37b3c231265b51d}
+      \strng{authornamehash}{6cb445c975961a41ca0ac45f9ee2af84}
+      \strng{authorfullhash}{c2adc93a9a8c76f9b37b3c231265b51d}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communication Methods and Measures}
+      \field{number}{3}
+      \field{title}{How much time do you spend online? Understanding and improving the accuracy of self-reported measures of Internet use}
+      \field{volume}{11}
+      \field{year}{2017}
+      \field{pages}{173\bibrangedash 190}
+      \range{pages}{18}
+    \endentry
+    \entry{batchelor2016extreme}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b30261037bc6b3f385cd00712c201179}{%
+           family={Batchelor},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=18b407487391f44861121aabdd6e93b0}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{27d6b4b9b582149e1b5232df0e2cf669}
+      \strng{fullhash}{27d6b4b9b582149e1b5232df0e2cf669}
+      \strng{bibnamehash}{27d6b4b9b582149e1b5232df0e2cf669}
+      \strng{authorbibnamehash}{27d6b4b9b582149e1b5232df0e2cf669}
+      \strng{authornamehash}{27d6b4b9b582149e1b5232df0e2cf669}
+      \strng{authorfullhash}{27d6b4b9b582149e1b5232df0e2cf669}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Organizational Psychology}
+      \field{number}{2}
+      \field{title}{Extreme response style: A meta-analysis}
+      \field{volume}{16}
+      \field{year}{2016}
+    \endentry
+    \entry{benade2020preference}{article}{}
+      \name{author}{4}{}{%
+        {{hash=12248a101c012488ee76f555ecc55ab1}{%
+           family={Benade},
+           familyi={B\bibinitperiod},
+           given={Gerdus},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3191964a38d73a2647f2e9173c74f321}{%
+           family={Nath},
+           familyi={N\bibinitperiod},
+           given={Swaprava},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7ff34acec04d8032d96671d5ccbe05bc}{%
+           family={Procaccia},
+           familyi={P\bibinitperiod},
+           given={Ariel\bibnamedelima D},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=89c887fd6cd263b082aa519a5a7b8538}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Nisarg},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{767db0f6bd9371694934399b7acf41b1}
+      \strng{fullhash}{fe7bbbba6ed9d5f56f21119ddb605b2f}
+      \strng{bibnamehash}{fe7bbbba6ed9d5f56f21119ddb605b2f}
+      \strng{authorbibnamehash}{fe7bbbba6ed9d5f56f21119ddb605b2f}
+      \strng{authornamehash}{767db0f6bd9371694934399b7acf41b1}
+      \strng{authorfullhash}{fe7bbbba6ed9d5f56f21119ddb605b2f}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management Science}
+      \field{title}{Preference elicitation for participatory budgeting}
+      \field{year}{2020}
+    \endentry
+    \entry{benz2008people}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77dde4c4e057603fd74dc9561c151a44}{%
+           family={Benz},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e54a334dd0071f78e8e405cc18e45699}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f53d9e872c0d0e8d17c75e37af3110d4}
+      \strng{fullhash}{f53d9e872c0d0e8d17c75e37af3110d4}
+      \strng{bibnamehash}{f53d9e872c0d0e8d17c75e37af3110d4}
+      \strng{authorbibnamehash}{f53d9e872c0d0e8d17c75e37af3110d4}
+      \strng{authornamehash}{f53d9e872c0d0e8d17c75e37af3110d4}
+      \strng{authorfullhash}{f53d9e872c0d0e8d17c75e37af3110d4}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Experimental economics}
+      \field{number}{3}
+      \field{title}{Do people behave in experiments as in the field?---evidence from donations}
+      \field{volume}{11}
+      \field{year}{2008}
+      \field{pages}{268\bibrangedash 281}
+      \range{pages}{14}
+    \endentry
+    \entry{berinsky2012evaluating}{article}{}
+      \name{author}{3}{}{%
+        {{hash=abff43c547820881e66248439eaa0b33}{%
+           family={Berinsky},
+           familyi={B\bibinitperiod},
+           given={Adam\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3b8e4a16861a12dbf1c341fba083f625}{%
+           family={Huber},
+           familyi={H\bibinitperiod},
+           given={Gregory\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f93853519e951eb031926a8a0bbfd809}{%
+           family={Lenz},
+           familyi={L\bibinitperiod},
+           given={Gabriel\bibnamedelima S},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{960285bda09907e450d4192d6080e878}
+      \strng{fullhash}{32526251395c8ca24740ffbb7f06f69f}
+      \strng{bibnamehash}{32526251395c8ca24740ffbb7f06f69f}
+      \strng{authorbibnamehash}{32526251395c8ca24740ffbb7f06f69f}
+      \strng{authornamehash}{960285bda09907e450d4192d6080e878}
+      \strng{authorfullhash}{32526251395c8ca24740ffbb7f06f69f}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Political analysis}
+      \field{number}{3}
+      \field{title}{Evaluating online labor markets for experimental research: Amazon. com's Mechanical Turk}
+      \field{volume}{20}
+      \field{year}{2012}
+      \field{pages}{351\bibrangedash 368}
+      \range{pages}{18}
+    \endentry
+    \entry{cabannes2004participatory}{article}{}
+      \name{author}{1}{}{%
+        {{hash=23446114dbd2330ecc37d0c660137da8}{%
+           family={Cabannes},
+           familyi={C\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications Sage CA: Thousand Oaks, CA}%
+      }
+      \strng{namehash}{23446114dbd2330ecc37d0c660137da8}
+      \strng{fullhash}{23446114dbd2330ecc37d0c660137da8}
+      \strng{bibnamehash}{23446114dbd2330ecc37d0c660137da8}
+      \strng{authorbibnamehash}{23446114dbd2330ecc37d0c660137da8}
+      \strng{authornamehash}{23446114dbd2330ecc37d0c660137da8}
+      \strng{authorfullhash}{23446114dbd2330ecc37d0c660137da8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Environment and urbanization}
+      \field{number}{1}
+      \field{title}{Participatory budgeting: a significant contribution to participatory democracy}
+      \field{volume}{16}
+      \field{year}{2004}
+      \field{pages}{27\bibrangedash 46}
+      \range{pages}{20}
+    \endentry
+    \entry{cavaille2018towards}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c931aaca4d2e2e2514b583391a2a2468}{%
+           family={Cavaill{é}},
+           familyi={C\bibinitperiod},
+           given={Charlotte},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a9940017ad7dd8651f47dce93080dd90}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelima L},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=e08be7ec6ef1dcbab351b02589f7da9e}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Straeten},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Karine},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TSE Working Paper}%
+      }
+      \strng{namehash}{ae4c3c0e08793d1632d501c16be5c4f5}
+      \strng{fullhash}{cdf761ddf7b5443ff5126fc4adb87909}
+      \strng{bibnamehash}{cdf761ddf7b5443ff5126fc4adb87909}
+      \strng{authorbibnamehash}{cdf761ddf7b5443ff5126fc4adb87909}
+      \strng{authornamehash}{ae4c3c0e08793d1632d501c16be5c4f5}
+      \strng{authorfullhash}{cdf761ddf7b5443ff5126fc4adb87909}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Towards a General Theory of Survey Response: Likert Scales Vs. Quadratic Voting for Attitudinal Research}
+      \field{year}{2018}
+    \endentry
+    \entry{champ1997using}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3bdf5b3cdfa94d0e46565a5b0ef5eef7}{%
+           family={Champ},
+           familyi={C\bibinitperiod},
+           given={Patricia\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9018cf765efa2fa770e4f28a9f0ece8c}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=6b187a3bf7962687c1c14f7558a59fc2}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Thomas\bibnamedelima C},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1c69736e7b46a22a979ee62b56270b50}{%
+           family={McCollum},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima W},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{00f94f68bb3d741787c3b76d12558b3c}
+      \strng{fullhash}{cf1af7a65407fddcfb3d4f26709920ec}
+      \strng{bibnamehash}{cf1af7a65407fddcfb3d4f26709920ec}
+      \strng{authorbibnamehash}{cf1af7a65407fddcfb3d4f26709920ec}
+      \strng{authornamehash}{00f94f68bb3d741787c3b76d12558b3c}
+      \strng{authorfullhash}{cf1af7a65407fddcfb3d4f26709920ec}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of environmental economics and management}
+      \field{number}{2}
+      \field{title}{Using donation mechanisms to value nonuse benefits from public goods}
+      \field{volume}{33}
+      \field{year}{1997}
+      \field{pages}{151\bibrangedash 162}
+      \range{pages}{12}
+    \endentry
+    \entry{chang2017alpharead}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=8f794f4efb395dda49e3d6f10d314042}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Yuan-Chia},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=70762167cd275d8c77930773c922d88c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hao-Chuan},
+           giveni={H\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=9be0ac91e684a1f680a0ff61fa910c59}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Hung-kuo},
+           giveni={H\bibinithyphendelim k\bibinitperiod}}}%
+        {{hash=ff0f40333f2138168df8e04a7641ad57}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Shung-Ying},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=13ee139830c180282389c277f66ac11c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shuo-Ping},
+           giveni={S\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a686729a8ea8ccc48d040c091e56eaeb}
+      \strng{fullhash}{7d7fe526a37d7b9c9b4f4749c86a4116}
+      \strng{bibnamehash}{7d7fe526a37d7b9c9b4f4749c86a4116}
+      \strng{authorbibnamehash}{7d7fe526a37d7b9c9b4f4749c86a4116}
+      \strng{authornamehash}{a686729a8ea8ccc48d040c091e56eaeb}
+      \strng{authorfullhash}{7d7fe526a37d7b9c9b4f4749c86a4116}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing}
+      \field{title}{AlphaRead: Support unambiguous referencing in remote collaboration with readable object annotation}
+      \field{year}{2017}
+      \field{pages}{2246\bibrangedash 2259}
+      \range{pages}{14}
+    \endentry
+    \entry{illinoisdatabankIDB_1928463}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=3d442d71831f6d0e89d09d7f7bd94740}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Ti-Chung},
+           giveni={T\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=3a43184aa7231b8ef02c6aabbcd48b7d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Tiffany\bibnamedelima Wenting},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=fd5039fa655dfef04da6f83e6dd93c1e}{%
+           family={Karahalios},
+           familyi={K\bibinitperiod},
+           given={Karrie},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0f0ac089d382457e8848268a5aaabbe8}{%
+           family={Sundaram},
+           familyi={S\bibinitperiod},
+           given={Hari},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Illinois at Urbana-Champaign}%
+      }
+      \strng{namehash}{50ddb3bef0922c3444a8c8f1aca227ed}
+      \strng{fullhash}{d708972d8aea0d7705e1ab63f6655e72}
+      \strng{bibnamehash}{d708972d8aea0d7705e1ab63f6655e72}
+      \strng{authorbibnamehash}{d708972d8aea0d7705e1ab63f6655e72}
+      \strng{authornamehash}{50ddb3bef0922c3444a8c8f1aca227ed}
+      \strng{authorfullhash}{d708972d8aea0d7705e1ab63f6655e72}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dataset for ` ``{I} can show what {I} really like.'': {Eliciting Preferences via Quadratic Voting}'}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.13012/B2IDB-1928463_V1
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.13012/B2IDB-1928463_V1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.13012/B2IDB-1928463_V1
+      \endverb
+    \endentry
+    \entry{cheng2017anyone}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=fcf7e2cc0011128155bbb648cb2fc647}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9c5821708eb9cc9bc6c92c66ada53892}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=803627d78ac3640f8c905c014a7e100e}{%
+           family={Danescu-Niculescu-Mizil},
+           familyi={D\bibinithyphendelim N\bibinithyphendelim M\bibinitperiod},
+           given={Cristian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8c511b8cd7d2beaf986e461ce4c3e88}
+      \strng{fullhash}{afe54da8e272824a3cc8969b72e0dbec}
+      \strng{bibnamehash}{afe54da8e272824a3cc8969b72e0dbec}
+      \strng{authorbibnamehash}{afe54da8e272824a3cc8969b72e0dbec}
+      \strng{authornamehash}{b8c511b8cd7d2beaf986e461ce4c3e88}
+      \strng{authorfullhash}{afe54da8e272824a3cc8969b72e0dbec}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM conference on computer supported cooperative work and social computing}
+      \field{title}{Anyone can become a troll: Causes of trolling behavior in online discussions}
+      \field{year}{2017}
+      \field{pages}{1217\bibrangedash 1230}
+      \range{pages}{14}
+    \endentry
+    \entry{davey2007one}{article}{}
+      \name{author}{4}{}{%
+        {{hash=46e205a2e017e7993148a91819189b87}{%
+           family={Davey},
+           familyi={D\bibinitperiod},
+           given={Heather\bibnamedelima M},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ae8938c19746047b850c2ac93f18160f}{%
+           family={Barratt},
+           familyi={B\bibinitperiod},
+           given={Alexandra\bibnamedelima L},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c420a63e334caeae20ad0ac108e01f7e}{%
+           family={Butow},
+           familyi={B\bibinitperiod},
+           given={Phyllis\bibnamedelima N},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d1309a6469a5d1fabb4952576db24cc7}{%
+           family={Deeks},
+           familyi={D\bibinitperiod},
+           given={Jonathan\bibnamedelima J},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6e71efb90540531fffa95ffe80a8a851}
+      \strng{fullhash}{236944b32e43511744f4a984c37da028}
+      \strng{bibnamehash}{236944b32e43511744f4a984c37da028}
+      \strng{authorbibnamehash}{236944b32e43511744f4a984c37da028}
+      \strng{authornamehash}{6e71efb90540531fffa95ffe80a8a851}
+      \strng{authorfullhash}{236944b32e43511744f4a984c37da028}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of clinical epidemiology}
+      \field{number}{4}
+      \field{title}{A one-item question with a Likert or Visual Analog Scale adequately measured current anxiety}
+      \field{volume}{60}
+      \field{year}{2007}
+      \field{pages}{356\bibrangedash 360}
+      \range{pages}{5}
+    \endentry
+    \entry{dawes2008data}{article}{}
+      \name{author}{1}{}{%
+        {{hash=80d05601250805a2deff48b4b36ee1d3}{%
+           family={Dawes},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{80d05601250805a2deff48b4b36ee1d3}
+      \strng{fullhash}{80d05601250805a2deff48b4b36ee1d3}
+      \strng{bibnamehash}{80d05601250805a2deff48b4b36ee1d3}
+      \strng{authorbibnamehash}{80d05601250805a2deff48b4b36ee1d3}
+      \strng{authornamehash}{80d05601250805a2deff48b4b36ee1d3}
+      \strng{authorfullhash}{80d05601250805a2deff48b4b36ee1d3}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of market research}
+      \field{number}{1}
+      \field{title}{Do data characteristics change according to the number of scale points used? An experiment using 5-point, 7-point and 10-point scales}
+      \field{volume}{50}
+      \field{year}{2008}
+      \field{pages}{61\bibrangedash 104}
+      \range{pages}{44}
+    \endentry
+    \entry{difallah2018demographics}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=caf1be5e3ef9d6a532ff3fcbae2f3952}{%
+           family={Difallah},
+           familyi={D\bibinitperiod},
+           given={Djellel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=27c6ea5a1a39b7196a67ea4347a7a31e}{%
+           family={Filatova},
+           familyi={F\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f8918936d23654c8b3cc2f5f2b54d303}{%
+           family={Ipeirotis},
+           familyi={I\bibinitperiod},
+           given={Panos},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a354ed1a1ea28aa065d5438ec2246bfb}
+      \strng{fullhash}{2c8ab2ee5e96157a69877150ce9e2ece}
+      \strng{bibnamehash}{2c8ab2ee5e96157a69877150ce9e2ece}
+      \strng{authorbibnamehash}{2c8ab2ee5e96157a69877150ce9e2ece}
+      \strng{authornamehash}{a354ed1a1ea28aa065d5438ec2246bfb}
+      \strng{authorfullhash}{2c8ab2ee5e96157a69877150ce9e2ece}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the eleventh ACM international conference on web search and data mining}
+      \field{title}{Demographics and dynamics of mechanical Turk workers}
+      \field{year}{2018}
+      \field{pages}{135\bibrangedash 143}
+      \range{pages}{9}
+    \endentry
+    \entry{census2018}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labeltitlesource}{title}
+      \field{title}{Educational Attainment in the United States: 2018}
+      \field{urlday}{13}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.census.gov/data/tables/2018/demo/education-attainment/cps-detailed-tables.html
+      \endverb
+      \verb{url}
+      \verb https://www.census.gov/data/tables/2018/demo/education-attainment/cps-detailed-tables.html
+      \endverb
+    \endentry
+    \entry{eguia2019quadratic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=07163ec54a71f84fd68acbcd80e947dc}{%
+           family={Eguia},
+           familyi={E\bibinitperiod},
+           given={Jon\bibnamedelima X},
+           giveni={J\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=2bf2d58e3c96261c225f4c422f263192}{%
+           family={Immorlica},
+           familyi={I\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d117e5dcc05ea10241afcd4de0a6afaa}{%
+           family={Ligett},
+           familyi={L\bibinitperiod},
+           given={Katrina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4fc18f7132ef6aab4fd165fe14a73448}{%
+           family={Weyl},
+           familyi={W\bibinitperiod},
+           given={E\bibnamedelima Glen},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=d2753b4e4618a5d60b084fd0f3368a21}{%
+           family={Xefteris},
+           familyi={X\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{658333b9182e9e26caac3b30b27f1394}
+      \strng{fullhash}{643440bf9e047dec9d5c6809bf3fc4ca}
+      \strng{bibnamehash}{643440bf9e047dec9d5c6809bf3fc4ca}
+      \strng{authorbibnamehash}{643440bf9e047dec9d5c6809bf3fc4ca}
+      \strng{authornamehash}{658333b9182e9e26caac3b30b27f1394}
+      \strng{authorfullhash}{643440bf9e047dec9d5c6809bf3fc4ca}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Available at SSRN 3319508}
+      \field{title}{Quadratic voting with multiple alternatives}
+      \field{year}{2019}
+    \endentry
+    \entry{Fehr2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=91ed91d8a80667277e10cbdf3b0585db}{%
+           family={Fehr},
+           familyi={F\bibinitperiod},
+           given={Ernst},
+           giveni={E\bibinitperiod}}}%
+        {{hash=28a789271210b1599883428ca9ba7997}{%
+           family={Gintis},
+           familyi={G\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {English}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{fullhash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{bibnamehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{authorbibnamehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{authornamehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{authorfullhash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Since Durkheim, sociological explanations of social cooperation have emphasized the internalization of values that induce norm compliance. Since Adam Smith, economic explanations of social cooperation have emphasized incentives that induce selfish individuals to cooperate. Here, we develop a general approach---the Beliefs, Preferences, and Constraints approach---showing that each of the above models is a special case. Our approach is based on evidence indicating that pure Homo Sociologicus and pure Homo Economicus views are wrong. We show that self-regarding and norm-regarding actors coexist and that the available action opportunities determine which of these actor types dominates the aggregate level of social cooperation. Our approach contributes to the solution of long-standing problems, including the problems of social order and collective action, the determinants and consequences of social exchanges, the microfoundations of emergent aggregate patterns of social interactions, and the measurement of the impact of cultural and economic practices on individuals' social goals.}
+      \field{annotation}{A fascinating review paper attempting to understand how social order emerges from interaction amongst social actors. Fehr and Gintis show that a significant portion of the actors are conditional cooperators (50\%) while about 30\% of the population are selfish actors. The rest exhibit mixed behavior. They show that the presence of punishment is crucial to cooperation; even a few free riders can dramatically influence cooperation. On the other hand with the presence of punishment, even a few conditional cooperators can bring about cooperation. Strong reciprocity is the idea that individual will cooperate conditioned on the cooperation of others. And, these individuals who are strongly-reciprocal will using the punishment when available. There are two motivational factors behind strong reciprocity: reciprocal fairness and inequity aversion. In fact, punishment (where you lose money for punishing someone else and hence a rational actor will not punish), occurs in both repeated games within the same group as well as in one-shot dilemmas with strangers. Interestingly third parties also tend to punish! There is a neurobiological basis to strong reciprocity. Notions of reciprocity also drive wages in experiments conducted on employer-employee pairs; higher wage offers increase effort and leads to more equitable distribution of wealth (the experiment was conducted in cases where there was an excess supply of workers; the standard economic theory suggests that this should drive down prices). There is a difference between the case when the possibility of long term relationships is impossible (the effort is much lower) than the case when long term relationships are cultivated. Experiments with the ultimatum game across cultures reveal that the outcomes mirror cultural values; Read gintis 2007; fehr 1999, and flak 2006 for the behaviors, preferences and beliefs (bpc) theory. The authors do not discuss the role of communication in cooperation; Ostrom shows that cooperation enhances trust and therefore cooperative behavior.}
+      \field{issn}{03600572}
+      \field{journaltitle}{Annual Review of Sociology}
+      \field{title}{Human Motivation and Social Cooperation: Experimental and Analytical Foundations}
+      \field{volume}{33}
+      \field{year}{2007}
+      \field{pages}{pp. 43\bibrangedash 64}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/29737753
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/29737753
+      \endverb
+      \keyw{paper:complete}
+    \endentry
+    \entry{fehr2007human}{article}{}
+      \name{author}{2}{}{%
+        {{hash=91ed91d8a80667277e10cbdf3b0585db}{%
+           family={Fehr},
+           familyi={F\bibinitperiod},
+           given={Ernst},
+           giveni={E\bibinitperiod}}}%
+        {{hash=28a789271210b1599883428ca9ba7997}{%
+           family={Gintis},
+           familyi={G\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{fullhash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{bibnamehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{authorbibnamehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{authornamehash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \strng{authorfullhash}{70e1736e0e02d7d17da885851b7b2d5c}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annu. Rev. Sociol.}
+      \field{title}{Human motivation and social cooperation: Experimental and analytical foundations}
+      \field{volume}{33}
+      \field{year}{2007}
+      \field{pages}{43\bibrangedash 64}
+      \range{pages}{22}
+    \endentry
+    \entry{finstad2010}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b596d7eafdb51e56a89a9c0246eeaa19}{%
+           family={Finstad},
+           familyi={F\bibinitperiod},
+           given={Kraig},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Usability Professionals' Association}%
+      }
+      \strng{namehash}{b596d7eafdb51e56a89a9c0246eeaa19}
+      \strng{fullhash}{b596d7eafdb51e56a89a9c0246eeaa19}
+      \strng{bibnamehash}{b596d7eafdb51e56a89a9c0246eeaa19}
+      \strng{authorbibnamehash}{b596d7eafdb51e56a89a9c0246eeaa19}
+      \strng{authornamehash}{b596d7eafdb51e56a89a9c0246eeaa19}
+      \strng{authorfullhash}{b596d7eafdb51e56a89a9c0246eeaa19}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Response interpolation and scale sensitivity: Evidence against 5-point scales}
+      \field{volume}{5}
+      \field{year}{2010}
+      \field{pages}{104\bibrangedash 110}
+      \range{pages}{7}
+    \endentry
+    \entry{furnham1986response}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e689ccfacdf969000027e1b9916f4622}{%
+           family={Furnham},
+           familyi={F\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e689ccfacdf969000027e1b9916f4622}
+      \strng{fullhash}{e689ccfacdf969000027e1b9916f4622}
+      \strng{bibnamehash}{e689ccfacdf969000027e1b9916f4622}
+      \strng{authorbibnamehash}{e689ccfacdf969000027e1b9916f4622}
+      \strng{authornamehash}{e689ccfacdf969000027e1b9916f4622}
+      \strng{authorfullhash}{e689ccfacdf969000027e1b9916f4622}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Personality and individual differences}
+      \field{number}{3}
+      \field{title}{Response bias, social desirability and dissimulation}
+      \field{volume}{7}
+      \field{year}{1986}
+      \field{pages}{385\bibrangedash 400}
+      \range{pages}{16}
+    \endentry
+    \entry{garland2008computer}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cde651e45d99c8001a2e0d4b5bdfbe32}{%
+           family={Garland},
+           familyi={G\bibinitperiod},
+           given={Kate\bibnamedelima J},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1531902c5477bb72644da1f9c450a29a}{%
+           family={Noyes},
+           familyi={N\bibinitperiod},
+           given={Jan\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5e0f6de668a8acc841f8b1891bc0aa96}
+      \strng{fullhash}{5e0f6de668a8acc841f8b1891bc0aa96}
+      \strng{bibnamehash}{5e0f6de668a8acc841f8b1891bc0aa96}
+      \strng{authorbibnamehash}{5e0f6de668a8acc841f8b1891bc0aa96}
+      \strng{authornamehash}{5e0f6de668a8acc841f8b1891bc0aa96}
+      \strng{authorfullhash}{5e0f6de668a8acc841f8b1891bc0aa96}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{number}{2}
+      \field{title}{Computer attitude scales: How relevant today?}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{pages}{563\bibrangedash 575}
+      \range{pages}{13}
+    \endentry
+    \entry{gendall2010effect}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b955217c3d0b3d4d15103665ffcb9c23}{%
+           family={Gendall},
+           familyi={G\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d0dac9a6d0ecb629d73b05a1786cbdfd}{%
+           family={Healey},
+           familyi={H\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{9fd84f8743affa29ea49929f7c18a67a}
+      \strng{fullhash}{9fd84f8743affa29ea49929f7c18a67a}
+      \strng{bibnamehash}{9fd84f8743affa29ea49929f7c18a67a}
+      \strng{authorbibnamehash}{9fd84f8743affa29ea49929f7c18a67a}
+      \strng{authornamehash}{9fd84f8743affa29ea49929f7c18a67a}
+      \strng{authorfullhash}{9fd84f8743affa29ea49929f7c18a67a}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Market Research}
+      \field{number}{5}
+      \field{title}{Effect of a promised donation to charity on survey response}
+      \field{volume}{52}
+      \field{year}{2010}
+      \field{pages}{565\bibrangedash 577}
+      \range{pages}{13}
+    \endentry
+    \entry{getzner2000hypothetical}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b0ad3506c942ac9a405f5ade0dbf87c9}{%
+           family={Getzner},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b0ad3506c942ac9a405f5ade0dbf87c9}
+      \strng{fullhash}{b0ad3506c942ac9a405f5ade0dbf87c9}
+      \strng{bibnamehash}{b0ad3506c942ac9a405f5ade0dbf87c9}
+      \strng{authorbibnamehash}{b0ad3506c942ac9a405f5ade0dbf87c9}
+      \strng{authornamehash}{b0ad3506c942ac9a405f5ade0dbf87c9}
+      \strng{authorfullhash}{b0ad3506c942ac9a405f5ade0dbf87c9}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Environmental planning and Management}
+      \field{number}{4}
+      \field{title}{Hypothetical and real economic commitments, and social status, in valuing a species protection programme}
+      \field{volume}{43}
+      \field{year}{2000}
+      \field{pages}{541\bibrangedash 559}
+      \range{pages}{19}
+    \endentry
+    \entry{glaser2008response}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1078adab65be6a0fdb9fff820168f561}{%
+           family={Glaser},
+           familyi={G\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage: Thousand Oaks, CA, USA}%
+      }
+      \strng{namehash}{1078adab65be6a0fdb9fff820168f561}
+      \strng{fullhash}{1078adab65be6a0fdb9fff820168f561}
+      \strng{bibnamehash}{1078adab65be6a0fdb9fff820168f561}
+      \strng{authorbibnamehash}{1078adab65be6a0fdb9fff820168f561}
+      \strng{authornamehash}{1078adab65be6a0fdb9fff820168f561}
+      \strng{authorfullhash}{1078adab65be6a0fdb9fff820168f561}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Response Rates. Encyclopedia of Survey Research Methods}
+      \field{year}{2008}
+    \endentry
+    \entry{gob2007ordinal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=44b5570400180c20e9837c0d3cd610fe}{%
+           family={G{ö}b},
+           familyi={G\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod}}}%
+        {{hash=df09af292f7f1deead4dc66715f7febc}{%
+           family={McCollin},
+           familyi={M\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1649ee9ddd5a599ff425c05ec096ea23}{%
+           family={Ramalhoto},
+           familyi={R\bibinitperiod},
+           given={Maria\bibnamedelima Fernanda},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{08254fa81e8564a2322c719d13126e4d}
+      \strng{fullhash}{2cd6e519a4848311e2803eba99b72655}
+      \strng{bibnamehash}{2cd6e519a4848311e2803eba99b72655}
+      \strng{authorbibnamehash}{2cd6e519a4848311e2803eba99b72655}
+      \strng{authornamehash}{08254fa81e8564a2322c719d13126e4d}
+      \strng{authorfullhash}{2cd6e519a4848311e2803eba99b72655}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quality \& Quantity}
+      \field{number}{5}
+      \field{title}{Ordinal methodology in the analysis of Likert scales}
+      \field{volume}{41}
+      \field{year}{2007}
+      \field{pages}{601\bibrangedash 626}
+      \range{pages}{26}
+    \endentry
+    \entry{Goel2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b9f86630475050f998c1380d54906d21}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1201a4b83996fadde2ccffb412716ba}{%
+           family={Krishnaswamy},
+           familyi={K\bibinitperiod},
+           given={Anilesh\bibnamedelima K},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=726c4431af9d9899af14b6253ad03ca9}{%
+           family={Sakshuwong},
+           familyi={S\bibinitperiod},
+           given={Sukolsak},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7aa2cf8016ff9e2408ff4cb5cd200432}
+      \strng{fullhash}{96dc68dabb0080096c8c6c82139faf20}
+      \strng{bibnamehash}{96dc68dabb0080096c8c6c82139faf20}
+      \strng{authorbibnamehash}{96dc68dabb0080096c8c6c82139faf20}
+      \strng{authornamehash}{7aa2cf8016ff9e2408ff4cb5cd200432}
+      \strng{authorfullhash}{96dc68dabb0080096c8c6c82139faf20}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Collective Intelligence}
+      \field{title}{Budget aggregation via knapsack voting: welfare-maximization and strategy-proofness}
+      \field{year}{2016}
+      \field{pages}{783\bibrangedash 809}
+      \range{pages}{27}
+    \endentry
+    \entry{goel2015knapsack}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b9f86630475050f998c1380d54906d21}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1201a4b83996fadde2ccffb412716ba}{%
+           family={Krishnaswamy},
+           familyi={K\bibinitperiod},
+           given={Anilesh\bibnamedelima K},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=726c4431af9d9899af14b6253ad03ca9}{%
+           family={Sakshuwong},
+           familyi={S\bibinitperiod},
+           given={Sukolsak},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1f18ebca56203c24d287b6288292d189}{%
+           family={Aitamurto},
+           familyi={A\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{7aa2cf8016ff9e2408ff4cb5cd200432}
+      \strng{fullhash}{cb9f47c2cd2697042ea6cb633ffa293c}
+      \strng{bibnamehash}{cb9f47c2cd2697042ea6cb633ffa293c}
+      \strng{authorbibnamehash}{cb9f47c2cd2697042ea6cb633ffa293c}
+      \strng{authornamehash}{7aa2cf8016ff9e2408ff4cb5cd200432}
+      \strng{authorfullhash}{cb9f47c2cd2697042ea6cb633ffa293c}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Knapsack voting}
+    \endentry
+    \entry{gould2015home}{article}{}
+      \name{author}{4}{}{%
+        {{hash=8035809ecdb8c8c1634af9aa792b6e8f}{%
+           family={Gould},
+           familyi={G\bibinitperiod},
+           given={Sandy\bibnamedelima JJ},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9e7566144fed2906eb15b0e66f083614}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={Anna\bibnamedelima L},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=1c80cb39e88241c9b6b5cb76fbc527e1}{%
+           family={Brumby},
+           familyi={B\bibinitperiod},
+           given={Duncan\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=bb6ac4413b330fa7a46d3fa61e466670}{%
+           family={Wiseman},
+           familyi={W\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d41b813730e74525eb3a2a41730e1f2}
+      \strng{fullhash}{75476ba0a76ee40a69b0b46761ee5955}
+      \strng{bibnamehash}{75476ba0a76ee40a69b0b46761ee5955}
+      \strng{authorbibnamehash}{75476ba0a76ee40a69b0b46761ee5955}
+      \strng{authornamehash}{5d41b813730e74525eb3a2a41730e1f2}
+      \strng{authorfullhash}{75476ba0a76ee40a69b0b46761ee5955}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Human Computation}
+      \field{number}{1}
+      \field{title}{Home is where the lab is: a comparison of online and lab data from a time-sensitive study of interruption}
+      \field{volume}{2}
+      \field{year}{2015}
+      \field{pages}{45\bibrangedash 67}
+      \range{pages}{23}
+    \endentry
+    \entry{hardman1998successful}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d83522c2245dabf437a6975da1f6e36e}{%
+           family={Hardman},
+           familyi={H\bibinitperiod},
+           given={Vicky},
+           giveni={V\bibinitperiod}}}%
+        {{hash=ab5dd4e074174a1ca813ac1de1a88629}{%
+           family={Sasse},
+           familyi={S\bibinitperiod},
+           given={Martina\bibnamedelima Angela},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=31a6e2100808946db6782db6c08a0a78}{%
+           family={Kouvelas},
+           familyi={K\bibinitperiod},
+           given={Isidor},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{38d191b63a3c73d9660adeb28b32ca24}
+      \strng{fullhash}{78b4ae980ed4a6a5ca21f8d31889a1e9}
+      \strng{bibnamehash}{78b4ae980ed4a6a5ca21f8d31889a1e9}
+      \strng{authorbibnamehash}{78b4ae980ed4a6a5ca21f8d31889a1e9}
+      \strng{authornamehash}{38d191b63a3c73d9660adeb28b32ca24}
+      \strng{authorfullhash}{78b4ae980ed4a6a5ca21f8d31889a1e9}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{5}
+      \field{title}{Successful multiparty audio communication over the Internet}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{pages}{74\bibrangedash 80}
+      \range{pages}{7}
+    \endentry
+    \entry{hodge2003phrase}{article}{}
+      \name{author}{2}{}{%
+        {{hash=aad1e526f1ba2745ea744f54d1cc9c3c}{%
+           family={Hodge},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima R},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=4d8e3e1f27d18b0f53330826168da0c7}{%
+           family={Gillespie},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{6311a5c0b3642fd8b1521b58a6fcc22f}
+      \strng{fullhash}{6311a5c0b3642fd8b1521b58a6fcc22f}
+      \strng{bibnamehash}{6311a5c0b3642fd8b1521b58a6fcc22f}
+      \strng{authorbibnamehash}{6311a5c0b3642fd8b1521b58a6fcc22f}
+      \strng{authornamehash}{6311a5c0b3642fd8b1521b58a6fcc22f}
+      \strng{authorfullhash}{6311a5c0b3642fd8b1521b58a6fcc22f}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Social Work Research}
+      \field{number}{1}
+      \field{title}{Phrase completions: An alternative to likert scales.(Note on Research Methodology)}
+      \field{volume}{27}
+      \field{year}{2003}
+      \field{pages}{45\bibrangedash 56}
+      \range{pages}{12}
+    \endentry
+    \entry{huynh2008temporal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=28f70c8a6d9356ffb2f375633f664fad}{%
+           family={Huynh-Thu},
+           familyi={H\bibinithyphendelim T\bibinitperiod},
+           given={Quan},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=0dc6cbc4c38d6cca74bcffff5f436cbc}{%
+           family={Ghanbari},
+           familyi={G\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{dc908f3709eb9b228c5ae243af80c7bc}
+      \strng{fullhash}{dc908f3709eb9b228c5ae243af80c7bc}
+      \strng{bibnamehash}{dc908f3709eb9b228c5ae243af80c7bc}
+      \strng{authorbibnamehash}{dc908f3709eb9b228c5ae243af80c7bc}
+      \strng{authornamehash}{dc908f3709eb9b228c5ae243af80c7bc}
+      \strng{authorfullhash}{dc908f3709eb9b228c5ae243af80c7bc}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Broadcasting}
+      \field{number}{3}
+      \field{title}{Temporal aspect of perceived quality in mobile video broadcasting}
+      \field{volume}{54}
+      \field{year}{2008}
+      \field{pages}{641\bibrangedash 651}
+      \range{pages}{11}
+    \endentry
+    \entry{ioannidis2005most}{article}{}
+      \name{author}{1}{}{%
+        {{hash=03e697d9228cdc30ac73d1b71c8da689}{%
+           family={Ioannidis},
+           familyi={I\bibinitperiod},
+           given={John\bibnamedelima PA},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{03e697d9228cdc30ac73d1b71c8da689}
+      \strng{fullhash}{03e697d9228cdc30ac73d1b71c8da689}
+      \strng{bibnamehash}{03e697d9228cdc30ac73d1b71c8da689}
+      \strng{authorbibnamehash}{03e697d9228cdc30ac73d1b71c8da689}
+      \strng{authornamehash}{03e697d9228cdc30ac73d1b71c8da689}
+      \strng{authorfullhash}{03e697d9228cdc30ac73d1b71c8da689}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS medicine}
+      \field{number}{8}
+      \field{title}{Why most published research findings are false}
+      \field{volume}{2}
+      \field{year}{2005}
+      \field{pages}{e124}
+      \range{pages}{-1}
+    \endentry
+    \entry{iyengar2000choice}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4384dae544f5d6737be01c9c28c98884}{%
+           family={Iyengar},
+           familyi={I\bibinitperiod},
+           given={Sheena\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=d9d9334dad39d62d9d9e571d56ada204}{%
+           family={Lepper},
+           familyi={L\bibinitperiod},
+           given={Mark\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{4ed538e15259addc968e77033e0ee604}
+      \strng{fullhash}{4ed538e15259addc968e77033e0ee604}
+      \strng{bibnamehash}{4ed538e15259addc968e77033e0ee604}
+      \strng{authorbibnamehash}{4ed538e15259addc968e77033e0ee604}
+      \strng{authornamehash}{4ed538e15259addc968e77033e0ee604}
+      \strng{authorfullhash}{4ed538e15259addc968e77033e0ee604}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of personality and social psychology}
+      \field{number}{6}
+      \field{title}{When choice is demotivating: Can one desire too much of a good thing?}
+      \field{volume}{79}
+      \field{year}{2000}
+      \field{pages}{995}
+      \range{pages}{1}
+    \endentry
+    \entry{jamieson2011intervening}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2096d4618dc2eaf1742128ca924081cd}{%
+           family={Jamieson},
+           familyi={J\bibinitperiod},
+           given={Jeremy\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=2a82074a358872ac9dbd5b8f1d444776}{%
+           family={Harkins},
+           familyi={H\bibinitperiod},
+           given={Stephen\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications Sage CA: Los Angeles, CA}%
+      }
+      \strng{namehash}{f7a0f71397462f1c776e067010f4159d}
+      \strng{fullhash}{f7a0f71397462f1c776e067010f4159d}
+      \strng{bibnamehash}{f7a0f71397462f1c776e067010f4159d}
+      \strng{authorbibnamehash}{f7a0f71397462f1c776e067010f4159d}
+      \strng{authornamehash}{f7a0f71397462f1c776e067010f4159d}
+      \strng{authorfullhash}{f7a0f71397462f1c776e067010f4159d}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Personality and Social Psychology Bulletin}
+      \field{number}{5}
+      \field{title}{The intervening task method: Implications for measuring mediation}
+      \field{volume}{37}
+      \field{year}{2011}
+      \field{pages}{652\bibrangedash 661}
+      \range{pages}{10}
+    \endentry
+    \entry{joshi2015likert}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b89883fe4b946d9f158640c7400c561f}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Ankur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=042e7f4ccb547ad7447d57151c288049}{%
+           family={Kale},
+           familyi={K\bibinitperiod},
+           given={Saket},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c1aa6b3ce2c9ffbdd5e8c697aa4ac242}{%
+           family={Chandel},
+           familyi={C\bibinitperiod},
+           given={Satish},
+           giveni={S\bibinitperiod}}}%
+        {{hash=170e7604b3fa34be8b27f90dd26b6f58}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={D\bibnamedelima Kumar},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{21e0056b361c2209912898c3a0fb2ed2}
+      \strng{fullhash}{bd1c8af820724eb3c25a93210be1446c}
+      \strng{bibnamehash}{bd1c8af820724eb3c25a93210be1446c}
+      \strng{authorbibnamehash}{bd1c8af820724eb3c25a93210be1446c}
+      \strng{authornamehash}{21e0056b361c2209912898c3a0fb2ed2}
+      \strng{authorfullhash}{bd1c8af820724eb3c25a93210be1446c}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current Journal of Applied Science and Technology}
+      \field{title}{Likert scale: Explored and explained}
+      \field{year}{2015}
+      \field{pages}{396\bibrangedash 403}
+      \range{pages}{8}
+    \endentry
+    \entry{kay2016researcher}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=62ee66d0503a0d594daf8e77fec37f8f}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b6492a73131a0d53e29263e5ce7ff537}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Gregory\bibnamedelima L},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3f16ffdc0c38e5467ca38620f0256edf}{%
+           family={Hekler},
+           familyi={H\bibinitperiod},
+           given={Eric\bibnamedelima B},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{284935a6d05e696fa3b10b541f39e072}
+      \strng{fullhash}{6f3e2f03e66fb14674dc375643af96d9}
+      \strng{bibnamehash}{6f3e2f03e66fb14674dc375643af96d9}
+      \strng{authorbibnamehash}{6f3e2f03e66fb14674dc375643af96d9}
+      \strng{authornamehash}{284935a6d05e696fa3b10b541f39e072}
+      \strng{authorfullhash}{6f3e2f03e66fb14674dc375643af96d9}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Researcher-centered design of statistics: Why Bayesian statistics better fit the culture and incentives of HCI}
+      \field{year}{2016}
+      \field{pages}{4521\bibrangedash 4532}
+      \range{pages}{12}
+    \endentry
+    \entry{knoche2005can}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e320cf60736e245b52dc7fd927f59b69}{%
+           family={Knoche},
+           familyi={K\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=79a463d5dcd87334e10990ab308fd865}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b90b3429a641ca8627953015010966b8}{%
+           family={Sasse},
+           familyi={S\bibinitperiod},
+           given={M\bibnamedelima Angela},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b51734ee26aeaab2b1437dc7940c4aa0}
+      \strng{fullhash}{a056cb2a800ad11a1222d1b2843f2a81}
+      \strng{bibnamehash}{a056cb2a800ad11a1222d1b2843f2a81}
+      \strng{authorbibnamehash}{a056cb2a800ad11a1222d1b2843f2a81}
+      \strng{authornamehash}{b51734ee26aeaab2b1437dc7940c4aa0}
+      \strng{authorfullhash}{a056cb2a800ad11a1222d1b2843f2a81}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 13th annual ACM international conference on Multimedia}
+      \field{title}{Can small be beautiful? Assessing image resolution requirements for mobile TV}
+      \field{year}{2005}
+      \field{pages}{829\bibrangedash 838}
+      \range{pages}{10}
+    \endentry
+    \entry{knoche2008low}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e320cf60736e245b52dc7fd927f59b69}{%
+           family={Knoche},
+           familyi={K\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7a87c7986bb428d8562d84da1790a654}{%
+           family={Mccarthy},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b90b3429a641ca8627953015010966b8}{%
+           family={Sasse},
+           familyi={S\bibinitperiod},
+           given={M\bibnamedelima Angela},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b51734ee26aeaab2b1437dc7940c4aa0}
+      \strng{fullhash}{307cdfcb0e71ceb54c92f48223c71b26}
+      \strng{bibnamehash}{307cdfcb0e71ceb54c92f48223c71b26}
+      \strng{authorbibnamehash}{307cdfcb0e71ceb54c92f48223c71b26}
+      \strng{authornamehash}{b51734ee26aeaab2b1437dc7940c4aa0}
+      \strng{authorfullhash}{307cdfcb0e71ceb54c92f48223c71b26}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{number}{1-2}
+      \field{title}{How low can you go? The effect of low resolutions on shot types in mobile TV}
+      \field{volume}{36}
+      \field{year}{2008}
+      \field{pages}{145\bibrangedash 166}
+      \range{pages}{22}
+    \endentry
+    \entry{komorita1965number}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f4f41ff51e950a7aa8740437a799bc5e}{%
+           family={Komorita},
+           familyi={K\bibinitperiod},
+           given={Samuel\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9b34493eae48454758943fabb2aaadc0}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={William\bibnamedelima K},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications Sage CA: Thousand Oaks, CA}%
+      }
+      \strng{namehash}{e292a0d072ba794b420c33362652c486}
+      \strng{fullhash}{e292a0d072ba794b420c33362652c486}
+      \strng{bibnamehash}{e292a0d072ba794b420c33362652c486}
+      \strng{authorbibnamehash}{e292a0d072ba794b420c33362652c486}
+      \strng{authornamehash}{e292a0d072ba794b420c33362652c486}
+      \strng{authorfullhash}{e292a0d072ba794b420c33362652c486}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Educational and Psychological Measurement}
+      \field{number}{4}
+      \field{title}{Number of scale points and the reliability of scales}
+      \field{volume}{25}
+      \field{year}{1965}
+      \field{pages}{987\bibrangedash 995}
+      \range{pages}{9}
+    \endentry
+    \entry{kruschke2010bayesian}{article}{}
+      \name{author}{1}{}{%
+        {{hash=81a0481c4d0c2f7a95cdc42fda92af07}{%
+           family={Kruschke},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{81a0481c4d0c2f7a95cdc42fda92af07}
+      \strng{fullhash}{81a0481c4d0c2f7a95cdc42fda92af07}
+      \strng{bibnamehash}{81a0481c4d0c2f7a95cdc42fda92af07}
+      \strng{authorbibnamehash}{81a0481c4d0c2f7a95cdc42fda92af07}
+      \strng{authornamehash}{81a0481c4d0c2f7a95cdc42fda92af07}
+      \strng{authorfullhash}{81a0481c4d0c2f7a95cdc42fda92af07}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wiley Interdisciplinary Reviews: Cognitive Science}
+      \field{number}{5}
+      \field{title}{Bayesian data analysis}
+      \field{volume}{1}
+      \field{year}{2010}
+      \field{pages}{658\bibrangedash 676}
+      \range{pages}{19}
+    \endentry
+    \entry{kuru2016improving}{article}{}
+      \name{author}{2}{}{%
+        {{hash=926e5211d62717b32a72e08e533e49b9}{%
+           family={Kuru},
+           familyi={K\bibinitperiod},
+           given={Ozan},
+           giveni={O\bibinitperiod}}}%
+        {{hash=135f47c76e92caa3fd38d06eec6fa01f}{%
+           family={Pasek},
+           familyi={P\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6ffa3a0f90856c5b17b0e9a1f1028fd9}
+      \strng{fullhash}{6ffa3a0f90856c5b17b0e9a1f1028fd9}
+      \strng{bibnamehash}{6ffa3a0f90856c5b17b0e9a1f1028fd9}
+      \strng{authorbibnamehash}{6ffa3a0f90856c5b17b0e9a1f1028fd9}
+      \strng{authornamehash}{6ffa3a0f90856c5b17b0e9a1f1028fd9}
+      \strng{authorfullhash}{6ffa3a0f90856c5b17b0e9a1f1028fd9}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{title}{Improving social media measurement in surveys: Avoiding acquiescence bias in Facebook research}
+      \field{volume}{57}
+      \field{year}{2016}
+      \field{pages}{82\bibrangedash 92}
+      \range{pages}{11}
+    \endentry
+    \entry{Lalley2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=aba73ed000314fec04f1aa1ae26bac88}{%
+           family={Lalley},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=4fc18f7132ef6aab4fd165fe14a73448}{%
+           family={Weyl},
+           familyi={W\bibinitperiod},
+           given={E\bibnamedelima Glen},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{fullhash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{bibnamehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{authorbibnamehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{authornamehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{authorfullhash}{35af286f2f625dacd2afbf0baf8cd032}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AEA Papers and Proceedings}
+      \field{title}{Quadratic voting: How mechanism design can radicalize democracy}
+      \field{volume}{108}
+      \field{year}{2018}
+      \field{pages}{33\bibrangedash 37}
+      \range{pages}{5}
+    \endentry
+    \entry{lalley2018quadratic}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=aba73ed000314fec04f1aa1ae26bac88}{%
+           family={Lalley},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=4fc18f7132ef6aab4fd165fe14a73448}{%
+           family={Weyl},
+           familyi={W\bibinitperiod},
+           given={E\bibnamedelima Glen},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{fullhash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{bibnamehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{authorbibnamehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{authornamehash}{35af286f2f625dacd2afbf0baf8cd032}
+      \strng{authorfullhash}{35af286f2f625dacd2afbf0baf8cd032}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AEA Papers and Proceedings}
+      \field{title}{Quadratic voting: How mechanism design can radicalize democracy}
+      \field{volume}{108}
+      \field{year}{2018}
+      \field{pages}{33\bibrangedash 37}
+      \range{pages}{5}
+    \endentry
+    \entry{ledo2018evaluation}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=d5067c586c7da4d6716b642ae9f78d7f}{%
+           family={Ledo},
+           familyi={L\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e66d41b65cba8a2a69434805252ee8c6}{%
+           family={Houben},
+           familyi={H\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b03798777c34671ca8efcba15a8f3710}{%
+           family={Vermeulen},
+           familyi={V\bibinitperiod},
+           given={Jo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cbb77c80a36d1e1e267e3726981e21b8}{%
+           family={Marquardt},
+           familyi={M\bibinitperiod},
+           given={Nicolai},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3dd851d89854203e2b1be45de479d666}{%
+           family={Oehlberg},
+           familyi={O\bibinitperiod},
+           given={Lora},
+           giveni={L\bibinitperiod}}}%
+        {{hash=235c46d06eaf0fbe7ff9c72d756b03a9}{%
+           family={Greenberg},
+           familyi={G\bibinitperiod},
+           given={Saul},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{73e7c692a2c72648fc96169d1447b696}
+      \strng{fullhash}{c7e07732cf15cb1ea7bbd1c1bb6733a8}
+      \strng{bibnamehash}{c7e07732cf15cb1ea7bbd1c1bb6733a8}
+      \strng{authorbibnamehash}{c7e07732cf15cb1ea7bbd1c1bb6733a8}
+      \strng{authornamehash}{73e7c692a2c72648fc96169d1447b696}
+      \strng{authorfullhash}{c7e07732cf15cb1ea7bbd1c1bb6733a8}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems}
+      \field{title}{Evaluation strategies for HCI toolkit research}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
+    \entry{Lee2014}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=0dc597a3713e8101a5952eaf3ad157c9}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima Timothy},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=b9f86630475050f998c1380d54906d21}{%
+           family={Goel},
+           familyi={G\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f18ebca56203c24d287b6288292d189}{%
+           family={Aitamurto},
+           familyi={A\bibinitperiod},
+           given={Tanja},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e9b065d0a51348054e8752832293cee0}{%
+           family={Landemore},
+           familyi={L\bibinitperiod},
+           given={Helene},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7ef3fae65b36c5e0d00a6c95e66d1cc}
+      \strng{fullhash}{b71fc3cee92b2e3638e324915aefd252}
+      \strng{bibnamehash}{b71fc3cee92b2e3638e324915aefd252}
+      \strng{authorbibnamehash}{b71fc3cee92b2e3638e324915aefd252}
+      \strng{authornamehash}{b7ef3fae65b36c5e0d00a6c95e66d1cc}
+      \strng{authorfullhash}{b71fc3cee92b2e3638e324915aefd252}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Second AAAI Conference on Human Computation and Crowdsourcing}
+      \field{title}{Crowdsourcing for participatory democracies: Efficient elicitation of social choice functions}
+      \field{year}{2014}
+    \endentry
+    \entry{likert1932technique}{article}{}
+      \name{author}{1}{}{%
+        {{hash=85b07393f98f1590e08d998667417f9b}{%
+           family={Likert},
+           familyi={L\bibinitperiod},
+           given={Rensis},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{fullhash}{85b07393f98f1590e08d998667417f9b}
+      \strng{bibnamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authorbibnamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authornamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authorfullhash}{85b07393f98f1590e08d998667417f9b}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Archives of psychology}
+      \field{title}{A technique for the measurement of attitudes.}
+      \field{year}{1932}
+    \endentry
+    \entry{litman2017turkprime}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d97b70839cff1f0cab5e1300cf7b3220}{%
+           family={Litman},
+           familyi={L\bibinitperiod},
+           given={Leib},
+           giveni={L\bibinitperiod}}}%
+        {{hash=40f23127c9cf34a2a0552bf5affef00d}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=53da7529e5d2e9da305b02a0598ac1c7}{%
+           family={Abberbock},
+           familyi={A\bibinitperiod},
+           given={Tzvi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d08ed534042f5f906ed9b114f9d83fb0}
+      \strng{fullhash}{971662f3800cfe78737538b54b301e24}
+      \strng{bibnamehash}{971662f3800cfe78737538b54b301e24}
+      \strng{authorbibnamehash}{971662f3800cfe78737538b54b301e24}
+      \strng{authornamehash}{d08ed534042f5f906ed9b114f9d83fb0}
+      \strng{authorfullhash}{971662f3800cfe78737538b54b301e24}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Behavior research methods}
+      \field{number}{2}
+      \field{title}{TurkPrime. com: A versatile crowdsourcing data acquisition platform for the behavioral sciences}
+      \field{volume}{49}
+      \field{year}{2017}
+      \field{pages}{433\bibrangedash 442}
+      \range{pages}{10}
+    \endentry
+    \entry{pew_spending}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Little Public Support for Reductions in Federal Spending}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pewresearch.org/politics/2019/04/11/little-public-support-for-reductions-in-federal-spending/
+      \endverb
+      \verb{url}
+      \verb https://www.pewresearch.org/politics/2019/04/11/little-public-support-for-reductions-in-federal-spending/
+      \endverb
+    \endentry
+    \entry{ma2017video}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ac13e82481ebbd3158b8978c7a569ed6}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xiaojuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7977d8a5d28f6653a153bbe19df06d95}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{4dc940bf7c8872b14bb94a4e9b44a111}
+      \strng{fullhash}{4dc940bf7c8872b14bb94a4e9b44a111}
+      \strng{bibnamehash}{4dc940bf7c8872b14bb94a4e9b44a111}
+      \strng{authorbibnamehash}{4dc940bf7c8872b14bb94a4e9b44a111}
+      \strng{authornamehash}{4dc940bf7c8872b14bb94a4e9b44a111}
+      \strng{authorfullhash}{4dc940bf7c8872b14bb94a4e9b44a111}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing}
+      \field{title}{Video-based evanescent, anonymous, asynchronous social interaction: Motivation and adaption to medium}
+      \field{year}{2017}
+      \field{pages}{770\bibrangedash 782}
+      \range{pages}{13}
+    \endentry
+    \entry{malhotra2006basic}{book}{}
+      \name{author}{2}{}{%
+        {{hash=419c12edb3936c73e7552557a5f9a5a8}{%
+           family={Malhotra},
+           familyi={M\bibinitperiod},
+           given={Naresh\bibnamedelima K},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4d2cc1647f41f303a270886ebdb9a9ed}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice hall}%
+      }
+      \strng{namehash}{546caedab8410a9206e92edcde973143}
+      \strng{fullhash}{546caedab8410a9206e92edcde973143}
+      \strng{bibnamehash}{546caedab8410a9206e92edcde973143}
+      \strng{authorbibnamehash}{546caedab8410a9206e92edcde973143}
+      \strng{authornamehash}{546caedab8410a9206e92edcde973143}
+      \strng{authorfullhash}{546caedab8410a9206e92edcde973143}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Basic marketing research: A decision-making approach}
+      \field{year}{2006}
+    \endentry
+    \entry{McElreath2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=51204ab1ac6fd3aa8b649ff12ae89bf1}{%
+           family={McElreath},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Chapman}%
+        {Hall/CRC}%
+      }
+      \strng{namehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{fullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{bibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorbibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authornamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorfullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical rethinking: A Bayesian course with examples in R and Stan}
+      \field{year}{2015}
+    \endentry
+    \entry{meier2007subsidies}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e54a334dd0071f78e8e405cc18e45699}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{e54a334dd0071f78e8e405cc18e45699}
+      \strng{fullhash}{e54a334dd0071f78e8e405cc18e45699}
+      \strng{bibnamehash}{e54a334dd0071f78e8e405cc18e45699}
+      \strng{authorbibnamehash}{e54a334dd0071f78e8e405cc18e45699}
+      \strng{authornamehash}{e54a334dd0071f78e8e405cc18e45699}
+      \strng{authorfullhash}{e54a334dd0071f78e8e405cc18e45699}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the European Economic Association}
+      \field{number}{6}
+      \field{title}{Do subsidies increase charitable giving in the long run? Matching donations in a field experiment}
+      \field{volume}{5}
+      \field{year}{2007}
+      \field{pages}{1203\bibrangedash 1222}
+      \range{pages}{20}
+    \endentry
+    \entry{meisenberg2008acquiescent}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6a41d179a14277167789a5f1fe2de42b}{%
+           family={Meisenberg},
+           familyi={M\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5fa83e3e3435d3db1c27ec633d42da83}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Amandy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d284d13fba3296c5dee1de91c76d9fe0}
+      \strng{fullhash}{d284d13fba3296c5dee1de91c76d9fe0}
+      \strng{bibnamehash}{d284d13fba3296c5dee1de91c76d9fe0}
+      \strng{authorbibnamehash}{d284d13fba3296c5dee1de91c76d9fe0}
+      \strng{authornamehash}{d284d13fba3296c5dee1de91c76d9fe0}
+      \strng{authorfullhash}{d284d13fba3296c5dee1de91c76d9fe0}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Personality and individual differences}
+      \field{number}{7}
+      \field{title}{Are acquiescent and extreme response styles related to low intelligence and education?}
+      \field{volume}{44}
+      \field{year}{2008}
+      \field{pages}{1539\bibrangedash 1550}
+      \range{pages}{12}
+    \endentry
+    \entry{molnar2013comedy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c62eb44ceb813738c5a85f010bbc6dfc}{%
+           family={Molnar},
+           familyi={M\bibinitperiod},
+           given={Andreea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0ffdabc3e4b25879790a8e68d097a504}{%
+           family={Muntean},
+           familyi={M\bibinitperiod},
+           given={Cristina\bibnamedelima Hava},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9498a0034bcc2c2c059c0277ed68d6a1}
+      \strng{fullhash}{9498a0034bcc2c2c059c0277ed68d6a1}
+      \strng{bibnamehash}{9498a0034bcc2c2c059c0277ed68d6a1}
+      \strng{authorbibnamehash}{9498a0034bcc2c2c059c0277ed68d6a1}
+      \strng{authornamehash}{9498a0034bcc2c2c059c0277ed68d6a1}
+      \strng{authorfullhash}{9498a0034bcc2c2c059c0277ed68d6a1}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 IEEE International Symposium on Broadband Multimedia Systems and Broadcasting (BMSB)}
+      \field{title}{COMEDY: Viewer trade off between multimedia quality and monetary benefits}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{moors2016two}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=4be708a5faa9c7605b634f2a2aeaa95d}{%
+           family={Moors},
+           familyi={M\bibinitperiod},
+           given={Guy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9c88acd90f281c59972b81b39c99eb71}{%
+           family={Vriens},
+           familyi={V\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+        {{hash=059d94d467d6d89b07d51b94c4133718}{%
+           family={Gelissen},
+           familyi={G\bibinitperiod},
+           given={John\bibnamedelima PTM},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=330de4275b99a9c2b54e3edf055f48e3}{%
+           family={Vermunt},
+           familyi={V\bibinitperiod},
+           given={Jeroen\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{25d5e2e82e2f53ab980b7c034c2dd39b}
+      \strng{fullhash}{c530ac773197284473f97930b9c54cd4}
+      \strng{bibnamehash}{c530ac773197284473f97930b9c54cd4}
+      \strng{authorbibnamehash}{c530ac773197284473f97930b9c54cd4}
+      \strng{authornamehash}{25d5e2e82e2f53ab980b7c034c2dd39b}
+      \strng{authorfullhash}{c530ac773197284473f97930b9c54cd4}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Survey Research Methods}
+      \field{number}{1}
+      \field{title}{Two of a Kind. Similarities Between Ranking and Rating Data in Measuring Values.}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{pages}{15\bibrangedash 33}
+      \range{pages}{19}
+    \endentry
+    \entry{naylor2017first}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=57607acc4f4a48cd12a6d3afb479bc9f}{%
+           family={Naylor},
+           familyi={N\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Student Success Journal}%
+      }
+      \strng{namehash}{006b1ee7581aa21306a91c36379d7ccc}
+      \strng{fullhash}{006b1ee7581aa21306a91c36379d7ccc}
+      \strng{bibnamehash}{006b1ee7581aa21306a91c36379d7ccc}
+      \strng{authorbibnamehash}{006b1ee7581aa21306a91c36379d7ccc}
+      \strng{authornamehash}{006b1ee7581aa21306a91c36379d7ccc}
+      \strng{authorfullhash}{006b1ee7581aa21306a91c36379d7ccc}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Student Success}
+      \field{number}{2}
+      \field{title}{First year student conceptions of success: What really matters?}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{pages}{9\bibrangedash 19}
+      \range{pages}{11}
+    \endentry
+    \entry{experiment2015}{online}{}
+      \name{author}{5}{}{%
+        {{hash=f15f9b9b4b0b8fa33d1d439d00f1de48}{%
+           family={Nikolayeva},
+           familyi={N\bibinitperiod},
+           given={Olga},
+           giveni={O\bibinitperiod}}}%
+        {{hash=f240fc31e4f916e7cc90bb6d9a064e2e}{%
+           family={Buz},
+           familyi={B\bibinitperiod},
+           given={Esteban},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a0fbf5e332b23bbfb9d5f5ce45048207}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Linda},
+           giveni={L\bibinitperiod}}}%
+        {{hash=31eae34fbf21389cc08cd3a37ebb5536}{%
+           family={Watts},
+           familyi={W\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fc8270e01d1c2e367b4536345c4db119}{%
+           family={Jaeger},
+           familyi={J\bibinitperiod},
+           given={Tim\bibnamedelima Florian},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1cf8ab69abf68cbc54019791370e719}
+      \strng{fullhash}{3b3a86147f143c57ea2ccce9b2489c3d}
+      \strng{bibnamehash}{3b3a86147f143c57ea2ccce9b2489c3d}
+      \strng{authorbibnamehash}{3b3a86147f143c57ea2ccce9b2489c3d}
+      \strng{authornamehash}{d1cf8ab69abf68cbc54019791370e719}
+      \strng{authorfullhash}{3b3a86147f143c57ea2ccce9b2489c3d}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Web based tutorial on experimental design.}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.hlp.rochester.edu/resources/BCS152-Tutorial/
+      \endverb
+      \verb{url}
+      \verb https://www.hlp.rochester.edu/resources/BCS152-Tutorial/
+      \endverb
+    \endentry
+    \entry{noll1993wideband}{article}{}
+      \name{author}{1}{}{%
+        {{hash=93f9cbe7fb63af472323077b26899913}{%
+           family={Noll},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{93f9cbe7fb63af472323077b26899913}
+      \strng{fullhash}{93f9cbe7fb63af472323077b26899913}
+      \strng{bibnamehash}{93f9cbe7fb63af472323077b26899913}
+      \strng{authorbibnamehash}{93f9cbe7fb63af472323077b26899913}
+      \strng{authornamehash}{93f9cbe7fb63af472323077b26899913}
+      \strng{authorfullhash}{93f9cbe7fb63af472323077b26899913}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Communications Magazine}
+      \field{number}{11}
+      \field{title}{Wideband speech and audio coding}
+      \field{volume}{31}
+      \field{year}{1993}
+      \field{pages}{34\bibrangedash 44}
+      \range{pages}{11}
+    \endentry
+    \entry{oeldorf2012bad}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f24b8f2c5b0bd44852cc8e510c63697e}{%
+           family={Oeldorf-Hirsch},
+           familyi={O\bibinithyphendelim H\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a560036c54bd0b15c51126dea56ac99a}{%
+           family={Donner},
+           familyi={D\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=434b5670e66211e1c68a58af75653567}{%
+           family={Cutrell},
+           familyi={C\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{f371c8a8c76276296b8297092991cccd}
+      \strng{fullhash}{51b147a62b1c2395f65a34ce1c5b028d}
+      \strng{bibnamehash}{51b147a62b1c2395f65a34ce1c5b028d}
+      \strng{authorbibnamehash}{51b147a62b1c2395f65a34ce1c5b028d}
+      \strng{authornamehash}{f371c8a8c76276296b8297092991cccd}
+      \strng{authorfullhash}{51b147a62b1c2395f65a34ce1c5b028d}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 7th Nordic Conference on Human-Computer Interaction: Making Sense Through Design}
+      \field{title}{How bad is good enough?: exploring mobile video quality trade-offs for bandwidth-constrained consumers}
+      \field{year}{2012}
+      \field{pages}{49\bibrangedash 58}
+      \range{pages}{10}
+    \endentry
+    \entry{oviatt2006human}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=2e89ee52fbb71b4c8b36c85fb9f78386}{%
+           family={Oviatt},
+           familyi={O\bibinitperiod},
+           given={Sharon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{fullhash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{bibnamehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{authorbibnamehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{authornamehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{authorfullhash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th ACM international conference on Multimedia}
+      \field{title}{Human-centered design meets cognitive load theory: designing interfaces that help people think}
+      \field{year}{2006}
+      \field{pages}{871\bibrangedash 880}
+      \range{pages}{10}
+    \endentry
+    \entry{posner2018radical}{book}{}
+      \name{author}{2}{}{%
+        {{hash=aede6e96185da8c77b290567ceebdc0f}{%
+           family={Posner},
+           familyi={P\bibinitperiod},
+           given={Eric\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4fc18f7132ef6aab4fd165fe14a73448}{%
+           family={Weyl},
+           familyi={W\bibinitperiod},
+           given={E\bibnamedelima Glen},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{abc6984eefbd95b68640618ec82bfbbb}
+      \strng{fullhash}{abc6984eefbd95b68640618ec82bfbbb}
+      \strng{bibnamehash}{abc6984eefbd95b68640618ec82bfbbb}
+      \strng{authorbibnamehash}{abc6984eefbd95b68640618ec82bfbbb}
+      \strng{authornamehash}{abc6984eefbd95b68640618ec82bfbbb}
+      \strng{authorfullhash}{abc6984eefbd95b68640618ec82bfbbb}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Radical markets: Uprooting capitalism and democracy for a just society}
+      \field{year}{2018}
+    \endentry
+    \entry{quarfoot2017quadratic}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4ba98608bddb5fb4b3e8b3e67832fe87}{%
+           family={Quarfoot},
+           familyi={Q\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=47af5b37aa4ad2ff7c91321e0beeab12}{%
+           family={Kohorn},
+           familyi={K\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=73048d0a0fb9384dfae031f65651957a}{%
+           family={Slavin},
+           familyi={S\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e0d62fefacd1539d4328dfbd8b1cf936}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Rory},
+           giveni={R\bibinitperiod}}}%
+        {{hash=23e7a9765722824cdcb0523037077a60}{%
+           family={Goldstein},
+           familyi={G\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1b79df1c7fcc54a37ec0952179b8c0d3}{%
+           family={Konar},
+           familyi={K\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0ce3f9524e07cc95d2f7f05f5ec55dcd}
+      \strng{fullhash}{b5fddb3fb8676255080452b66af3a9f1}
+      \strng{bibnamehash}{b5fddb3fb8676255080452b66af3a9f1}
+      \strng{authorbibnamehash}{b5fddb3fb8676255080452b66af3a9f1}
+      \strng{authornamehash}{0ce3f9524e07cc95d2f7f05f5ec55dcd}
+      \strng{authorfullhash}{b5fddb3fb8676255080452b66af3a9f1}
+      \field{sortinit}{Q}
+      \field{sortinithash}{c54e16deb53fc904a621fa8fd8703b5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Public Choice}
+      \field{number}{1-2}
+      \field{title}{Quadratic voting in the wild: real people, real votes}
+      \field{volume}{172}
+      \field{year}{2017}
+      \field{pages}{283\bibrangedash 303}
+      \range{pages}{21}
+    \endentry
+    \entry{ready2010using}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b173278b97aa83263e9e5814d43ce7b2}{%
+           family={Ready},
+           familyi={R\bibinitperiod},
+           given={Richard\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=3bdf5b3cdfa94d0e46565a5b0ef5eef7}{%
+           family={Champ},
+           familyi={C\bibinitperiod},
+           given={Patricia\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6e2bc17a57ef400d537ac818303abd29}{%
+           family={Lawton},
+           familyi={L\bibinitperiod},
+           given={Jennifer\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Wisconsin Press}%
+      }
+      \strng{namehash}{a75d1d7428d6a65db2443d061aa19aae}
+      \strng{fullhash}{2ffd09ede6fbcfd5180c3e48a8248223}
+      \strng{bibnamehash}{2ffd09ede6fbcfd5180c3e48a8248223}
+      \strng{authorbibnamehash}{2ffd09ede6fbcfd5180c3e48a8248223}
+      \strng{authornamehash}{a75d1d7428d6a65db2443d061aa19aae}
+      \strng{authorfullhash}{2ffd09ede6fbcfd5180c3e48a8248223}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Land Economics}
+      \field{number}{2}
+      \field{title}{Using respondent uncertainty to mitigate hypothetical bias in a stated choice experiment}
+      \field{volume}{86}
+      \field{year}{2010}
+      \field{pages}{363\bibrangedash 381}
+      \range{pages}{19}
+    \endentry
+    \entry{roster2015exploring}{article}{}
+      \name{author}{3}{}{%
+        {{hash=babe8048523f4a2388aafcefb9f032e6}{%
+           family={Roster},
+           familyi={R\bibinitperiod},
+           given={Catherine\bibnamedelima A},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=70fc1b6a2b24b274280afbcc9b810dc0}{%
+           family={Lucianetti},
+           familyi={L\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bd9de6f7cd2ba91e52e8beffa324cb2b}{%
+           family={Albaum},
+           familyi={A\bibinitperiod},
+           given={Gerald},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f7d5a640eb4192fb35a45c3388524e0}
+      \strng{fullhash}{f268dc99d30ea116b71499cd730c6a30}
+      \strng{bibnamehash}{f268dc99d30ea116b71499cd730c6a30}
+      \strng{authorbibnamehash}{f268dc99d30ea116b71499cd730c6a30}
+      \strng{authornamehash}{7f7d5a640eb4192fb35a45c3388524e0}
+      \strng{authorfullhash}{f268dc99d30ea116b71499cd730c6a30}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Research Practice}
+      \field{number}{1}
+      \field{title}{Exploring slider vs. categorical response formats in web-based surveys}
+      \field{volume}{11}
+      \field{year}{2015}
+      \field{pages}{1}
+      \range{pages}{1}
+    \endentry
+    \entry{roth1982incentive}{article}{}
+      \name{author}{1}{}{%
+        {{hash=320ab47af0997a7a69af46760b320783}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Alvin\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{320ab47af0997a7a69af46760b320783}
+      \strng{fullhash}{320ab47af0997a7a69af46760b320783}
+      \strng{bibnamehash}{320ab47af0997a7a69af46760b320783}
+      \strng{authorbibnamehash}{320ab47af0997a7a69af46760b320783}
+      \strng{authornamehash}{320ab47af0997a7a69af46760b320783}
+      \strng{authorfullhash}{320ab47af0997a7a69af46760b320783}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Economics letters}
+      \field{number}{2}
+      \field{title}{Incentive compatibility in a market with indivisible goods}
+      \field{volume}{9}
+      \field{year}{1982}
+      \field{pages}{127\bibrangedash 132}
+      \range{pages}{6}
+    \endentry
+    \entry{roughgarden2010algorithmic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=efce6f6d496cdcc1bb07fb47dfecb3aa}{%
+           family={Roughgarden},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{efce6f6d496cdcc1bb07fb47dfecb3aa}
+      \strng{fullhash}{efce6f6d496cdcc1bb07fb47dfecb3aa}
+      \strng{bibnamehash}{efce6f6d496cdcc1bb07fb47dfecb3aa}
+      \strng{authorbibnamehash}{efce6f6d496cdcc1bb07fb47dfecb3aa}
+      \strng{authornamehash}{efce6f6d496cdcc1bb07fb47dfecb3aa}
+      \strng{authorfullhash}{efce6f6d496cdcc1bb07fb47dfecb3aa}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{7}
+      \field{title}{Algorithmic game theory}
+      \field{volume}{53}
+      \field{year}{2010}
+      \field{pages}{78\bibrangedash 86}
+      \range{pages}{9}
+    \endentry
+    \entry{salvatier2016probabilistic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=05c761e203cc6c586605836fa4676d10}{%
+           family={Salvatier},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=50f495e80088cea41d5ff3a042dfb728}{%
+           family={Wiecki},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima V},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9524daf70c4a2e189d4efb9eb659bb8e}{%
+           family={Fonnesbeck},
+           familyi={F\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PeerJ Inc.}%
+      }
+      \strng{namehash}{abfae452a57f1beb54edb571049fb0a2}
+      \strng{fullhash}{84d195951c6ec056c0d274af93148826}
+      \strng{bibnamehash}{84d195951c6ec056c0d274af93148826}
+      \strng{authorbibnamehash}{84d195951c6ec056c0d274af93148826}
+      \strng{authornamehash}{abfae452a57f1beb54edb571049fb0a2}
+      \strng{authorfullhash}{84d195951c6ec056c0d274af93148826}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PeerJ Computer Science}
+      \field{title}{Probabilistic programming in Python using PyMC3}
+      \field{volume}{2}
+      \field{year}{2016}
+      \field{pages}{e55}
+      \range{pages}{-1}
+    \endentry
+    \entry{Shah2015a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=44455106198f85e92a3d8ecce8a3ffc9}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Anuj\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=95914e1fa470b15a1f841b7b75fcc9f0}{%
+           family={Shafir},
+           familyi={S\bibinitperiod},
+           given={Eldar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0ad4a50fedec7f3fb2ce43f3f64e62d6}{%
+           family={Mullainathan},
+           familyi={M\bibinitperiod},
+           given={Sendhil},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7057bae2583a145a3862e264f345a2d}
+      \strng{fullhash}{c15822f639d8aa0481867fef6c12452a}
+      \strng{bibnamehash}{c15822f639d8aa0481867fef6c12452a}
+      \strng{authorbibnamehash}{c15822f639d8aa0481867fef6c12452a}
+      \strng{authornamehash}{a7057bae2583a145a3862e264f345a2d}
+      \strng{authorfullhash}{c15822f639d8aa0481867fef6c12452a}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Science}
+      \field{number}{4}
+      \field{title}{Scarcity Frames Value}
+      \field{volume}{26}
+      \field{year}{2015}
+      \field{pages}{402\bibrangedash 412}
+      \range{pages}{11}
+    \endentry
+    \entry{nielsen}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labeltitlesource}{title}
+      \field{title}{SHELF SOLUTIONS}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nielsen.com/apac/en/solutions/measurement/shelf-solutions/
+      \endverb
+      \verb{url}
+      \verb https://www.nielsen.com/apac/en/solutions/measurement/shelf-solutions/
+      \endverb
+    \endentry
+    \entry{singhal2001modern}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=e842c74a8f00853e7e3ea135b41b55bd}{%
+           family={Singhal},
+           familyi={S\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{fullhash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{bibnamehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{authorbibnamehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{authornamehash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \strng{authorfullhash}{edda2c0bbec7c54a7421c6e0ddaa8460}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Data Eng. Bull.}
+      \field{number}{4}
+      \field{title}{Modern information retrieval: A brief overview}
+      \field{volume}{24}
+      \field{year}{2001}
+      \field{pages}{35\bibrangedash 43}
+      \range{pages}{9}
+    \endentry
+    \entry{steinmetz1996human}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9eea3638fa9a97f4054f44f5e740579c}{%
+           family={Steinmetz},
+           familyi={S\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9eea3638fa9a97f4054f44f5e740579c}
+      \strng{fullhash}{9eea3638fa9a97f4054f44f5e740579c}
+      \strng{bibnamehash}{9eea3638fa9a97f4054f44f5e740579c}
+      \strng{authorbibnamehash}{9eea3638fa9a97f4054f44f5e740579c}
+      \strng{authornamehash}{9eea3638fa9a97f4054f44f5e740579c}
+      \strng{authorfullhash}{9eea3638fa9a97f4054f44f5e740579c}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Journal on selected Areas in Communications}
+      \field{number}{1}
+      \field{title}{Human perception of jitter and media synchronization}
+      \field{volume}{14}
+      \field{year}{1996}
+      \field{pages}{61\bibrangedash 72}
+      \range{pages}{12}
+    \endentry
+    \entry{vavreck2007exaggerated}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=76124e204d6e54ed1d3813b35e0bbd72}{%
+           family={Vavreck},
+           familyi={V\bibinitperiod},
+           given={Lynn},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Now Publishers, Inc.}%
+      }
+      \strng{namehash}{eeccad6d55b4cea17b5a532387a8bd01}
+      \strng{fullhash}{eeccad6d55b4cea17b5a532387a8bd01}
+      \strng{bibnamehash}{eeccad6d55b4cea17b5a532387a8bd01}
+      \strng{authorbibnamehash}{eeccad6d55b4cea17b5a532387a8bd01}
+      \strng{authornamehash}{eeccad6d55b4cea17b5a532387a8bd01}
+      \strng{authorfullhash}{eeccad6d55b4cea17b5a532387a8bd01}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quarterly Journal of Political Science}
+      \field{number}{4}
+      \field{title}{The exaggerated effects of advertising on turnout: The dangers of self-reports}
+      \field{volume}{2}
+      \field{year}{2007}
+      \field{pages}{325\bibrangedash 343}
+      \range{pages}{19}
+    \endentry
+    \entry{xiao2019should}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3f8ee261a8e138bd7a2e765c919aff52}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Ziang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=66006b42eb8b9a0207e79ef4009179d7}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Po-Shiun},
+           giveni={P\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=3faba9f811e536a7d268c4e4b066c53c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xinran},
+           giveni={X\bibinitperiod}}}%
+        {{hash=fd5039fa655dfef04da6f83e6dd93c1e}{%
+           family={Karahalios},
+           familyi={K\bibinitperiod},
+           given={Karrie},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0f0ac089d382457e8848268a5aaabbe8}{%
+           family={Sundaram},
+           familyi={S\bibinitperiod},
+           given={Hari},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{9d2f599ab4c8c78f0212caa3f48bacd7}
+      \strng{fullhash}{b356d9c041b594941fdaecae70e05044}
+      \strng{bibnamehash}{b356d9c041b594941fdaecae70e05044}
+      \strng{authorbibnamehash}{b356d9c041b594941fdaecae70e05044}
+      \strng{authornamehash}{9d2f599ab4c8c78f0212caa3f48bacd7}
+      \strng{authorfullhash}{b356d9c041b594941fdaecae70e05044}
+      \field{sortinit}{X}
+      \field{sortinithash}{e90038f30fa4b9ce59606fc8347e3cc7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the ACM on Human-Computer Interaction}
+      \field{number}{CSCW}
+      \field{title}{Should We Use an Abstract Comic Form to Persuade? Experiments with Online Charitable Donation}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 28}
+      \range{pages}{28}
+    \endentry
+    \entry{zawojska2015re}{report}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=7b8cb835a2d1c89ff97dda2190da43d2}{%
+           family={Zawojska},
+           familyi={Z\bibinitperiod},
+           given={Ewa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=493428b48f678b4ba08a85595ccbb0bf}{%
+           family={Czajkowski},
+           familyi={C\bibinitperiod},
+           given={Miko{ł}aj},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2d9edffbe424b8fd59ad297ef611301}
+      \strng{fullhash}{b2d9edffbe424b8fd59ad297ef611301}
+      \strng{bibnamehash}{b2d9edffbe424b8fd59ad297ef611301}
+      \strng{authorbibnamehash}{b2d9edffbe424b8fd59ad297ef611301}
+      \strng{authornamehash}{b2d9edffbe424b8fd59ad297ef611301}
+      \strng{authorfullhash}{b2d9edffbe424b8fd59ad297ef611301}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Re-examining empirical evidence on contingent valuation--Importance of incentive compatibility}
+      \field{type}{techreport}
+      \field{year}{2015}
+    \endentry
+    \entry{zhang2017wikum}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=55594ce723e5771b24852196ad6f6035}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Amy\bibnamedelima X},
+           giveni={A\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=85b3406f401e98a7e63bc7132661428a}{%
+           family={Verou},
+           familyi={V\bibinitperiod},
+           given={Lea},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ca0d40fd2ed3fc314917b42745659849}{%
+           family={Karger},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dd3eb943e591ff38088ddd189ac3c08}
+      \strng{fullhash}{c021611a81a9f720911df613a1344210}
+      \strng{bibnamehash}{c021611a81a9f720911df613a1344210}
+      \strng{authorbibnamehash}{c021611a81a9f720911df613a1344210}
+      \strng{authornamehash}{8dd3eb943e591ff38088ddd189ac3c08}
+      \strng{authorfullhash}{c021611a81a9f720911df613a1344210}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2017 ACM Conference on Computer Supported Cooperative Work and Social Computing}
+      \field{title}{Wikum: Bridging discussion forums and wikis using recursive summarization}
+      \field{year}{2017}
+      \field{pages}{2082\bibrangedash 2096}
+      \range{pages}{15}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
