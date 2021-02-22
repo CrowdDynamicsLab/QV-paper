@@ -38,8 +38,8 @@ As shown in \Cref{fig:likert_exp2} and \Cref{fig:qv3_exp2}, on an aggregated lev
 
 \begin{figure}[htpb]
 \centering
-\begin{minipage}[b]{0.44\linewidth}
-\includegraphics[width=\textwidth, keepaspectratio=true]{content/image/likert_distribution_per_element (1).pdf}
+\begin{minipage}[t]{0.48\linewidth}
+\includegraphics[width=\textwidth, keepaspectratio=true]{content/image/likert_distribution_per_element.pdf}
     \caption{
       Distribution of Likert scale survey responses per video elements in Boxen plot. 
       Each level from -2 to 2 corresponds to 
@@ -50,8 +50,8 @@ As shown in \Cref{fig:likert_exp2} and \Cref{fig:qv3_exp2}, on an aggregated lev
     \label{fig:likert_exp2}
 \end{minipage}
 \quad
-\begin{minipage}[b]{0.52\linewidth}
-\includegraphics[width=0.9\textwidth, keepaspectratio=true]{content/image/qv_distribution_per_element.pdf}
+\begin{minipage}[t]{0.48\linewidth}
+\includegraphics[width=\textwidth, keepaspectratio=true]{content/image/qv_distribution_per_element.pdf}
     \caption{
       Distribution of QV responses per video element in QV in Boxen plots. The maximum possible number of votes on an element was 10 votes given 100 voice credits. Most distributions in all three QV set-ups follow a normal distribution. 
     }
@@ -105,7 +105,7 @@ Similar to experiment one, we are interested in the degree of alignment between 
 
 Overall, our Bayesian analysis for experiment two showed that QV survey responses aligned significantly better with the price setting behaviors than Likert responses with a medium to high effect size (0.5--0.6). The first graph in the left column of~\Cref{fig:traceplot_exp2}, which contains traceplots for the MCMC estimations, shows that the distribution of the mean cosine similarity angle for QV (orange line) is to the left of that for Likert (blue line). Since a perfect alignment means a zero angle, QV had better alignment with the set prices relative to Likert. 
 
-To confirm if the difference was statistical significant, we constructed the distribution of the absolute difference between the means and the distribution of the corresponding effect size (normalized difference), as shown in \Cref{fig:contrast_exp2}. In the subfigure on the left, the mode of the contrast is $6.1$, meaning that the cosine similarity angles in the Likert group were most frequently $6.1$ degrees larger than the angles in the QV group. Since the HPD of [$1.9$, $9.6$] lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1 \deg$, there was a significant difference between the alignment levels of the two survey methods. The medium to high effect size is significant based on the figure on the right, with a modal value of $0.51$ and a HPD interval of [$0.15$, $0.84$].
+To confirm if the difference was statistical significant, we constructed the distribution of the absolute difference between the means and the distribution of the corresponding effect size (normalized difference), as shown in \Cref{fig:contrast_exp2}. In the subfigure on the left, the mode of the contrast is $5.8$, meaning that the cosine similarity angles in the Likert group were most frequently $5.8$ degrees larger than the angles in the QV group. Since the HPD of [$2$, $9.7$] lies outside a significant ROPE (Region of Practical Equivalence) of $0 \pm 1 \deg$, there was a significant difference between the alignment levels of the two survey methods. The medium to high effect size is significant based on the figure on the right, with a modal value of $0.51$ and a HPD interval of [$0.16$, $0.84$].
 
 
 \begin{sidewaysfigure*}
