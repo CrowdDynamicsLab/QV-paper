@@ -22,7 +22,7 @@ Cite using:
 ```
 
 # Related Links
-Analysis code: https://github.com/CrowdDynamicsLab/QV_True_Preference_Analysis.
-QV Simple Interface: https://github.com/hank0982/SimpleQV
-Experiment 1: https://github.com/a2975667/QV-app
-Experiment 2: https://github.com/a2975667/QV-buyback
+- Analysis code: https://github.com/CrowdDynamicsLab/QV_True_Preference_Analysis.
+- QV Simple Interface: https://github.com/hank0982/SimpleQV
+- Experiment 1: https://github.com/a2975667/QV-app
+- Experiment 2: https://github.com/a2975667/QV-buyback
